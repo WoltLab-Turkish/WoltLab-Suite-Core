@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.cronjob">
+		<item name="wcf.acp.cronjob.description.cronjob22"><![CDATA[Süresi dolan uzaklaştırmaları iptal eder]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.user.infraction.canManageSuspension"><![CDATA[Uzaklaştırmaları yönetebilir mi?]]></item>
+		<item name="wcf.acp.group.option.admin.user.infraction.canManageWarning"><![CDATA[Uyarıları yönetebilir mi?]]></item>
+		<item name="wcf.acp.group.option.category.admin.user.infraction"><![CDATA[İhlaller]]></item>
+		<item name="wcf.acp.group.option.category.mod.infraction"><![CDATA[İhlaller]]></item>
+		<item name="wcf.acp.group.option.mod.infraction.warning.canRevoke"><![CDATA[Uyarıları iptal edebilir mi?]]></item>
+		<item name="wcf.acp.group.option.mod.infraction.warning.canUseCustomWarning"><![CDATA[Bireysel uyarılar kullanabilir mi?]]></item>
+		<item name="wcf.acp.group.option.mod.infraction.warning.canWarn"><![CDATA[Kullanıcıları uyarabilir mi?]]></item>
+		<item name="wcf.acp.group.option.mod.infraction.warning.immune"><![CDATA[Kullanıcı grubuna uyarı yapılabilir mi?]]></item>
+	</category>
+	<category name="wcf.acp.infraction">
+		<item name="wcf.acp.infraction.suspension.add"><![CDATA[Öntanımlı Yaptırım Ekle]]></item>
+		<item name="wcf.acp.infraction.suspension.edit"><![CDATA[Yaptırımı Düzenle]]></item>
+		<item name="wcf.acp.infraction.suspension.edit.note"><![CDATA[Dikkat! Değişiklikler etkin yaptırımları etkilemez, bitiş süresi ya da puanları değiştirmek sadece yeni uygulanacak yaptırımlarda geçerli olacaktır.]]></item>
+		<item name="wcf.acp.infraction.suspension.list"><![CDATA[Öntanımlı Yaptırımlar]]></item>
+		<item name="wcf.acp.infraction.userSuspension.list"><![CDATA[Yaptırımlar]]></item>
+		<item name="wcf.acp.infraction.userWarning.list"><![CDATA[Uyarılar]]></item>
+		<item name="wcf.acp.infraction.warning.add"><![CDATA[Öntanımlı Uyarı Ekle]]></item>
+		<item name="wcf.acp.infraction.warning.edit"><![CDATA[Uyarı Düzenle]]></item>
+		<item name="wcf.acp.infraction.warning.list"><![CDATA[Öntanımlı Uyarılar]]></item>
+	</category>
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.infraction"><![CDATA[Uyarılar]]></item>
+		<item name="wcf.acp.menu.link.infraction.suspension.add"><![CDATA[Öntanımlı Yaptırım Ekle]]></item>
+		<item name="wcf.acp.menu.link.infraction.suspension.list"><![CDATA[Öntanımlı Yaptırımlar]]></item>
+		<item name="wcf.acp.menu.link.infraction.userSuspension.list"><![CDATA[Etkin Yaptırımlar]]></item>
+		<item name="wcf.acp.menu.link.infraction.userWarning.list"><![CDATA[Etkin Uyarılar]]></item>
+		<item name="wcf.acp.menu.link.infraction.warning.add"><![CDATA[Öntanımlı Uyarı Ekle]]></item>
+		<item name="wcf.acp.menu.link.infraction.warning.list"><![CDATA[Öntanımlı Uyarılar]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_user_infraction"><![CDATA[İhlaller aktif edilsin mi?]]></item>
+	</category>
+	<category name="wcf.acp.pip">
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.infraction.suspensionAction.description"><![CDATA[Bu nesne türü tanımı, bir askıya alma olarak yürütülebilecek farklı eylem türlerini kaydetmek için kullanılır.]]></item>
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.wcf.infraction.warnable.description"><![CDATA[Bu nesne türü tanımı, kullanıcıların uyarılabileceği nesneleri kaydetmek için kullanılır.]]></item>
+	</category>
+	<category name="wcf.infraction">
+		<item name="wcf.infraction.suspension.action"><![CDATA[Yaptırım Türü]]></item>
+		<item name="wcf.infraction.suspension.action.com.woltlab.wcf.infraction.suspension.addToGroup"><![CDATA[Gruba Ekle]]></item>
+		<item name="wcf.infraction.suspension.action.com.woltlab.wcf.infraction.suspension.ban"><![CDATA[Yasakla]]></item>
+		<item name="wcf.infraction.suspension.action.com.woltlab.wcf.infraction.suspension.disableAvatar"><![CDATA[Profil Resmini Engelle]]></item>
+		<item name="wcf.infraction.suspension.action.com.woltlab.wcf.infraction.suspension.disableCoverPhoto"><![CDATA[Yasak Kapak Fotoğrafı]]></item>
+		<item name="wcf.infraction.suspension.action.com.woltlab.wcf.infraction.suspension.disableSignature"><![CDATA[İmzayı Etkisizleştir]]></item>
+		<item name="wcf.infraction.suspension.action.settings"><![CDATA[Ayarlar]]></item>
+		<item name="wcf.infraction.suspension.data"><![CDATA[Yaptırım Verisi]]></item>
+		<item name="wcf.infraction.suspension.expires"><![CDATA[Bitiş Tarihi]]></item>
+		<item name="wcf.infraction.suspension.expires.description"><![CDATA[Yaptırım bitiş tarihine ulaştığında kaldırılacak.]]></item>
+		<item name="wcf.infraction.suspension.expires.never"><![CDATA[Süresiz yaptırım]]></item>
+		<item name="wcf.infraction.suspension.points"><![CDATA[Puan]]></item>
+		<item name="wcf.infraction.suspension.points.description"><![CDATA[Bu yaptırımın işleme alınması için gerekli olan uyarı puanları.]]></item>
+		<item name="wcf.infraction.suspension.predefined"><![CDATA[Öntanımlı Yaptırım]]></item>
+		<item name="wcf.infraction.suspension.revoke"><![CDATA[İptal]]></item>
+		<item name="wcf.infraction.suspension.revoke.confirmMessage"><![CDATA[Bu yaptırımı gerçekten iptal etmek istiyor musunuz?]]></item>
+		<item name="wcf.infraction.suspension.revokedBy"><![CDATA[İptal eden: {if $suspension->revokerUsername}{$suspension->revokerUsername}{else}Sistem{/if}.]]></item>
+		<item name="wcf.infraction.suspension.time"><![CDATA[Tarih]]></item>
+		<item name="wcf.infraction.userWarning.message.subject"><![CDATA[Bir uyarı aldınız]]></item>
+		<item name="wcf.infraction.userWarning.message.text"><![CDATA[<h2>Uyarı</h2>
+<p>{$warning->getTitle()}</p>
+{if $warning->getObject()}
+<h3>İçerik</h3>
+<p><a href="{$warning->getObject()->getLink()}">{$warning->getObject()->getTitle()}</a></p>
+{/if}
+<h3>Nedeni</h3>
+<p>{@$warning->reason|newlineToBreak}</p>]]></item>
+		<item name="wcf.infraction.warn"><![CDATA[Uyar]]></item>
+		<item name="wcf.infraction.warn.success"><![CDATA[Kullanıcı uyarıldı.]]></item>
+		<item name="wcf.infraction.warning.alreadyWarned"><![CDATA[İlgili içerik için zaten etkin bir uyarı mevcut.]]></item>
+		<item name="wcf.infraction.warning.custom"><![CDATA[Özel Uyarı]]></item>
+		<item name="wcf.infraction.warning.data"><![CDATA[Uyarı Verisi]]></item>
+		<item name="wcf.infraction.warning.details"><![CDATA[Ayrıntılar]]></item>
+		<item name="wcf.infraction.warning.expires"><![CDATA[Bitiş Tarihi]]></item>
+		<item name="wcf.infraction.warning.expires.days"><![CDATA[Gün]]></item>
+		<item name="wcf.infraction.warning.expires.description"><![CDATA[Süresi dolmuş uyarılar kullanıcının uyarı puanlarını etkilemez.]]></item>
+		<item name="wcf.infraction.warning.expires.hours"><![CDATA[Saat]]></item>
+		<item name="wcf.infraction.warning.expires.never"><![CDATA[Süresiz]]></item>
+		<item name="wcf.infraction.warning.expires.never.short"><![CDATA[Asla]]></item>
+		<item name="wcf.infraction.warning.expires.weeks"><![CDATA[Hafta]]></item>
+		<item name="wcf.infraction.warning.judge"><![CDATA[Hüküm]]></item>
+		<item name="wcf.infraction.warning.longTitle"><![CDATA[{$warning->getTitle()} (Uyarı Puanı: {#$warning->points}, Bitiş Süresi: {if $warning->expires == 0}Süresiz{else}{$warning->expires|dateDiff:0:true}{/if})]]></item>
+		<item name="wcf.infraction.warning.object"><![CDATA[İçerik]]></item>
+		<item name="wcf.infraction.warning.objectInformation"><![CDATA[İçerik Ayrıntıları]]></item>
+		<item name="wcf.infraction.warning.points"><![CDATA[Puan]]></item>
+		<item name="wcf.infraction.warning.points.description"><![CDATA[Kullanıcı hesabına eklenecek uyarı puanları. Toplam puan daha önceden belirlenmiş puana ulaştığında otomatik olarak yaptırım uygulanacaktır.]]></item>
+		<item name="wcf.infraction.warning.points.maximum"><![CDATA[Maksimum Puan]]></item>
+		<item name="wcf.infraction.warning.points.minimum"><![CDATA[Minimum Puan]]></item>
+		<item name="wcf.infraction.warning.predefined"><![CDATA[Öntanımlı Uyarı]]></item>
+		<item name="wcf.infraction.warning.reason"><![CDATA[Sebep]]></item>
+		<item name="wcf.infraction.warning.reason.description"><![CDATA[Kullanıcı bu sebebi içeren bir mesaj alacak.]]></item>
+		<item name="wcf.infraction.warning.reason.template.description"><![CDATA[Bir kullanıcıyı uyarırken, neden için metin alanı burada verilen nedenle önceden doldurulacaktır.]]></item>
+		<item name="wcf.infraction.warning.revoke"><![CDATA[İptal]]></item>
+		<item name="wcf.infraction.warning.revoke.confirmMessage"><![CDATA[Bu uyarıyı gerçekten iptal etmek istiyor musunuz?]]></item>
+		<item name="wcf.infraction.warning.revokedBy"><![CDATA[İptal eden: {if $warning->revokerUsername}{$warning->revokerUsername}{else}Sistem{/if}.]]></item>
+		<item name="wcf.infraction.warning.showDetails"><![CDATA[Ayrıntıları göster]]></item>
+		<item name="wcf.infraction.warning.status"><![CDATA[Durum]]></item>
+		<item name="wcf.infraction.warning.status.active"><![CDATA[Etkin]]></item>
+		<item name="wcf.infraction.warning.status.expired"><![CDATA[Bitmiş]]></item>
+		<item name="wcf.infraction.warning.time"><![CDATA[Tarih]]></item>
+	</category>
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.warning"><![CDATA[Uyarılar]]></item>
+	</category>
+</language>

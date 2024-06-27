@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.content">
+		<item name="wcf.acp.content.provider.com.woltlab.wcf.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.content.provider.com.woltlab.wcf.conversation.message"><![CDATA[Sohbet Mesajları]]></item>
+	</category>
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.conversation.attachment"><![CDATA[Ek Dosyalar]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.conversation.label"><![CDATA[Önek Etiketleri]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.conversation.message"><![CDATA[Mesajlar]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.conversation.user"><![CDATA[Sohbet Katılımcıları]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.canBeAddedAsConversationParticipant"><![CDATA[Kullanıcı grubu görüşmelere katılımcı olarak eklenebilir mi?]]></item>
+		<item name="wcf.acp.group.option.category.mod.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.group.option.category.user.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.group.option.mod.conversation.canAlwaysInviteUsers"><![CDATA[Katılımcıları her zaman özel sohbete davet edebilir mi?]]></item>
+		<item name="wcf.acp.group.option.mod.conversation.canModerateConversation"><![CDATA[Özel Sohbetleri yönetebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.allowedAttachmentExtensions"><![CDATA[İzin verilen dosya uzantıları?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canAddGroupParticipants"><![CDATA[Kullanıcı gruplarını katılımcı olarak ekleyebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canAddInvisibleParticipants"><![CDATA[Gizli katılımcı ekleyebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canAddInvisibleParticipants.description"><![CDATA[Bu grubun kullanıcıları sohbet oluşturma esnasında sohbete gizli katılımcı ekleyebilir. Yapılan bu değişiklik zaten yürümekte olan sohbetleri etkilemez.]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canEditMessage"><![CDATA[Kendi mesajlarını düzenleyebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canEditMessage.description"><![CDATA[Kullanıcılar kendi mesajlarını bir ya da daha fazla alıcı tarafından okunsa bile düzenleyebilir.]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canReplyToConversation"><![CDATA[Özel sohbetlere cevap verebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canSetCanInvite"><![CDATA[Yetkilendirme yapabilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canSetCanInvite.description"><![CDATA[Yeni bir sohbete başlarken, kullanıcılar eklenen katılımcılara yeni katılımcı ekleme yetkisi verebilir. Yapılan bu değişiklik zaten yürümekte olan sohbetleri etkilemez.]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canStartConversation"><![CDATA[Yeni özel sohbet başlatabilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canUploadAttachment"><![CDATA[Ek dosya yükleyebilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.canUseConversation"><![CDATA[Özel sohbet özelliğini kullanabilir mi?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.floodControlTime"><![CDATA[Aynı anda kaç sohbet oluşturabilir?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.floodControlTime.description"><![CDATA[İki konuşma mesajı oluşturma arasında gereken saniye. Devre dışı bırakmak için 0'ı kullanın.]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxAttachmentCount"><![CDATA[Maksimum ekleyebileceği dosya sayısı?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxAttachmentCount.description"><![CDATA[Her mesaj için izin verilen en fazla ek dosya sayısı.]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxAttachmentSize"><![CDATA[Maksimum yükleyebileceği dosya boyutu?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxConversations"><![CDATA[Kaç adet özel sohbet oluşturabilir?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxConversations.description"><![CDATA[Kullanıcı başına izin verilen en fazla etkin sohbet sayısı]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxLabels"><![CDATA[En fazla kaç adet önek etiketi oluşturabilir?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxLength"><![CDATA[Maksimum kullanabileceği mesaj uzunluğu?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxParticipants"><![CDATA[Özel sohbete ekleyebileceği katılımcı sayısı?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxParticipants.description"><![CDATA[Sohbet başına izin verilen en fazla katılımcı sayısı]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxStartedConversationsPer24Hours"><![CDATA[24 Saatte kaç adet özel sohbet oluşturabilir?]]></item>
+		<item name="wcf.acp.group.option.user.conversation.maxStartedConversationsPer24Hours.description"><![CDATA[Bir kullanıcının 24 saat içinde başlatabileceği konuşma sayısını sınırlar. Sonsuz için -1 kullanın.]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.message.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.option.conversation_list_default_sort_field"><![CDATA[Sıralama Şekli]]></item>
+		<item name="wcf.acp.option.conversation_list_default_sort_field.description"><![CDATA[Konuşmalar için varsayılan sıralama seçeniğini seçiniz.]]></item>
+		<item name="wcf.acp.option.conversation_list_default_sort_order"><![CDATA[Sıralama Düzeni]]></item>
+		<item name="wcf.acp.option.conversation_list_default_sort_order.description"><![CDATA[Konuşmalar için varsayılan sıralama düzenini seçiniz.]]></item>
+		<item name="wcf.acp.option.conversation_messages_per_page"><![CDATA[Sayfa Başına Mesajlar]]></item>
+		<item name="wcf.acp.option.conversations_per_page"><![CDATA[Sayfa Başına Sohbetler]]></item>
+		<item name="wcf.acp.option.module_conversation"><![CDATA[Özel sohbet sistemi aktif edilsin mi?]]></item>
+	</category>
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationMessageRebuildDataWorker"><![CDATA[Özel Sohbet Mesajlarını Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationMessageRebuildDataWorker.description"><![CDATA[Özel Sohbet mesaj sayaçlarını yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationMessageSearchIndexRebuildDataWorker"><![CDATA[Özel Sohbet Mesajı Arama Dizinini Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationMessageSearchIndexRebuildDataWorker.description"><![CDATA[Uyarı: Bu işlemin büyük forumlarda tamamlanması biraz zaman alabilir.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationRebuildDataWorker"><![CDATA[Özel Sohbetleri Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_ConversationRebuildDataWorker.description"><![CDATA[Özel Sohbet sayaçlarını yeniden oluşturur.]]></item>
+	</category>
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.wcf.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.stat.com.woltlab.wcf.conversation"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.acp.stat.com.woltlab.wcf.conversation.message"><![CDATA[Sohbet Mesajları]]></item>
+	</category>
+	<category name="wcf.clipboard">
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.assignLabel"><![CDATA[Durum Belirle ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.close"><![CDATA[Kapat ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leave"><![CDATA[Gizle ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.leavePermanently"><![CDATA[Ayrıl ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead"><![CDATA[Okundu Olarak İşaretle ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.markAsRead.confirmMessage"><![CDATA[Seçilen sohbet{if $count != 1}ler{/if} gerçekten okundu olarak işaretlensin mi?]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.open"><![CDATA[Aç ({#$count})]]></item>
+		<item name="wcf.clipboard.item.com.woltlab.wcf.conversation.conversation.restore"><![CDATA[Etkin olarak işaretle ({#$count})]]></item>
+		<item name="wcf.clipboard.label.com.woltlab.wcf.conversation.conversation.marked"><![CDATA[{if $count == 1}Bir Sohbet{else}{#$count} Sohbetler{/if}]]></item>
+	</category>
+	<category name="wcf.conversation">
+		<item name="wcf.conversation.add"><![CDATA[Yeni Özel Sohbet]]></item>
+		<item name="wcf.conversation.attachments"><![CDATA[Sohbet {#$conversation->attachments} ek dosya{if $conversation->attachments != 1}lar{/if} içermekte]]></item>
+		<item name="wcf.conversation.button.add"><![CDATA[Yeni Özel Sohbet]]></item>
+		<item name="wcf.conversation.button.saveAsDraft"><![CDATA[Taslak Kaydet]]></item>
+		<item name="wcf.conversation.conversations"><![CDATA[Özel Sohbetler]]></item>
+		<item name="wcf.conversation.error.floodControl"><![CDATA[Son 24 saat içinde zaten {if $limit == 1}bir görüşme{else}{#$limit} görüşmesi{/if} başlattınız. Yeni bir konuşma başlatmadan önce lütfen <strong>{@$notBefore|time}</strong> bekleyin.]]></item>
+		<item name="wcf.conversation.error.mailboxIsFull"><![CDATA[Üst sohbet sınırına ulaştınız bu nedenle yeni sohbetler başlatamazsınız.]]></item>
+		<item name="wcf.conversation.filter.participants"><![CDATA[Kullanıcı Adlarına Göre Filtrele]]></item>
+		<item name="wcf.conversation.folder.draft"><![CDATA[Taslaklar]]></item>
+		<item name="wcf.conversation.folder.hidden"><![CDATA[Gizli]]></item>
+		<item name="wcf.conversation.folder.outbox"><![CDATA[Başlattıklarınız]]></item>
+		<item name="wcf.conversation.folders"><![CDATA[Klasörler]]></item>
+		<item name="wcf.conversation.gotoLastPost"><![CDATA[Son Mesaja Geç]]></item>
+		<item name="wcf.conversation.hideConversation"><![CDATA[Katılımcıları Yönet]]></item>
+		<item name="wcf.conversation.hideConversation.leave"><![CDATA[Gizli]]></item>
+		<item name="wcf.conversation.hideConversation.leave.description"><![CDATA[Yeni bir mesaj yazılana kadar sohbet etkin ya da aktif olarak listelenmeyecek.]]></item>
+		<item name="wcf.conversation.hideConversation.leavePermanently"><![CDATA[Ayrıl]]></item>
+		<item name="wcf.conversation.hideConversation.leavePermanently.description"><![CDATA[Sohbet bırakılacak ve siz de artık bu sohbetin etkin bir katılımcısı olarak listelenmeyeceksiniz.]]></item>
+		<item name="wcf.conversation.hideConversation.restore"><![CDATA[Etkin Olarak İşaretle]]></item>
+		<item name="wcf.conversation.information"><![CDATA[Ayrıntılar]]></item>
+		<item name="wcf.conversation.invisible"><![CDATA[gizli]]></item>
+		<item name="wcf.conversation.invisibleParticipantWarning"><![CDATA[Dikkat! Özel konuşmanın görünmez bir katılımcısısınız. Bu sohbete mesaj yazdığınızda her katılımcı tarafından görülebilecek ve artık başkaları tarafından görünmez olmayacaksınız.]]></item>
+		<item name="wcf.conversation.invisibleParticipants"><![CDATA[Gizli Katılımcılar]]></item>
+		<item name="wcf.conversation.invisibleParticipants.description"><![CDATA[Gizli katılımcılar herhangi bir mesaj yazana kadar diğer katılımcılar tarafından görülemezler. Birden fazla kullanıcıyı virgül ile ayırınız.]]></item>
+		<item name="wcf.conversation.lastPostTime"><![CDATA[Son Cevap]]></item>
+		<item name="wcf.conversation.lastVisitTime"><![CDATA[Mesaj Okuma]]></item>
+		<item name="wcf.conversation.leave.title"><![CDATA[Katılımcıları Yönet]]></item>
+		<item name="wcf.conversation.markAsRead.doubleClick"><![CDATA[Bu Sohbeti Okundu Olarak İşaretlemek İçin Çift Tıklayın]]></item>
+		<item name="wcf.conversation.message"><![CDATA[Mesaj]]></item>
+		<item name="wcf.conversation.message.button.add"><![CDATA[Cevapla]]></item>
+		<item name="wcf.conversation.message.edit"><![CDATA[Mesaj Düzenle]]></item>
+		<item name="wcf.conversation.message.editNote"><![CDATA[{$message->username} bu mesajı {#$message->editCount} defa düzenledi, En son: {@$message->lastEditTime|time}.]]></item>
+		<item name="wcf.conversation.message.error.floodControl"><![CDATA[Son {plural value=$__wcf->getSession()->getPermission('user.conversation.floodControlTime') 1='second' other='# seconds'}. içinde zaten bir mesaj gönderdiniz. Yeni bir mesaj yazmaya çalışmadan önce en az {plural value=$waitTime 1='one second' other='# seconds'} beklemelisiniz.]]></item>
+		<item name="wcf.conversation.message.permalink"><![CDATA[{#$startIndex} Mesaj bağlantısı]]></item>
+		<item name="wcf.conversation.noConversations"><![CDATA[Herhangi bir özel sohbet görüşmeniz bulunmuyor.]]></item>
+		<item name="wcf.conversation.noMoreItems"><![CDATA[Yeni sohbet yok]]></item>
+		<item name="wcf.conversation.noParticipantsWarning"><![CDATA[Başka bir katılımcının olmadığı bir sohbeti cevaplamak üzeresiniz, tüm diğer katılımcılar bu sohbetden ayrıldılar ve kimse yazdığınız mesajı okuyamayacak!]]></item>
+		<item name="wcf.conversation.ownPosts"><![CDATA[Sohbet sizin mesajlarınızı içeriyor]]></item>
+		<item name="wcf.conversation.participantCanInvite"><![CDATA[Katılımcılar başka katılımcı ekleyebilir]]></item>
+		<item name="wcf.conversation.participants"><![CDATA[Sohbet Katılımcıları]]></item>
+		<item name="wcf.conversation.participants.description"><![CDATA[Birden fazla kullanıcıyı virgül ile ayırınız.]]></item>
+		<item name="wcf.conversation.participants.error.canNotUseConversation"><![CDATA[{$errorData[username]} adlı kullanıcının bir sohbete katılmasına izin verilmiyor.]]></item>
+		<item name="wcf.conversation.participants.error.doesNotAcceptConversation"><![CDATA[{$errorData[username]} adlı kullanıcı sohbetlere katılmak istemiyor.]]></item>
+		<item name="wcf.conversation.participants.error.duplicate"><![CDATA[{$errorData[username]} adlı kullanıcı zaten bu sohbette katılımcı olarak bulunuyor.]]></item>
+		<item name="wcf.conversation.participants.error.emptyGroup"><![CDATA[Belirtilen kullanıcı gruplarının tüm kullanıcıları bu sohbete zaten katılıyor.]]></item>
+		<item name="wcf.conversation.participants.error.ignoresYou"><![CDATA[{$errorData[username]} adlı kullanıcı sizi engelliyor.]]></item>
+		<item name="wcf.conversation.participants.error.intersects"><![CDATA[{$errorData[username]} zaten görünür bir katılımcı olarak eklendi.]]></item>
+		<item name="wcf.conversation.participants.error.invisibleParticipantsNoPermission"><![CDATA[Gizli katılımcı ekleme yetkiniz yok.]]></item>
+		<item name="wcf.conversation.participants.error.isAuthor"><![CDATA[Bu sohbetin zaten bir katılımcısısınız.]]></item>
+		<item name="wcf.conversation.participants.error.mailboxIsFull"><![CDATA[{$errorData[username]} adlı kullanıcı en fazla sohbet sınırına ulaştı ve bu nedenle yenisine katılamaz.]]></item>
+		<item name="wcf.conversation.participants.error.notFound"><![CDATA[“{$errorData[username]}” adlı bir kullanıcı yok.]]></item>
+		<item name="wcf.conversation.participants.error.participantCanInviteNoPermission"><![CDATA[Katılımcılara yeni katılımcı ekleme izni vermeye yetkiniz yok.]]></item>
+		<item name="wcf.conversation.participants.error.tooManyParticipants"><![CDATA[Çok fazla katılımcı eklediniz. En fazla {#$__wcf->getSession()->getPermission('user.conversation.maxParticipants')} katılımcı ekleyebilirsiniz.]]></item>
+		<item name="wcf.conversation.participants.other"><![CDATA[ve {if $conversation->participants - $participantSummaryCount == 1}bir diğer kimse{else}{#$conversation->participants-$participantSummaryCount} diğerleri{/if}]]></item>
+		<item name="wcf.conversation.participants.removeParticipant"><![CDATA[Katılımcı Kaldır]]></item>
+		<item name="wcf.conversation.participants.removeParticipant.confirmMessage"><![CDATA[<span class="confirmationObject">{$participant->username}</span> adlı kullanıcıyı bu sohbetden çıkarmak istediğinize emin misiniz?]]></item>
+		<item name="wcf.conversation.quota"><![CDATA[Özel Sohbet Kotası]]></item>
+		<item name="wcf.conversation.quota.description"><![CDATA[% {#$conversationCount/$maxConversationCount*100} kullanılmış ({#$conversationCount} / {#$maxConversationCount})]]></item>
+		<item name="wcf.conversation.replies"><![CDATA[Cevaplar]]></item>
+		<item name="wcf.conversation.reply"><![CDATA[Bu sohbeti cevapla…]]></item>
+		<item name="wcf.conversation.searchConversation"><![CDATA[Sadece Bu Sohbette Ara]]></item>
+		<item name="wcf.conversation.searchConversations"><![CDATA[Sohbetleri Ara]]></item>
+		<item name="wcf.conversation.searchedConversation"><![CDATA[Sadece <a href="{link controller='Conversation' object=$searchedConversation}{/link}">{$searchedConversation->getTitle()}</a> adlı sohbette ara.]]></item>
+		<item name="wcf.conversation.showAll"><![CDATA[Tüm Sohbetleri Göster]]></item>
+		<item name="wcf.conversation.time"><![CDATA[Oluşturma]]></item>
+		<item name="wcf.conversation.username"><![CDATA[Yazar]]></item>
+		<item name="wcf.conversation.visibility"><![CDATA[Okuma Erişimi]]></item>
+		<item name="wcf.conversation.visibility.all"><![CDATA[Tüm mesajlar]]></item>
+		<item name="wcf.conversation.visibility.all.description"><![CDATA[Bu sohbete eklenmeden önce yazılanlar da dahil olmak üzere tüm mesajlar gösterilecektir.]]></item>
+		<item name="wcf.conversation.visibility.new"><![CDATA[Yalnızca yeni mesajlar]]></item>
+		<item name="wcf.conversation.visibility.new.description"><![CDATA[Yeni katılımcılar yalnızca yeni mesajları görecek, eski mesajlar onlardan gizlenecektir.]]></item>
+		<item name="wcf.conversation.visibility.nextMessages"><![CDATA[Bu görüşmeden çıkarıldınız, yalnızca bu noktaya kadar mesajları okuyabilirsiniz.]]></item>
+		<item name="wcf.conversation.visibility.previousMessages"><![CDATA[Mevcut bir sohbete eklendiniz, önceden yazılan mesajlar gizlendi.]]></item>
+	</category>
+	<category name="wcf.conversation.edit">
+		<item name="wcf.conversation.edit.addParticipants"><![CDATA[Katılımcı Ekle]]></item>
+		<item name="wcf.conversation.edit.addParticipants.success"><![CDATA[{#$count} katılımcı{if $count != 1}{/if} eklendi]]></item>
+		<item name="wcf.conversation.edit.assignLabel"><![CDATA[Durum Belirle]]></item>
+		<item name="wcf.conversation.edit.close"><![CDATA[Kapat]]></item>
+		<item name="wcf.conversation.edit.leave"><![CDATA[Katılımı Yönet]]></item>
+		<item name="wcf.conversation.edit.open"><![CDATA[Aç]]></item>
+		<item name="wcf.conversation.edit.subject"><![CDATA[Konuyu Düzenle]]></item>
+	</category>
+	<category name="wcf.conversation.label">
+		<item name="wcf.conversation.label"><![CDATA[Etikete Göre Filtrele]]></item>
+		<item name="wcf.conversation.label.assignLabels"><![CDATA[Etiketi Belirle]]></item>
+		<item name="wcf.conversation.label.cssClassName"><![CDATA[Görünüm]]></item>
+		<item name="wcf.conversation.label.disableFilter"><![CDATA[Seçim Yok]]></item>
+		<item name="wcf.conversation.label.filter"><![CDATA[Etiket Seç]]></item>
+		<item name="wcf.conversation.label.labelName"><![CDATA[Başlık]]></item>
+		<item name="wcf.conversation.label.management"><![CDATA[Etiketleri Yönet]]></item>
+		<item name="wcf.conversation.label.management.addLabel"><![CDATA[Etiketi Ekle]]></item>
+		<item name="wcf.conversation.label.management.addLabel.success"><![CDATA[Etiket eklendi]]></item>
+		<item name="wcf.conversation.label.management.deleteLabel"><![CDATA[Etiketi Sil]]></item>
+		<item name="wcf.conversation.label.management.deleteLabel.confirmMessage"><![CDATA[<span class="confirmationObject">#labelName#</span> adlı etiketi gerçekten silmek istiyor musunuz?]]></item>
+		<item name="wcf.conversation.label.management.edit.description"><![CDATA[Silmek ya da düzenlemek için bir etiket üzerine tıklayın.]]></item>
+		<item name="wcf.conversation.label.management.editLabel"><![CDATA[Etiketi Düzenle “#labelName#”]]></item>
+		<item name="wcf.conversation.label.management.existingLabels"><![CDATA[Mevcut Etiketler]]></item>
+		<item name="wcf.conversation.label.placeholder"><![CDATA[Etiket]]></item>
+	</category>
+	<category name="wcf.conversation.log">
+		<item name="wcf.conversation.log.conversation.addParticipants"><![CDATA[Aşağıdaki katılımcılar eklendi: {implode from=$additionalData[participants] item=participant}<a href="{link controller='User' id=$participant[userID] title=$participant[username]}{/link}" class="userLink" data-object-id="{$participant[userID]}">{$participant[username]}</a>{/implode}.]]></item>
+		<item name="wcf.conversation.log.conversation.close"><![CDATA[Sohbeti kapattı.]]></item>
+		<item name="wcf.conversation.log.conversation.leave"><![CDATA[Sohbeti bıraktı.]]></item>
+		<item name="wcf.conversation.log.conversation.open"><![CDATA[Sohbeti tekrar açtı.]]></item>
+		<item name="wcf.conversation.log.conversation.removeParticipant"><![CDATA[Bir katılımcı kaldırıldı: <a href="{link controller='User' id=$additionalData[userID] title=$additionalData[username]}{/link}" class="userLink" data-object-id="{$additionalData[userID]}">{$additionalData[username]}</a>.]]></item>
+	</category>
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.type.com.woltlab.wcf.conversation.message"><![CDATA[Sohbet]]></item>
+	</category>
+	<category name="wcf.page">
+		<item name="wcf.page.onlineLocation.com.woltlab.wcf.conversation.Conversation"><![CDATA[Sohbette {anchor object=$conversation class='conversationLink'}]]></item>
+	</category>
+	<category name="wcf.search">
+		<item name="wcf.search.object.com.woltlab.wcf.conversation.message"><![CDATA[Sohbet]]></item>
+		<item name="wcf.search.type.com.woltlab.wcf.conversation"><![CDATA[Bu Sohbet]]></item>
+		<item name="wcf.search.type.com.woltlab.wcf.conversation.message"><![CDATA[Özel Sohbetler]]></item>
+	</category>
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.wcf.conversation"><![CDATA[Özel Sohbetler Bildirimleri]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.conversation.message.notification.conversationMessage"><![CDATA[Konuşmalara cevap yazıldığında beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.conversation.notification.conversation"><![CDATA[Yeni konuşmalar için beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.conversation.mail.html"><![CDATA[<p><strong>{$author}</strong> <a href="{$conversation->getLink()}">{$conversation->getTitle()}</a> görüşmesini başlattı:</p>]]></item>
+		<item name="wcf.user.notification.conversation.mail.plaintext"><![CDATA[{@$author} “{@$conversation->getTitle()}” [URL:{@$conversation->getLink()}] görüşmesini başlattı:]]></item>
+		<item name="wcf.user.notification.conversation.mail.title"><![CDATA["{@$author}" "{@$conversation->getTitle()}" başlıklı konuşmayı başlattı.]]></item>
+		<item name="wcf.user.notification.conversation.message"><![CDATA[<strong>{$author}</strong> adlı kullanıcı <strong>{$conversation->getTitle()}</strong> adlı sohbeti başlattı.]]></item>
+		<item name="wcf.user.notification.conversation.message.mail.html"><![CDATA[<p>{@$authorList} adlı kullanıcı <a href="{$message->getLink()}">{$conversation->getTitle()}</a> adlı sohbete cevap yazdı.</p>]]></item>
+		<item name="wcf.user.notification.conversation.message.mail.plaintext"><![CDATA[{@$authorList} adlı kullanıcı “{@$conversation->getTitle()}” [URL:{@$message->getLink()}]{if $count == 1 && !$guestTimesTriggered} {else}adlı sohbete cevap yazdı.{/if}]]></item>
+		<item name="wcf.user.notification.conversation.message.mail.title"><![CDATA["{@$conversation->getTitle()}" adlı sohbete "{@$author}" cevap verdi.]]></item>
+		<item name="wcf.user.notification.conversation.message.message"><![CDATA[<strong>{$message->getConversation()->getTitle()}</strong> adlı sohbete <strong>{$author}</strong> cevap verdi.]]></item>
+		<item name="wcf.user.notification.conversation.message.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} sohbete cevap yazdı <strong>{$message->getConversation()->getTitle()}</strong>.]]></item>
+		<item name="wcf.user.notification.conversation.message.title"><![CDATA[Bir Sohbete Yeni Cevap]]></item>
+		<item name="wcf.user.notification.conversation.message.title.stacked"><![CDATA[{#$count} katılımcılar bir sohbeti yanıtladı]]></item>
+		<item name="wcf.user.notification.conversation.title"><![CDATA[Yeni Özel Sohbet]]></item>
+	</category>
+	<category name="wcf.user.option">
+		<item name="wcf.user.option.canSendConversation"><![CDATA[Özel mesajlara beni dahil edebilir mi?]]></item>
+		<item name="wcf.user.option.conversationMessagesPerPage"><![CDATA[Sayfa başına kaç adet özel sohbet mesajı gösterilsin?]]></item>
+		<item name="wcf.user.option.conversationsPerPage"><![CDATA[Sayfa başına kaç adet özel sohbet gösterilsin?]]></item>
+	</category>
+	<category name="shadow.invalid.page">
+		<item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationAdd.title"><![CDATA[Yeni Sohbet]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationDraftEdit.title"><![CDATA[Sohbet Taslağını Düzenle]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.conversation.ConversationList.title"><![CDATA[Özel Sohbetler]]></item>
+	</category>
+	<category name="shadow.invalid.box">
+	</category>
+</language>

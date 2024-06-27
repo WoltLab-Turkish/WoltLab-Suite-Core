@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.flarum1x"><![CDATA[Flarum 1.x (experimental)]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.ipb3x"><![CDATA[IP.Board 3.4.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.ipb4x"><![CDATA[Invision Community 4.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.kunena3x"><![CDATA[Kunena 3.0.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.mybb16x"><![CDATA[MyBB 1.8.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.nodeBB0xRedis"><![CDATA[NodeBB 0.6+ (Redis, experimental)]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.phpbb31x"><![CDATA[phpBB 3.1.x, phpBB 3.2.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.phpbb3x"><![CDATA[phpBB 3.0.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.smf2x"><![CDATA[Simple Machines Forum 2.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.vb3or4x"><![CDATA[vBulletin 3.8.x - 4.2.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.vb5x"><![CDATA[vBulletin 5.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb2x"><![CDATA[Burning Board 2.3.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb3x"><![CDATA[Burning Board 3.x, Lite 2.1.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb4x"><![CDATA[Burning Board 4.x, WoltLab Suite Forum 5.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wordpress3x"><![CDATA[WordPress 3.7+]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.xf12x"><![CDATA[XenForo 1.2.x - 1.4.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.xf2x"><![CDATA[XenForo 2.0.x, 2.1.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.xobor"><![CDATA[Xobor]]></item>
+	</category>
+</language>

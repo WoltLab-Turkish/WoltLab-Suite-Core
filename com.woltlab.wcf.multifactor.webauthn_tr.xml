@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.user.security">
+		<item name="wcf.user.security.multifactor.com.woltlab.wcf.multifactor.webauthn"><![CDATA[Güvenlik Anahtarı]]></item>
+		<item name="wcf.user.security.multifactor.com.woltlab.wcf.multifactor.webauthn.description"><![CDATA[<small>WebAuthn standardı üzerinden kimlik doğrulaması yapın. Örneğin, işletim sistemi şifrenizi veya YubiKey gibi fiziksel bir FIDO U2F anahtarını kullanabilirsiniz.</small>]]></item>
+		<item name="wcf.user.security.multifactor.com.woltlab.wcf.multifactor.webauthn.manage"><![CDATA[Güvenlik Anahtarlarını Yönet]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.authentication.systemRequirementsNotMet"><![CDATA[<p class="warning">Teknik sorunlar nedeniyle şu anda bir güvenlik anahtarı ile kimlik doğrulaması yapılamıyor. Lütfen bir yönetici ile iletişime geçin veya farklı bir kimlik doğrulama yöntemi kullanın.</p>]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.createTime"><![CDATA[Kurulum]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.device.rpIdMismatch"><![CDATA[Eski Alan Adı]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.deviceName"><![CDATA[Anahtar Adı]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.deviceName.description.setup"><![CDATA[Bu güvenlik anahtarını tanımlayan rastgele bir ad.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.deviceName.placeholder"><![CDATA[{$__wcf->user->username}’nin Güvenlik Anahtarı]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.devices"><![CDATA[Aktif Güvenlik Anahtarları]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.devices.rpIdMismatch"><![CDATA[Kullanıcı hesabınız daha önce kullanılan bir alan adı ile kaydedilmiş güvenlik anahtarlarına bağlanmış durumda. Sizi phishing saldırılarından korumak için güvenlik anahtarları yalnızca ilk kayıtta kullanılan alan adıyla kullanılabilir. <strong>“Eski Alan Adı” olarak işaretlenen güvenlik anahtarları kimlik doğrulaması için kullanılamaz. Bunları silip yeniden kaydetmelisiniz.</strong>]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.challengeExpired"><![CDATA[Güvenlik anahtarınızdan gelen yanıt doğrulanamadı, çünkü istek zaman aşımına uğradı. Lütfen tekrar deneyin.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.invalid"><![CDATA[Güvenlik anahtarınızdan gelen yanıt doğrulanamadı.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.keyAlreadyRegistered"><![CDATA[Bu güvenlik anahtarını zaten kullanıcı hesabınıza eklediniz.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.keyNotRegistered"><![CDATA[Bu güvenlik anahtarı kullanıcı hesabınıza eklenmemiş.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.userAborted"><![CDATA[İstemiş olduğunuz güvenlik anahtarına yönelik isteği iptal ettiniz.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.userDeniedAccess"><![CDATA[Güvenlik anahtarınıza erişim izni vermediniz (zamanında). Lütfen güvenlik anahtarınıza yeni bir istek gönderin.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.error.webAuthnError"><![CDATA[Güvenlik anahtarınızla iletişim kurulamadı.{if $browserError !== null} Web tarayıcınız şunu bildiriyor: {$browserError}.{/if}]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.lastDevice"><![CDATA[Anahtarları değiştirmek istiyorsanız, son güvenlik anahtarınız <strong>{$deviceName}</strong>’ı kaldırmadan önce yeni güvenlik anahtarınızı ekleyin. Çok faktörlü kimlik doğrulamayı devre dışı bırakmak istiyorsanız, <a href="{link controller='AccountSecurity'}{/link}">Hesap Güvenliği bölümünde</a> göz atabilirsiniz.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.lastDevice.title"><![CDATA[En Son Güvenlik Anahtarı]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.newDevice"><![CDATA[Güvenlik Anahtarı Ekle]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.newDevice.description"><![CDATA[<p>Evrensel İkinci Faktör (U2F) veya WebAuthn standartlarını destekleyen bir güvenlik anahtarı kullanarak kimlik doğrulayın.</p>
+<p>Çoğu cihazda, USB veya NFC üzerinden bağlanabilen bir güvenlik anahtarı kullanabilirsiniz. Bazı işletim sistemleri ve web tarayıcıları ayrıca parmak izi okuyucu veya yüz tanıma ile kilidini açabileceğiniz bir güvenlik anahtarı da destekler.</p>
+<ol class="nativeList">
+<li>Güvenlik anahtarınızı elinizin altında bulundurun.</li>
+<li>Butona basarak güvenlik anahtarınıza bağlantı isteği gönderin.</li>
+<li>Kayıt isteğinizi güvenlik anahtarınızla onaylayın. Güvenlik anahtarınızı dokunmanız, üzerindeki bir düğmeye basmanız veya PIN kodunu girmeniz gerekebilir.</li>
+</ol>]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.reauthentication"><![CDATA[Güvenlik anahtarınızla kimlik doğrulayın]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.reauthentication.usePassword"><![CDATA[Mevcut değil mi? Şifre kullanarak <a href="{$url}">giriş yapmaya devam edin</a>.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.reauthentication.useWebAuthn"><![CDATA[Güvenlik anahtarınızı kullanarak <a href="{$url}">giriş yapmaya geçin</a>.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.registration"><![CDATA[Güvenlik Anahtarı ile Bağlantı Kur]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.registration.systemRequirementsNotMet"><![CDATA[<div class="info">
+<p>Yeni güvenlik anahtarları eklemek şu anda mümkün değil, çünkü sistem gereksinimleri karşılanmıyor. Lütfen bir yönetici ile iletişime geçin.</p>
+<ul class="nativeList">
+{foreach from=$failingSystemRequirements item='failingSystemRequirement'}
+<li>{lang}wcf.user.security.multifactor.webauthn.systemRequirement.{$failingSystemRequirement}{/lang}</li>
+{/foreach}
+</ul>
+</div>]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.sendRequest"><![CDATA[Güvenlik Anahtarına İstek Gönder]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.state.error"><![CDATA[İstek Başarısız Oldu]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.state.pending"><![CDATA[İstek Bekleniyor]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.state.success"><![CDATA[İstek Başarılı]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.state.waiting"><![CDATA[Onay Bekleniyor]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.status"><![CDATA[<ul class="inlineList small dotSeparated">
+<li>{plural value=$count 0="Kurulmamış" 1="Bir güvenlik anahtarı kurulmuş" other="# güvenlik anahtarı kurulmuş"}</li>
+{if $lastUsed}<li>Son kullanım tarihi {time time=$lastUsed type='plainTime'}</li>{/if}
+</ul>]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.success.add"><![CDATA[Güvenlik anahtarınız <strong>{$deviceName}</strong> başarıyla eklenmiştir.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.success.delete"><![CDATA[Güvenlik anahtarınız <strong>{$deviceName}</strong> başarıyla kaldırılmıştır.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.systemRequirement.ipAddress"><![CDATA[IP adresi üzerinden sayfaya erişildiğinde güvenlik anahtarları kullanılamaz.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.systemRequirement.php"><![CDATA[Kullanılan PHP sürümü tüm sistem gereksinimlerini karşılamıyor.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.systemRequirement.ssl"><![CDATA[Güvenlik Anahtarları şifrelenmiş bir "https" bağlantısı gerektirir.]]></item>
+		<item name="wcf.user.security.multifactor.webauthn.useTime"><![CDATA[En Son Kullanım]]></item>
+	</category>
+</language>

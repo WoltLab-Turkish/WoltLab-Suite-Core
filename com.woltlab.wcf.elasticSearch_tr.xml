@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.cronjob">
+		<item name="wcf.acp.cronjob.description.cronjob26"><![CDATA[Elasticsearch Dizini Günceller]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.elasticsearch_index_name"><![CDATA[Elasticsearch Dizin Öneki]]></item>
+		<item name="wcf.acp.option.elasticsearch_index_name.description"><![CDATA[Önek tüm dizinler için kullanılacaktır. Yazılımın birden fazla örneğini tek bir Elasticsearch kümesi kullanarak çalıştırıyorsanız, her örnek için benzersiz bir dizin öneki sağlamanız gerekmektedir.]]></item>
+		<item name="wcf.acp.option.elasticsearch_password"><![CDATA[Elasticsearch Parolası]]></item>
+		<item name="wcf.acp.option.elasticsearch_password.description"><![CDATA[İsteğe bağlı: Lütfen kullanıcı kimlik doğrulaması için parolayı sağlayın.]]></item>
+		<item name="wcf.acp.option.elasticsearch_pem_crt_path"><![CDATA[Elasticsearch İstemci Sertifikası (Genel Anahtar)]]></item>
+		<item name="wcf.acp.option.elasticsearch_pem_crt_path.description"><![CDATA[İsteğe bağlı: Lütfen genel anahtarın (PEM formatında) mutlak yolunu sağlayın.]]></item>
+		<item name="wcf.acp.option.elasticsearch_pem_key_path"><![CDATA[Elasticsearch İstemci Sertifikası (Özel Anahtar)]]></item>
+		<item name="wcf.acp.option.elasticsearch_pem_key_path.description"><![CDATA[İsteğe bağlı: Lütfen özel anahtarın (PEM formatında) mutlak yolunu sağlayın.]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_function"><![CDATA[Uygunluk Puanı: Fonksiyon]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_function.description"><![CDATA[Seçilen dönemden daha eski olan eşleşen belgeler daha az alakalı kabul edilir, fonksiyon bu noktadan sonraki düşüş eğrisini kontrol eder. Daha fazla bilgi <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/decay-functions.html#img-decay-functions" class="externalURL">Elasticsearch belgelerinde</a> mevcuttur (seçilen dönem “offset”e eşittir, “scale” değeri “offset”in yarısı ve “decay” değeri “0.5” olarak ayarlanmıştır).]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time"><![CDATA[Uygunluk Puanı: Dönem]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.1year"><![CDATA[1 Yıl]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.2years"><![CDATA[2 Yıl]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.30days"><![CDATA[30 Gün]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.6months"><![CDATA[6 Ay]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.90days"><![CDATA[90 Gün]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.description"><![CDATA[Bu dönem içindeki eşleşen belgeler eşit derecede yeni kabul edilir, daha eski belgeler puan cezası alacaktır.]]></item>
+		<item name="wcf.acp.option.elasticsearch_score_time.disabled"><![CDATA[(Ceza yok)]]></item>
+		<item name="wcf.acp.option.elasticsearch_server"><![CDATA[Elasticsearch Sunucusu]]></item>
+		<item name="wcf.acp.option.elasticsearch_server.description"><![CDATA[Lütfen dinleme portu dahil Elasticsearch sunucu adresini sağlayın, örneğin, “http://127.0.0.1:9200”.]]></item>
+		<item name="wcf.acp.option.elasticsearch_username"><![CDATA[Elasticsearch Kullanıcı Adı]]></item>
+		<item name="wcf.acp.option.elasticsearch_username.description"><![CDATA[İsteğe bağlı: Lütfen kullanıcı kimlik doğrulaması için kullanıcı adını sağlayın.]]></item>
+		<item name="wcf.acp.option.search_engine.elasticsearch"><![CDATA[Elasticsearch Kullan]]></item>
+	</category>
+</language>

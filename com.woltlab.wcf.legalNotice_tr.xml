@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.legalNotice"><![CDATA[Yasal Bildirim]]></item>
+		<item name="wcf.acp.option.legal_notice_additional_text"><![CDATA[Ek Bilgi]]></item>
+		<item name="wcf.acp.option.legal_notice_additional_text.description"><![CDATA[Yasal bildirim sayfanız için burayı kullanarak ek bilgi girebilirsiniz.]]></item>
+		<item name="wcf.acp.option.legal_notice_additional_text_enable_html"><![CDATA[İlave Bilgi Metninde HTML Kodunu Etkinleştir]]></item>
+		<item name="wcf.acp.option.legal_notice_additional_text_enable_html.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_address"><![CDATA[İsim ve Adres]]></item>
+		<item name="wcf.acp.option.legal_notice_address.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_email_address"><![CDATA[E-Posta Adresi]]></item>
+		<item name="wcf.acp.option.legal_notice_email_address.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_fax"><![CDATA[Faks]]></item>
+		<item name="wcf.acp.option.legal_notice_fax.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_phone"><![CDATA[Telefon]]></item>
+		<item name="wcf.acp.option.legal_notice_phone.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_register"><![CDATA[Kayıt]]></item>
+		<item name="wcf.acp.option.legal_notice_register.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_representative"><![CDATA[Temsilciler]]></item>
+		<item name="wcf.acp.option.legal_notice_representative.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.legal_notice_responsible_for_content"><![CDATA[İçerik Sorumlusu]]></item>
+		<item name="wcf.acp.option.legal_notice_responsible_for_content.description"><![CDATA[İçerikten sorumlu. Bilgiler yalnızca gazetecilik-editörlük web siteleri için gereklidir.]]></item>
+		<item name="wcf.acp.option.legal_notice_vat_id"><![CDATA[KDV Kimliği]]></item>
+		<item name="wcf.acp.option.legal_notice_vat_id.description"><![CDATA[]]></item>
+	</category>
+	<category name="wcf.legalNotice">
+		<item name="wcf.legalNotice.additionalText"><![CDATA[Ek Bilgi]]></item>
+		<item name="wcf.legalNotice.address"><![CDATA[İsim ve Adres]]></item>
+		<item name="wcf.legalNotice.emailAddress"><![CDATA[E-Posta Adresi]]></item>
+		<item name="wcf.legalNotice.fax"><![CDATA[Faks]]></item>
+		<item name="wcf.legalNotice.general"><![CDATA[Genel Bilgi]]></item>
+		<item name="wcf.legalNotice.phone"><![CDATA[Telefon]]></item>
+		<item name="wcf.legalNotice.register"><![CDATA[Kayıt]]></item>
+		<item name="wcf.legalNotice.representative"><![CDATA[Temsil Edenler]]></item>
+		<item name="wcf.legalNotice.responsibleForContent"><![CDATA[İçerik Sorumlusu]]></item>
+		<item name="wcf.legalNotice.vatID"><![CDATA[KDV Kimliği]]></item>
+	</category>
+	<category name="wcf.menu">
+		<item name="wcf.menu.item.com.woltlab.wcf.LegalNotice"><![CDATA[Yasal Uyarı]]></item>
+	</category>
+	<category name="shadow.invalid.page">
+		<item name="shadow.invalid.page.com.woltlab.wcf.LegalNotice.title"><![CDATA[Yasal Bildirim]]></item>
+	</category>
+	<category name="shadow.invalid.box">
+	</category>
+</language>

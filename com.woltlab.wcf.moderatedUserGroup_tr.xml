@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.groupType"><![CDATA[Kullanıcı Grubu Türü]]></item>
+		<item name="wcf.acp.group.groupType.description"><![CDATA[Kullanıcı grubu türünü seçin:
+<ul class="nativeList">
+	<li>Kapalı: Sadece yöneticiler kullanıcı ekleyebilir.</li>
+	<li>Herkes Katılabilir: Her kullanıcı katılabilir ya da ayrılabilir.</li>
+	<li>Denetlenen: Kullanıcılar gruba katılmak için başvuru yapmalıdır fakat diledikleri zaman ayrılabilirler.</li>
+	<li>Kapalı Denetlenen: Kullanıcılar gruba katılmak için başvuru yapmalıdır ve kendi başlarına diledikleri zaman ayrılamazlar.</li>
+</ul>]]></item>
+		<item name="wcf.acp.group.groupType.type4"><![CDATA[Kapalı]]></item>
+		<item name="wcf.acp.group.groupType.type5"><![CDATA[Herkes Katılabilir]]></item>
+		<item name="wcf.acp.group.groupType.type6"><![CDATA[Denetlenen]]></item>
+		<item name="wcf.acp.group.groupType.type7"><![CDATA[Kapalı Denetlenen]]></item>
+		<item name="wcf.acp.group.leader"><![CDATA[Kullanıcı Grup Lideri]]></item>
+		<item name="wcf.acp.group.leader.description"><![CDATA[Birden fazla kullanıcı virgül ile ayrılmalıdır. Liderler başvuruları onaylayabilir ve bu gruba kullanıcıları ekleyebilirler.]]></item>
+		<item name="wcf.acp.group.leader.error.empty"><![CDATA[Denetlenen ve kapalı kullanıcı grupları en az bir lider gerektirir.]]></item>
+		<item name="wcf.acp.group.leader.error.notFound"><![CDATA[Kullanıcı {if $unknownLeader|count != 1}lar{/if}:<ul class="inlineDataList">{foreach from=$unknownLeader item=username}<li>{$username}</li>{/foreach}</ul> bulunamadı.]]></item>
+		<item name="wcf.acp.group.moderatedUserGroup"><![CDATA[Denetlenen Kullanıcı Grubu]]></item>
+	</category>
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.accessibleUserGroups"><![CDATA[Kullanıcı Grupları]]></item>
+		<item name="wcf.user.menu.moderatedUserGroups"><![CDATA[Kullanıcı Grup Yönetimi]]></item>
+		<item name="wcf.user.menu.userGroups"><![CDATA[Kullanıcı Grupları]]></item>
+	</category>
+	<category name="wcf.user.moderatedUserGroups">
+		<item name="wcf.user.moderatedUserGroups.applications"><![CDATA[Başvurular]]></item>
+		<item name="wcf.user.moderatedUserGroups.isMember"><![CDATA[Kullanıcı]]></item>
+		<item name="wcf.user.moderatedUserGroups.members"><![CDATA[Kullanıcılar]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add"><![CDATA[Kullanıcı Ekle]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.error.alreadyMember"><![CDATA[Kullanıcı zaten bu grupta.]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.add.error.notFound"><![CDATA[Kullanıcı bulunamadı.]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.kick"><![CDATA[Kaldır]]></item>
+		<item name="wcf.user.moderatedUserGroups.members.kick.sure"><![CDATA[ <span class="confirmationObject">{$user->username}</span> adlı kullanıcıyı bu gruptan çıkarmak istediğinizden emin misiniz?]]></item>
+		<item name="wcf.user.moderatedUserGroups.noApplications"><![CDATA[Bekleyen başvuru yok.]]></item>
+	</category>
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application"><![CDATA[Moderasyondaki Kullanıcı Grupları]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.mail.html"><![CDATA[<p>{@$authorList} adlı kullanıcı {$userGroupApplication->getUserProfile()} adlı kullanıcının uygulamasında <a href="{$userGroupApplication->getLink()}#comment{@$commentID}">{$userGroupApplication->getGroup()}</a> adlı kullanıcı grubunda cevap yazdı:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.mail.plaintext"><![CDATA[{@$authorList} adlı kullanıcı {@$userGroupApplication->getUserProfile()} adlı kullanıcının uygulamasında “{@$userGroupApplication->getGroup()}” [URL:{@$userGroupApplication->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered} adlı kullanıcı grubunda cevap yazdı:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.message"><![CDATA[{if !$author->userID} bir misafir{else}<strong>{$author}</strong>{/if} <strong>{$userGroupApplication->getUserProfile()}</strong> adlı kullanıcının uygulamasında <strong>{$userGroupApplication->getGroup()}</strong> adlı kullanıcı grubunda cevap yazdı.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} adlı kullanıcının <strong>{$userGroupApplication->getUserProfile()}</strong> adlı kullanıcının uygulamasında <strong>{$userGroupApplication->getGroup()}</strong> adlı kullanıcı grubunda cevap yazdı.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.title"><![CDATA[Yeni yorum (Kullanıcı Grupları Uygulaması)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.comment.title.stacked"><![CDATA[{#$timesTriggered} yeni yorumlar (Kullanıcı Grupları Uygulaması)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.mail.html"><![CDATA[<p>{@$authorList} replied to {$commentAuthor} adlı kullanıcının yorumuna {$userGroupApplication->getUserProfile()} adlı kullanıcının uygulamasında <a href="{$userGroupApplication->getLink()}#comment{@$commentID}/response{@$responseID}">{$userGroupApplication->getGroup()}</a> adlı kullanıcı grubunda cevap yazdı:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.mail.plaintext"><![CDATA[{@$authorList} replied to {@$commentAuthor} adlı kullanıcının yorumuna {@$userGroupApplication->getUserProfile()} adlı kullanıcının uygulamasında “{@$userGroupApplication->getGroup()}” [URL:{@$userGroupApplication->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered} adlı kullanıcı grubunda cevap yazdı:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if} <strong>{$commentAuthor}</strong> adlı kullanıcı tarafından yapılan bir yoruma <strong>{$userGroupApplication->getUserProfile()}</strong> adlı kullanıcının uygulamasında <strong>{$userGroupApplication->getGroup()}</strong> adlı kullanıcı grubunda cevap yazdı.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} <strong>{$userGroupApplication->getUserProfile()}</strong> adlı kullanıcının uygulamasındaki yorumlara <strong>{$userGroupApplication->getGroup()}</strong> adlı kullanıcı grubunda cevap yazdı.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.title"><![CDATA[Yeni Cevap (Kullanıcı Grupları Uygulaması)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} yeni cevaplar (Kullanıcı Grupları Uygulaması)]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created"><![CDATA[Yeni başvurularda beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.mail.html"><![CDATA[<p><a href="{$author->getLink()}">{$author}</a> <a href="{$application->getLink()}">{$group}</a> kullanıcı grubu için başvurdu:</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.mail.plaintext"><![CDATA[{@$author} [URL:{@$author->getLink()}] “{@$group}” [URL:{@$application->getLink()}] kullanıcı grubu için başvurdu:]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.message"><![CDATA[<strong>{$author}</strong> <strong>{$group}</strong> kullanıcı grubu için başvurdu.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.created.title"><![CDATA[Yeni uygulama]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited"><![CDATA[Başvuru durum güncellemelerinde beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.mail.html"><![CDATA[“{$group}” kullanıcı grubu için başvurunuz: <p><a href="{$author->getLink()}">{$author}</a> {if $newStatus == 'accepted'}kabul edildi{elseif $newStatus == 'rejected'}reddedildi{else}kapatıldı{/if}</p>]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.mail.plaintext"><![CDATA[“{$group}” kullanıcı grubu için başvurunuz: {@$author} [URL:{@$author->getLink()}] {if $newStatus == 'accepted'}kabul edildi{elseif $newStatus == 'rejected'}reddedildi{else}kapatıldı{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.message"><![CDATA[<strong>{$group}</strong> adlı kullanıcı grubuna <strong>{$author}</strong> {if $newStatus == 'accepted'}kabul edildi{elseif $newStatus == 'rejected'}reddedildi{else}kapatıldı{/if}.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.edited.title"><![CDATA[Başvuru {if $newStatus == 'accepted'}Kabul Edildi{elseif $newStatus == 'rejected'}Reddedildi{else}Kapatıldı{/if}]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.notification.comment"><![CDATA[Kullanıcı grubu uygulaması için yeni yorum yazıldığında beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderatedUserGroup.application.response.notification.commentResponse"><![CDATA[Kullanıcı grubu uygulaması için yorumlara yeni cevaplar yazıldığında beni bilgilendir.]]></item>
+	</category>
+	<category name="wcf.user.userGroups">
+		<item name="wcf.user.userGroups.application.comments.description"><![CDATA[Tüm yorumlar dahilidir ve başvuranlara görünmeyecektir.]]></item>
+		<item name="wcf.user.userGroups.application.edit"><![CDATA[Başvuru Düzenle]]></item>
+		<item name="wcf.user.userGroups.application.log"><![CDATA[Başvuru Kayıt]]></item>
+		<item name="wcf.user.userGroups.application.log.action"><![CDATA[İşlem]]></item>
+		<item name="wcf.user.userGroups.application.log.changeStatus"><![CDATA[Durum şuna değişti “{'wcf.user.userGroups.application.status.status'|concat:$additionalData[newStatus]|language}”.]]></item>
+		<item name="wcf.user.userGroups.application.log.editReason"><![CDATA[Düzenleme nedeni]]></item>
+		<item name="wcf.user.userGroups.application.log.editReply"><![CDATA[Düzenlenen cevap]]></item>
+		<item name="wcf.user.userGroups.application.log.time"><![CDATA[Zaman]]></item>
+		<item name="wcf.user.userGroups.application.reply"><![CDATA[Cevap]]></item>
+		<item name="wcf.user.userGroups.application.revoke"><![CDATA[Başvuruyu İptal Et]]></item>
+		<item name="wcf.user.userGroups.application.revoke.sure"><![CDATA[<span class="confirmationObject">{$group->getTitle()}</span> adlı gruba yaptığınız başvuruyu gerçekten iptal etmek istiyor musunuz?]]></item>
+		<item name="wcf.user.userGroups.application.status"><![CDATA[Durum]]></item>
+		<item name="wcf.user.userGroups.application.status.status0"><![CDATA[Bekliyor]]></item>
+		<item name="wcf.user.userGroups.application.status.status1"><![CDATA[İşlemde]]></item>
+		<item name="wcf.user.userGroups.application.status.status2"><![CDATA[Kabul Edildi]]></item>
+		<item name="wcf.user.userGroups.application.status.status3"><![CDATA[Reddedildi]]></item>
+		<item name="wcf.user.userGroups.application.status.status5"><![CDATA[Kapalı]]></item>
+		<item name="wcf.user.userGroups.application.time"><![CDATA[Son Değişiklik]]></item>
+		<item name="wcf.user.userGroups.apply"><![CDATA[Üyelik için başvur]]></item>
+		<item name="wcf.user.userGroups.apply.applicationInformation"><![CDATA[Başvuru Ayrıntıları]]></item>
+		<item name="wcf.user.userGroups.apply.groupInformation"><![CDATA[Grup Ayrıntıları]]></item>
+		<item name="wcf.user.userGroups.apply.reason"><![CDATA[Sebep]]></item>
+		<item name="wcf.user.userGroups.join"><![CDATA[Gruba Katıl]]></item>
+		<item name="wcf.user.userGroups.leave"><![CDATA[Gruptan Ayrıl]]></item>
+		<item name="wcf.user.userGroups.leave.sure"><![CDATA[<span class="confirmationObject">{$group->getTitle()}</span> adlı gruptan ayrılmak istediğinizden emin misiniz?]]></item>
+	</category>
+	<category name="shadow.invalid.page">
+		<item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.ModeratedUserGroupList.title"><![CDATA[Kullanıcı Grubu Yönetimi]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.moderatedUserGroup.UserGroupList.title"><![CDATA[Kullanıcı Grupları]]></item>
+	</category>
+	<category name="shadow.invalid.box">
+	</category>
+</language>
