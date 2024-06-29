@@ -110,7 +110,7 @@
 		<item name="wcf.conversation.message.button.add"><![CDATA[Cevapla]]></item>
 		<item name="wcf.conversation.message.edit"><![CDATA[Mesaj Düzenle]]></item>
 		<item name="wcf.conversation.message.editNote"><![CDATA[{$message->username} bu mesajı {#$message->editCount} defa düzenledi, En son: {@$message->lastEditTime|time}.]]></item>
-		<item name="wcf.conversation.message.error.floodControl"><![CDATA[Son {plural value=$__wcf->getSession()->getPermission('user.conversation.floodControlTime') 1='second' other='# seconds'}. içinde zaten bir mesaj gönderdiniz. Yeni bir mesaj yazmaya çalışmadan önce en az {plural value=$waitTime 1='one second' other='# seconds'} beklemelisiniz.]]></item>
+		<item name="wcf.conversation.message.error.floodControl"><![CDATA[Son {plural value=$__wcf->getSession()->getPermission('user.conversation.floodControlTime') 1='saniye' other='# saniye'}. içinde zaten bir mesaj gönderdiniz. Yeni bir mesaj yazmaya çalışmadan önce en az {plural value=$waitTime 1='bir saniye' other='# saniye'} beklemelisiniz.]]></item>
 		<item name="wcf.conversation.message.permalink"><![CDATA[{#$startIndex} Mesaj bağlantısı]]></item>
 		<item name="wcf.conversation.noConversations"><![CDATA[Herhangi bir özel sohbet görüşmeniz bulunmuyor.]]></item>
 		<item name="wcf.conversation.noMoreItems"><![CDATA[Yeni sohbet yok]]></item>
