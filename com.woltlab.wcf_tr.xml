@@ -4470,7 +4470,7 @@ Ekler:
 		<item name="wcf.moderation.report.changeJustifiedStatus.confirmMessage"><![CDATA[Bu raporun “Gerekçeli” durumunu gerçekten değiştirmek istiyor musunuz? ]]></item>
 		<item name="wcf.moderation.report.changeJustifiedStatus.markAsJustified"><![CDATA[Raporu “Gerekçeli” olarak işaretleyin]]></item>
 		<item name="wcf.moderation.report.details"><![CDATA[Bilgi]]></item>
-		<item name="wcf.moderation.report.notification.comment.mail.html"><![CDATA[<p>{@$authorList} <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a> adlı rapora yorum yazdı:</p>]]></item>
+		<item name="wcf.moderation.report.notification.comment.mail.html"><![CDATA[<p>{@$authorList} 1 <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a> 2adlı rapora yorum yazdı:</p>3]]></item>
 		<item name="wcf.moderation.report.notification.comment.mail.plaintext"><![CDATA[{@$authorList} commented on the report {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}] adlı rapora {if $count == 1 && !$guestTimesTriggered} yorum yazdı:{else}.{/if}]]></item>
 		<item name="wcf.moderation.report.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong> adlı kullanıcı {else}Bir misafir{/if} rapor hakkında yorum yaptı<strong>{$moderationQueue}</strong>.]]></item>
 		<item name="wcf.moderation.report.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} rapor hakkında yorum yaptı<strong>{$moderationQueue}</strong>.]]></item>
