@@ -3248,7 +3248,7 @@ tam olarak kullanabilirsiniz.</p>]]></item>
 		<item name="wcf.acp.user.option.defaultValue.description"><![CDATA[İlk düzenlemede önerilen varsayılan seçenek değeri.]]></item>
 		<item name="wcf.acp.user.option.description"><![CDATA[Tanım]]></item>
 		<item name="wcf.acp.user.option.edit"><![CDATA[Özel Kullanıcı Alanını Düzenle]]></item>
-		<item name="wcf.acp.user.option.editable"><![CDATA[tarafından düzenlenebilir]]></item>
+		<item name="wcf.acp.user.option.editable"><![CDATA[Tarafından düzenlenebilir]]></item>
 		<item name="wcf.acp.user.option.editable.1"><![CDATA[Sahip]]></item>
 		<item name="wcf.acp.user.option.editable.2"><![CDATA[Yönetici]]></item>
 		<item name="wcf.acp.user.option.editable.3"><![CDATA[Sahip ve Yönetici]]></item>
@@ -3271,7 +3271,7 @@ tam olarak kullanabilirsiniz.</p>]]></item>
 		<item name="wcf.acp.user.option.setDefaults.applyChangesToExistingUsers"><![CDATA[Mevcut kullanıcılar için de seçenkeleri uygula]]></item>
 		<item name="wcf.acp.user.option.setDefaults.applyChangesToExistingUsers.description"><![CDATA[Kullanıcı profil ayarları öntanımlı değerlerinde yapılan herhangi bir değişiklik mevcut kullanıcıları da etkiler. Bu düzenleme kullanıcı tarafından düzenlenen ve değiştirilen önceki tüm ayarları etkiler ve üzerine yazar. Değiştirilmemiş seçenekler göz ardı edilecek.]]></item>
 		<item name="wcf.acp.user.option.typeData"><![CDATA[Özellikler]]></item>
-		<item name="wcf.acp.user.option.validationPattern"><![CDATA[Onaylama için Regular Expression (Düzenli İfade)]]></item>
+		<item name="wcf.acp.user.option.validationPattern"><![CDATA[Onaylama için Düzenli İfade]]></item>
 		<item name="wcf.acp.user.option.validationPattern.description"><![CDATA[Kullanıcı girdisini onaylamak için bir düzneli ifade girin.]]></item>
 		<item name="wcf.acp.user.option.visible"><![CDATA[Kimler görebilir]]></item>
 		<item name="wcf.acp.user.option.visible.0"><![CDATA[Hiç kimse]]></item>
