@@ -1936,39 +1936,15 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.package.optionalPackages.description"><![CDATA[Şu isteğe bağlı yükelenebilir paketler yükleme için hazır durumda:]]></item>
 		<item name="wcf.acp.package.packageDate"><![CDATA[Paket Tarihi]]></item>
 		<item name="wcf.acp.package.packageDescription.package1"><![CDATA[Harika web siteleri ve topluluklar için tasarlanmış ücretsiz CMS ve web-framework.]]></item>
-		<item name="wcf.acp.package.packageDescription.package10"><![CDATA[Diğer tartışma panosu sistemlerinden veri içe aktarın.]]></item>
-		<item name="wcf.acp.package.packageDescription.package11"><![CDATA[Deneyim raporları, test sonuçları, dijital günlükler ve çok daha fazlası için esnek blog yazılımı.]]></item>
-		<item name="wcf.acp.package.packageDescription.package12"><![CDATA[Etkinlikleri, katılımcıları ve entegre harita işlevini düzenlemek için çok yönlü çözüm.]]></item>
-		<item name="wcf.acp.package.packageDescription.package13"><![CDATA[Resim ve videoların çekici ve yapılandırılmış sunumu için tasarlanmış galeri.]]></item>
-		<item name="wcf.acp.package.packageDescription.package14"><![CDATA[İzinler, dosya sürümleri ve isteğe bağlı incelemelerle dosyaları ve belgeleri kolayca dağıtın.]]></item>
-		<item name="wcf.acp.package.packageDescription.package15"><![CDATA[Blog makaleleri için otomatik olarak konular oluşturur.]]></item>
-		<item name="wcf.acp.package.packageDescription.package16"><![CDATA[Dosyalar için otomatik olarak destek konuları oluşturur.]]></item>
-		<item name="wcf.acp.package.packageDescription.package17"><![CDATA[Takvim etkinlikleri için otomatik olarak konular oluşturur.]]></item>
-		<item name="wcf.acp.package.packageDescription.package3"><![CDATA[Esnek bir uyarı ve askıya alma sistemi sağlar.]]></item>
 		<item name="wcf.acp.package.packageDescription.package4"><![CDATA[Özel forumlar, en iyi yanıtlar ve konu formlarıyla tamamlanan ödüllü forum yazılımı.]]></item>
 		<item name="wcf.acp.package.packageDescription.package5"><![CDATA[Denetlenen Kullanıcı Grupları, kullanıcının bir kullanıcı grubuna katılmak için uygulamalar göndermesine olanak tanır.]]></item>
 		<item name="wcf.acp.package.packageDescription.package6"><![CDATA[Web sitenize site sahibi hakkında bilgilerin yer aldığı yeni bir sayfa ekler. (Bu, Almanca web siteleri için gereklidir.)]]></item>
-		<item name="wcf.acp.package.packageDescription.package7"><![CDATA[LDAP aracılığıyla kullanıcı kimlik doğrulaması sağlar.]]></item>
-		<item name="wcf.acp.package.packageDescription.package8"><![CDATA[Varsayılan MySQL tabanlı arama yerine Elasticsearch kullanır.]]></item>
-		<item name="wcf.acp.package.packageDescription.package9"><![CDATA[U2F / WebAuthn aracılığıyla çok faktörlü kimlik doğrulama desteği ekler.]]></item>
 		<item name="wcf.acp.package.packageDir.input"><![CDATA[Kurulum Dizini]]></item>
 		<item name="wcf.acp.package.packageDir.notAvailable"><![CDATA[Hedef dizin zaten bir uygulama içeriyor.]]></item>
 		<item name="wcf.acp.package.packageName.package1"><![CDATA[WoltLab Suite Core]]></item>
-		<item name="wcf.acp.package.packageName.package10"><![CDATA[WoltLab Suite Core: Importer]]></item>
-		<item name="wcf.acp.package.packageName.package11"><![CDATA[WoltLab Suite Blog]]></item>
-		<item name="wcf.acp.package.packageName.package12"><![CDATA[WoltLab Suite Calendar]]></item>
-		<item name="wcf.acp.package.packageName.package13"><![CDATA[WoltLab Suite Gallery]]></item>
-		<item name="wcf.acp.package.packageName.package14"><![CDATA[WoltLab Suite Filebase]]></item>
-		<item name="wcf.acp.package.packageName.package15"><![CDATA[WoltLab Suite Blog: Article Threads]]></item>
-		<item name="wcf.acp.package.packageName.package16"><![CDATA[WoltLab Suite Filebase: Support Threads]]></item>
-		<item name="wcf.acp.package.packageName.package17"><![CDATA[WoltLab Suite Calendar: Event Threads]]></item>
-		<item name="wcf.acp.package.packageName.package3"><![CDATA[WoltLab Suite Core: Infractions]]></item>
 		<item name="wcf.acp.package.packageName.package4"><![CDATA[WoltLab Suite Forum]]></item>
 		<item name="wcf.acp.package.packageName.package5"><![CDATA[WoltLab Suite Core: Moderated User Groups]]></item>
 		<item name="wcf.acp.package.packageName.package6"><![CDATA[WoltLab Suite Core: Legal Notice]]></item>
-		<item name="wcf.acp.package.packageName.package7"><![CDATA[WoltLab Suite Core: LDAP Authentication]]></item>
-		<item name="wcf.acp.package.packageName.package8"><![CDATA[WoltLab Suite Core: Elasticsearch]]></item>
-		<item name="wcf.acp.package.packageName.package9"><![CDATA[WoltLab Suite Core: WebAuthn]]></item>
 		<item name="wcf.acp.package.plugin.installed"><![CDATA[Yüklü Paketler]]></item>
 		<item name="wcf.acp.package.plugin.title"><![CDATA[Eklentiler]]></item>
 		<item name="wcf.acp.package.pluginStore.file"><![CDATA[WoltLab® Eklenti Mağazası]]></item>
@@ -2047,20 +2023,20 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.package.upgradeOverrideEnabled"><![CDATA[WoltLab Suite {$version} yükseltmesi artık hazır. Yükseltmeyi başlatmak için lütfen "Güncellemeleri Ara" düğmesine tıklayın.<br>
 <br>
 <a href="{link controller='PackageEnableUpgradeOverride' application='wcf'}{/link}">Yükseltmeyi iptal et</a>]]></item>
-		<item name="wcf.acp.package.upload"><![CDATA[Paket yükle]]></item>
+		<item name="wcf.acp.package.upload"><![CDATA[Paket Yükle]]></item>
 		<item name="wcf.acp.package.url"><![CDATA[Site]]></item>
 		<item name="wcf.acp.package.validation"><![CDATA[Doğrulama Sonucu]]></item>
 		<item name="wcf.acp.package.validation.errorCode.1"><![CDATA[{if !$targetArchive|empty} “{$targetArchive}” içindeki{/if} “{$archive}” dosyası kayıp.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.10"><![CDATA[“{$packageVersion}” sürümünde ya da daha yüksek sürümde {if $package === null}“{$packageName}”{else}“{$package}”{/if} paket gerekmektedir, {if $package === null} fakat yüklenmemiş ya da yüklü gelmemiştir.{else}fakat “{$package->packageVersion}” sürümü yüklenmiştir.{/if}]]></item>
-		<item name="wcf.acp.package.validation.errorCode.11"><![CDATA[{if $type == 'install'}Yükleme{else}Güncelleme{/if} talimatları  “{$pip}” paket yükleme eklentisi için “{$value}” paketini gerekli görmüştür fakat belirtilen konumda bulunamamıştır. Olası nedenler:<ul class="nativeList"><li>Dosya arşiv dosyasına eklenmemiştir</li><li>Dosya vardır fakat dosya isminde küçük bir hata olabilir</li></ul>]]></item>
-		<item name="wcf.acp.package.validation.errorCode.12"><![CDATA[“{$packageName|language}” paketi, “{$packageVersion}” sürümüne zaten yüklenmiş.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.10"><![CDATA[“{$packageVersion}” sürümünde ya da daha yüksek sürümde {if $package === null}“{$packageName}”{else}“{$package}”{/if} paket gerekmektedir, {if $package === null}fakat yüklenmemiş ya da yüklü gelmemiştir.{else}fakat “{$package->packageVersion}” sürümü yüklenmiştir.{/if}]]></item>
+		<item name="wcf.acp.package.validation.errorCode.11"><![CDATA[{if $type == 'install'}Yükleme{else}Güncelleme{/if}-talimatları “{$pip}” paket yükleme eklentisi için “{$value}” paketini gerekli görmüştür fakat belirtilen konumda bulunamamıştır. Olası nedenler:<ul class="nativeList"><li>Dosya arşiv dosyasına eklenmemiştir</li><li>Dosya mevcut ancak (biraz) farklı bir adla (yazım hatası)</li></ul>]]></item>
+		<item name="wcf.acp.package.validation.errorCode.12"><![CDATA[“{$packageName|phrase}” paketi, “{$packageVersion}” sürümüne zaten yüklenmiş.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.13"><![CDATA[“{$version}” API sürümü geçersiz.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.14"><![CDATA[Bu paket, WoltLab Suite'in {if $ isOlderVersion} eski bir {else} daha yeni {/ if} sürümü için oluşturuldu ve uyumlu değil.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.14"><![CDATA[Bu paket WoltLab Suite'in eski bir sürümü için oluşturulmuştur ve uyumlu değildir.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.15"><![CDATA[Bu paket API uyumluluğu ile ilgili herhangi bir veri içermez, geliştirici araçları etkinken kurulum engellenir.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.16"><![CDATA[&Lt;void/ & gt; talimatına ek olarak, ek paket yükleme eklentileri kullanılır.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.17"><![CDATA[&Lt;void/ & gt; talimatı kurulum talimatlarında kullanılamaz.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.16"><![CDATA[&lt;void/&gt; talimatına ek olarak, ek paket yükleme eklentileri kullanılır.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.17"><![CDATA[&lt;void/&gt; talimatı kurulum talimatlarında kullanılamaz.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.18"><![CDATA[Zaten yüklü olan “{$application->getPackage()->package}”, uygulaması aynı uygulama kısaltmasını kullanır.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.19"><![CDATA[Uyumsuz “{$packageName}” ppaketinin “{$version}” sürümü geçersiz.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.19"><![CDATA[Uyumsuz “{$packageName}” paketinin “{$version}” sürümü geçersiz.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.2"><![CDATA[“{$archive}” paket dosyası eksik, “package.xml” dosyası gerekli.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.20"><![CDATA[“{$packageName}” paketi kendisini hariç tutar.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.21"><![CDATA[“com.woltlab.wcf” dosyasına herhangi bir bağımlılık tanımlanmadı.]]></item>
@@ -2070,14 +2046,14 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.package.validation.errorCode.25"><![CDATA[&lt;authorinformation&gt; bilinmeyen alt öğeyi “{$tag}” içerir.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.26"><![CDATA[&lt;authorinformation&gt; Hayır (geçerli) verilmedi.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.27"><![CDATA[&lt;packagename&gt; Hayır (geçerli) verilmedi.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.28"><![CDATA[&lt;packageinformation&gt; "{$tag}" yinelenen alt öğesini içerir.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.28"><![CDATA[&lt;packageinformation&gt; “{$tag}” yinelenen alt öğesini içerir.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.29"><![CDATA[Hiçbir paket sürümü verilmedi.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.3"><![CDATA[“{$packageName}” paket adı beklentileri karşılamıyor ve reddedildi.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.30"><![CDATA[No package date was given.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.31"><![CDATA[The file “package.xml” is invalid{if $libxmlOutput}: {$libxmlOutput}{/if}.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.30"><![CDATA[Paketin teslim tarihi belirtilmedi.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.31"><![CDATA[“package.xml” dosyası geçersiz{if $libxmlOutput}: {$libxmlOutput}{/if}.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.4"><![CDATA[“{$packageVersion}” paket sürümü beklentileri karşılamadı ve reddedildi.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.5"><![CDATA[“{$packageName|language}” adlı paket geçerli yükleme talimatlarını içermiyor.]]></item>
-		<item name="wcf.acp.package.validation.errorCode.6"><![CDATA[“{$packageName|language}” paketi (yüklenmiş sürüm: “{$packageVersion}”) , “{$deliveredPackageVersion}”, sürümüne güncellenmelidir ancak güncellenme desteklenmemektedir.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.5"><![CDATA[“{$packageName}” adlı paket geçerli yükleme talimatlarını içermiyor.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.6"><![CDATA[“{$packageName|phrase}” paketi (yüklenmiş sürüm: “{$packageVersion}”) , “{$deliveredPackageVersion}”, sürümüne güncellenmelidir ancak güncellenme desteklenmemektedir.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.7"><![CDATA[Belirtilen yüklü paketler bilinen uyumsuzluk sorunlarından dolayı şu anki paketi devre dışı bırakıyor: <ul class="nativeList">{foreach from=$packages item=package}<li>“{$package}” ({$package->package})</li>{/foreach}</ul>]]></item>
 		<item name="wcf.acp.package.validation.errorCode.8"><![CDATA[Paket belirtilen yüklü paketler ile uyuşmazlık halinde: <ul class="nativeList">{foreach from=$packages item=package}<li>“{$package}” ({$package->package})</li>{/foreach}</ul>]]></item>
 		<item name="wcf.acp.package.validation.errorCode.9"><![CDATA[Yükleme, “{$packageName}” adlı paketin “{$packageVersion}” sürüm ya da daha yüksek sürümünü gerektirmekte fakat sadece “{$deliveredPackageVersion}” sürümü yüklenmiş durumda.]]></item>
