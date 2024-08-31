@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
 	<category name="wcf.acl">
 		<item name="wcf.acl.access"><![CDATA[Kısıtlanmış Erişim]]></item>
 		<item name="wcf.acl.access.denied"><![CDATA[Kullanıcılar ve Kullanıcı Grupları için Erişim Engellendi]]></item>
@@ -2943,7 +2943,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.style.globals.pageLogo"><![CDATA[Sayfa Logosu]]></item>
 		<item name="wcf.acp.style.globals.pageLogo.height"><![CDATA[Sayfa Logosu Yükseklik]]></item>
 		<item name="wcf.acp.style.globals.pageLogo.width"><![CDATA[Sayfa Logosu Genişlik]]></item>
-		<item name="wcf.acp.style.globals.pageLogoMobile"><![CDATA[Sayga Logosu (Mobil Sürüm)]]></item>
+		<item name="wcf.acp.style.globals.pageLogoMobile"><![CDATA[Sayfa Logosu (Mobil Sürüm)]]></item>
 		<item name="wcf.acp.style.globals.useFluidLayout"><![CDATA[Akıcı genişlik kullan]]></item>
 		<item name="wcf.acp.style.image"><![CDATA[Resim Önizleme]]></item>
 		<item name="wcf.acp.style.image.description"><![CDATA[Bu tema için bir önizleme resmi yükleyin, kabul edilen resim türleri JPG ve PNG'dir. Boyutları 102px × 64px olmalıdır, bu boyutu aşan resimler tekrar boyutlandırılacaktır.]]></item>
