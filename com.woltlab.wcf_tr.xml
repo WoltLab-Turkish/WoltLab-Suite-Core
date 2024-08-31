@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Turkish" countrycode="tr">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
 	<category name="wcf.acl">
 		<item name="wcf.acl.access"><![CDATA[Kısıtlanmış Erişim]]></item>
 		<item name="wcf.acl.access.denied"><![CDATA[Kullanıcılar ve Kullanıcı Grupları için Erişim Engellendi]]></item>
@@ -2943,7 +2943,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.style.globals.pageLogo"><![CDATA[Sayfa Logosu]]></item>
 		<item name="wcf.acp.style.globals.pageLogo.height"><![CDATA[Sayfa Logosu Yükseklik]]></item>
 		<item name="wcf.acp.style.globals.pageLogo.width"><![CDATA[Sayfa Logosu Genişlik]]></item>
-		<item name="wcf.acp.style.globals.pageLogoMobile"><![CDATA[Sayga Logosu (Mobil Sürüm)]]></item>
+		<item name="wcf.acp.style.globals.pageLogoMobile"><![CDATA[Sayfa Logosu (Mobil Sürüm)]]></item>
 		<item name="wcf.acp.style.globals.useFluidLayout"><![CDATA[Akıcı genişlik kullan]]></item>
 		<item name="wcf.acp.style.image"><![CDATA[Resim Önizleme]]></item>
 		<item name="wcf.acp.style.image.description"><![CDATA[Bu tema için bir önizleme resmi yükleyin, kabul edilen resim türleri JPG ve PNG'dir. Boyutları 102px × 64px olmalıdır, bu boyutu aşan resimler tekrar boyutlandırılacaktır.]]></item>
@@ -4144,7 +4144,7 @@ Ekler:
 		<item name="wcf.global.form.error.lessThan"><![CDATA[Girilen değer, bu değerden küçük olmalı: {#$lessThan}.]]></item>
 		<item name="wcf.global.form.error.multilingual"><![CDATA[Lütfen tüm diller için bu alanı doldurun.]]></item>
 		<item name="wcf.global.form.error.noValidSelection"><![CDATA[Mevcut seçeneklerden birini seçiniz.]]></item>
-		<item name="wcf.global.form.error.securityToken"><![CDATA[Oturumunuz sona erdi lütfen formu tekrar gönderin.]]></item>
+		<item name="wcf.global.form.error.securityToken"><![CDATA[XSRF belirteci geçersiz olduğundan isteğinizin geçerliliği doğrulanamadı. Lütfen formu tekrar gönderin.]]></item>
 		<item name="wcf.global.form.input.maxItems"><![CDATA[En fazla öğeye erişildi]]></item>
 		<item name="wcf.global.form.password.button.hide"><![CDATA[Gizle]]></item>
 		<item name="wcf.global.form.password.button.show"><![CDATA[Göster]]></item>
@@ -4786,7 +4786,7 @@ bu e-postayı görmezden gelebilirsiniz.]]></item>
 		<item name="wcf.user.login.register.teaser"><![CDATA[Henüz hesabınız yok mu? Topluluğumuzun aktif bir üyesi olun ve oyunlarla, yazılımlarla ilgili ilginç konuları keşfedin! Kaydolun ve tartışmalara katılın, deneyimlerinizi paylaşın ve yeni arkadaşlar edinin. Topluluğumuzda herkesin kendine göre bir yer bulabileceğinden eminiz. Hadi, gelin ve bizimle birlikte eğlenceli ve bilgilendirici bir yolculuğa çıkın!]]></item>
 		<item name="wcf.user.loginOrRegister"><![CDATA[Giriş Yap{if !REGISTER_DISABLED}/Kayıt Ol{/if}]]></item>
 		<item name="wcf.user.logout"><![CDATA[Çıkış Yap]]></item>
-		<item name="wcf.user.lostPassword"><![CDATA[Kayıp Şifre]]></item>
+		<item name="wcf.user.lostPassword"><![CDATA[Şifremi Unuttum]]></item>
 		<item name="wcf.user.lostPassword.description"><![CDATA[Yeni şifre talep etmek için e-posta adresi ya da kullanıcı adını belirtmek zorundasınız. Yardıma ihtiyacınız varsa site yöneticisi ile iletişime geçebilirsiniz.]]></item>
 		<item name="wcf.user.lostPassword.email.error.notFound"><![CDATA[“{$email}” e-posta herhangi bir hesaba ait değil.]]></item>
 		<item name="wcf.user.lostPassword.error.flood"><![CDATA[Çok fazla şifre istediniz. Bu nedenle işlev, güvenlik nedeniyle geçici olarak devre dışı bırakıldı. Lütfen daha sonra tekrar deneyiniz.]]></item>
