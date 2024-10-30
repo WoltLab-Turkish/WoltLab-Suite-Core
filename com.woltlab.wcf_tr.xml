@@ -4245,8 +4245,8 @@ Ekler:
 		<item name="wcf.media.button.insert"><![CDATA[Ekle]]></item>
 		<item name="wcf.media.button.replaceFile"><![CDATA[Dosyayı değiştir]]></item>
 		<item name="wcf.media.button.select"><![CDATA[Seç]]></item>
-		<item name="wcf.media.caption"><![CDATA[Başlık]]></item>
-		<item name="wcf.media.caption.enableHtml"><![CDATA[Başlıkta HTML kodunu etkinleştirin]]></item>
+		<item name="wcf.media.caption"><![CDATA[Altyazı]]></item>
+		<item name="wcf.media.caption.enableHtml"><![CDATA[Altyazıda HTML kodunu etkinleştirin]]></item>
 		<item name="wcf.media.category.choose"><![CDATA[Kategoriler]]></item>
 		<item name="wcf.media.category.choose.noCategory"><![CDATA[(Kategori yok)]]></item>
 		<item name="wcf.media.categoryID"><![CDATA[Kategori]]></item>
