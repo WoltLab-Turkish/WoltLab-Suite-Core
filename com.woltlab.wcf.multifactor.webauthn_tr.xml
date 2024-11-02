@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd" languagecode="tr" languagename="Türkçe" countrycode="tr">
 	<category name="wcf.user.security">
 		<item name="wcf.user.security.multifactor.com.woltlab.wcf.multifactor.webauthn"><![CDATA[Güvenlik Anahtarı]]></item>
 		<item name="wcf.user.security.multifactor.com.woltlab.wcf.multifactor.webauthn.description"><![CDATA[<small>WebAuthn standardı üzerinden kimlik doğrulaması yapın. Örneğin, işletim sistemi şifrenizi veya YubiKey gibi fiziksel bir FIDO U2F anahtarını kullanabilirsiniz.</small>]]></item>
@@ -33,14 +33,12 @@
 		<item name="wcf.user.security.multifactor.webauthn.reauthentication.usePassword"><![CDATA[Mevcut değil mi? Şifre kullanarak <a href="{$url}">giriş yapmaya devam edin</a>.]]></item>
 		<item name="wcf.user.security.multifactor.webauthn.reauthentication.useWebAuthn"><![CDATA[Güvenlik anahtarınızı kullanarak <a href="{$url}">giriş yapmaya geçin</a>.]]></item>
 		<item name="wcf.user.security.multifactor.webauthn.registration"><![CDATA[Güvenlik Anahtarı ile Bağlantı Kur]]></item>
-		<item name="wcf.user.security.multifactor.webauthn.registration.systemRequirementsNotMet"><![CDATA[<div class="info">
-<p>Yeni güvenlik anahtarları eklemek şu anda mümkün değil, çünkü sistem gereksinimleri karşılanmıyor. Lütfen bir yönetici ile iletişime geçin.</p>
+		<item name="wcf.user.security.multifactor.webauthn.registration.systemRequirementsNotMet"><![CDATA[<p>Yeni güvenlik anahtarları eklemek şu anda mümkün değil çünkü sistem gereksinimleri karşılanmıyor. Lütfen bir yöneticiyle iletişime geçin.</p>
 <ul class="nativeList">
 {foreach from=$failingSystemRequirements item='failingSystemRequirement'}
 <li>{lang}wcf.user.security.multifactor.webauthn.systemRequirement.{$failingSystemRequirement}{/lang}</li>
 {/foreach}
-</ul>
-</div>]]></item>
+</ul>]]></item>
 		<item name="wcf.user.security.multifactor.webauthn.sendRequest"><![CDATA[Güvenlik Anahtarına İstek Gönder]]></item>
 		<item name="wcf.user.security.multifactor.webauthn.state.error"><![CDATA[İstek Başarısız Oldu]]></item>
 		<item name="wcf.user.security.multifactor.webauthn.state.pending"><![CDATA[İstek Bekleniyor]]></item>
