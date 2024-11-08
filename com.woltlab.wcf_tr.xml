@@ -3442,7 +3442,7 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.bbcode.quote.edit.author"><![CDATA[Yazar]]></item>
 		<item name="wcf.bbcode.quote.edit.link"><![CDATA[Kaynak]]></item>
 		<item name="wcf.bbcode.quote.insert"><![CDATA[Alıntı Gir]]></item>
-		<item name="wcf.bbcode.quote.simplified"><![CDATA[(Alıntı {if $cite} yazan {$cite}{/if})]]></item>
+		<item name="wcf.bbcode.quote.simplified"><![CDATA[[…]]]></item>
 		<item name="wcf.bbcode.quote.title"><![CDATA[{$quoteAuthor} yazdı:]]></item>
 		<item name="wcf.bbcode.spoiler.hide"><![CDATA[Spoiler Gizle]]></item>
 		<item name="wcf.bbcode.spoiler.show"><![CDATA[Spoiler Göster]]></item>
@@ -4460,8 +4460,8 @@ Ekler:
 		<item name="wcf.moderation.report.notification.commentResponse.title"><![CDATA[Yeni cevap (Rapor)]]></item>
 		<item name="wcf.moderation.report.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} yeni yanıtlar (Rapor)]]></item>
 		<item name="wcf.moderation.report.notification.mail.html"><![CDATA[<p>{if $author->userID}{$author}{else}Bir misafir{/if} <a href="{$objectLink}">{$title}</a> ({$typeName}) bildirdi:</p>]]></item>
-		<item name="wcf.moderation.report.notification.mail.plaintext"><![CDATA[{if $author->userID}{$author}{else}Bir misafir{/if} {$title} ({$typeName}) [URL:{$objectLink}] bildirmiştir.]]></item>
-		<item name="wcf.moderation.report.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if} <strong>{$title}</strong> ({$typeName}) bildirmiştir.]]></item>
+		<item name="wcf.moderation.report.notification.mail.plaintext"><![CDATA[{if $author->userID}{$author}{else}Bir misafir{/if}, {$title} ({$typeName}) [URL:{$objectLink}] bildirmiştir.]]></item>
+		<item name="wcf.moderation.report.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if}, <strong>{$title}</strong> ({$typeName}) bildirmiştir.]]></item>
 		<item name="wcf.moderation.report.notification.title"><![CDATA[Yeni rapor]]></item>
 		<item name="wcf.moderation.report.reason"><![CDATA[Sebep]]></item>
 		<item name="wcf.moderation.report.reason.description"><![CDATA[Bu işlem şu saydıklarımız için önceliklidir: Spam, Reklam ve diğer sorunlu (ırkçılık, cinsellik, saldırı, şiddetin özendirilmesi) içerik]]></item>
@@ -4830,7 +4830,7 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.newActivationCode.success"><![CDATA[Etkinleştirme kodu bu e-postaya “{$email}” gönderildi.]]></item>
 		<item name="wcf.user.newEmail"><![CDATA[Yeni E-Posta Adresi]]></item>
 		<item name="wcf.user.newPassword"><![CDATA[Yeni Şifre]]></item>
-		<item name="wcf.user.newPassword.error.invalidLink"><![CDATA[Yeni bir parola belirleme bağlantısı artık geçerli değil. Güvenlik nedeniyle, bu bağlantı bir süre sonra sona erer ve yalnızca bir kez kullanılabilir. Aşağıdaki sayfada yeni bir bağlantı isteyebilirsiniz: <a href="{link controller='LostPassword'}{/link}">Kayıp Şifre</a>]]></item>
+		<item name="wcf.user.newPassword.error.invalidLink"><![CDATA[Yeni bir parola belirleme bağlantısı artık geçerli değil. Güvenlik nedeniyle, bu bağlantı bir süre sonra sona erer ve yalnızca bir kez kullanılabilir. Aşağıdaki sayfada yeni bir bağlantı isteyebilirsiniz: <a href="{link controller='LostPassword'}{/link}">Şifremi Unuttum</a>]]></item>
 		<item name="wcf.user.newPassword.info"><![CDATA[“{$user->username}” adlı kullanıcı için yeni bir şifre belirliyorsunuz.]]></item>
 		<item name="wcf.user.newPassword.success"><![CDATA[“{$user->username}” adlı kullanıcının şifresi başarıyla değiştirildi. Artık yeni şifrenizle giriş yapabilirsiniz.]]></item>
 		<item name="wcf.user.newUsername"><![CDATA[Yeni Kullanıcı Adı]]></item>
@@ -4892,7 +4892,7 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.reauthentication"><![CDATA[Yeniden kimlik doğrulama]]></item>
 		<item name="wcf.user.reauthentication.explanation"><![CDATA[Güvenlik açısından hassas bir alana giriyorsunuz. Güvenlik nedeniyle, şifrenizi girerek kendinizi yeniden doğrulamanız gerekmektedir.]]></item>
 		<item name="wcf.user.reauthentication.loginAs"><![CDATA[Giriş Yap]]></item>
-		<item name="wcf.user.reauthentication.logoutAndChangeUser"><![CDATA[{$__wcf->user->username} Değil mi? <a href="{link controller='FullLogout' application='wcf'}t={csrfToken type='url'}{/link}">Çıkış yapın ve kullanıcıyı değiştirin</a>.]]></item>
+		<item name="wcf.user.reauthentication.logoutAndChangeUser"><![CDATA[{$__wcf->user->username} Değil misin? <a href="{link controller='FullLogout' application='wcf'}t={csrfToken type='url'}{/link}">Çıkış yapın ve kullanıcıyı değiştirin</a>.]]></item>
 		<item name="wcf.user.registerActivation"><![CDATA[Kaydı Tamamla]]></item>
 		<item name="wcf.user.registerActivation.error.userAlreadyEnabled"><![CDATA[Kullanıcı zaten etkinleştirilmiş.]]></item>
 		<item name="wcf.user.registerActivation.info"><![CDATA[Aktivasyon kodunu içeren e-posta şu adrese gönderildi “{$__wcf->user->email}”.]]></item>
@@ -5259,9 +5259,9 @@ Eğer sadece bu tür bildirimleri etkisizleştirmek isterseniz onu da bu bağlan
 		<item name="wcf.user.notification.pageComment.responseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir misafir{/if} <strong>{$page->getTitle()}</strong> sayfasındaki yorumunuzu yanıtladı.]]></item>
 		<item name="wcf.user.notification.pageComment.responseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} <strong>{$page->getTitle()}</strong> sayfasındaki yorumunuzu yanıtladı.]]></item>
 		<item name="wcf.user.notification.pageComment.responseOwner.title"><![CDATA[Yeni cevaplar (Sayfa)]]></item>
-		<item name="wcf.user.notification.registrationSuccess.mail.html"><![CDATA[<p>Kullanıcı <strong>{$username}</strong> kayıt işlemini tamamladı ve hesabı etkinleştirildi.</p>]]></item>
+		<item name="wcf.user.notification.registrationSuccess.mail.html"><![CDATA[<p><strong>{$username}</strong> adlı kullanıcı kayıt işlemini tamamladı ve hesabı etkinleştirildi.</p>]]></item>
 		<item name="wcf.user.notification.registrationSuccess.mail.plaintext"><![CDATA[“{unsafe:$username}” adlı kullanıcı kayıt işlemini tamamladı ve hesabı aktifleştirildi.]]></item>
-		<item name="wcf.user.notification.registrationSuccess.message"><![CDATA[<strong>{$username}</strong> <strong>{$username</strong> adlı kullanıcı kayıt işlemini tamamladı ve hesabı etkinleştirildi.]]></item>
+		<item name="wcf.user.notification.registrationSuccess.message"><![CDATA[<strong>{$username}</strong> adlı kullanıcı kayıt işlemini tamamladı ve hesabı etkinleştirildi.]]></item>
 		<item name="wcf.user.notification.registrationSuccess.title"><![CDATA[Kullanıcı kayıt işlemini tamamladı]]></item>
 		<item name="wcf.user.notification.settings"><![CDATA[Ayarlar]]></item>
 		<item name="wcf.user.notification.showAll"><![CDATA[Tüm Bildirimleri Göster]]></item>
@@ -5637,7 +5637,7 @@ Ayrıca, ikinci faktörünüz kullanılamaz hale geldiğinde kullanmanız için 
 		<item name="shadow.invalid.page.com.woltlab.wcf.Following.title"><![CDATA[Takip Edilen Kullanıcılar]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.IgnoredUsers.title"><![CDATA[Engellenen Kullanıcılar]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.Login.title"><![CDATA[Giriş]]></item>
-		<item name="shadow.invalid.page.com.woltlab.wcf.LostPassword.title"><![CDATA[Kayıp Şifre]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.LostPassword.title"><![CDATA[Şifremi Unuttum]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.MembersList.title"><![CDATA[Kullanıcılar]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.ModerationActivation.title"><![CDATA[İçerik Onayı]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.ModerationList.title"><![CDATA[Moderasyon]]></item>
