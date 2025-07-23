@@ -14,7 +14,7 @@
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.vb5x"><![CDATA[vBulletin 5.x]]></item>
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb2x"><![CDATA[Burning Board 2.3.x]]></item>
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb3x"><![CDATA[Burning Board 3.x, Lite 2.1.x]]></item>
-		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb4x"><![CDATA[Burning Board 4.x, WoltLab Suite Forum 5.x]]></item>
+		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wbb4x"><![CDATA[Burning Board 4.x, WoltLab Suite Forum 5.x / 6.x]]></item>
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.wordpress3x"><![CDATA[WordPress 3.7+]]></item>
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.xf12x"><![CDATA[XenForo 1.2.x - 1.4.x]]></item>
 		<item name="wcf.acp.dataImport.exporter.com.woltlab.wcf.exporter.xf2x"><![CDATA[XenForo 2.0.x, 2.1.x]]></item>
