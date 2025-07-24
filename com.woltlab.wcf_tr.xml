@@ -1127,9 +1127,7 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 	</category>
 	<category name="wcf.acp.license">
 		<item name="wcf.acp.license"><![CDATA[Lisanslı Ürünler]]></item>
-		<item name="wcf.acp.license.developerLicense"><![CDATA[{icon name='wrench'} <strong>Geliştirici Lisansı</strong><br>
-<br>
-Geliştirici lisansı yalnızca geliştirme sürecinde ve demo kurulumlarının işletiminde kullanımı izin verir. Yazılımın üretim ortamlarında kullanımını yetkilendirmez.]]></item>
+		<item name="wcf.acp.license.developerLicense"><![CDATA[<strong>Geliştirici Lisansı</strong>Geliştirici lisansı yalnızca geliştirme sürecinde ve demo kurulumlarının işletiminde kullanımı izin verir. Yazılımın üretim ortamlarında kullanımını yetkilendirmez.]]></item>
 		<item name="wcf.acp.license.edit"><![CDATA[Lisans Verilerini Düzenle]]></item>
 		<item name="wcf.acp.license.error.parsingFailed"><![CDATA[Lisans verileri alınamadı. Lütfen <a href="{link controller="LicenseEdit"}{/link}">lisans kimlik bilgilerini doğrulayın ve güncelleyin</a>.{if $licenseData !== null}<br><br> Lisans verileri son olarak {time type='plainTime' time=$licenseData->creationDate} tarihinde güncellendi.{/if}]]></item>
 		<item name="wcf.acp.license.extend"><![CDATA[Lisansı Uzat]]></item>
@@ -2105,7 +2103,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.page.parentPage"><![CDATA[Üst Sayfa]]></item>
 		<item name="wcf.acp.page.parentPage.error.invalid"><![CDATA[Seçilen sayfa geçersiz.]]></item>
 		<item name="wcf.acp.page.parentPage.none"><![CDATA[Hiç]]></item>
-		<item name="wcf.acp.page.type"><![CDATA[Sayfa Türü]]]></item>
+		<item name="wcf.acp.page.type"><![CDATA[Sayfa Türü]]></item>
 		<item name="wcf.acp.page.type.html"><![CDATA[HTML]]></item>
 		<item name="wcf.acp.page.type.html.description"><![CDATA[En yüksek esneklik için  sayfa içeriğini oluştururken saf HTML kullanılır.]]></item>
 		<item name="wcf.acp.page.type.system"><![CDATA[Sistem]]></item>
@@ -2705,23 +2703,23 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.rebuildData.wcf_system_worker_FileRebuildDataWorker"><![CDATA[Dosyaları Yeniden Oluştur]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_FileRebuildDataWorker.description"><![CDATA[Dosya önizleme görüntülerini yeniden oluşturur.]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_LikeRebuildDataWorker"><![CDATA[Beğenileri Yeniden Oluştur]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_LikeRebuildDataWorker.description"><![CDATA[Recalculates the reactions.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_MediaRebuildDataWorker"><![CDATA[Rebuild Media]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_MediaRebuildDataWorker.description"><![CDATA[Rebuilds the media preview images.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_PageRebuildDataWorker"><![CDATA[Rebuild Pages]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_PageRebuildDataWorker.description"><![CDATA[Rebuilds the page search index.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_PollRebuildDataWorker"><![CDATA[Rebuild Polls]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_PollRebuildDataWorker.description"><![CDATA[Rebuilds the poll counters.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_SitemapRebuildWorker"><![CDATA[Rebuild Sitemap]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_SitemapRebuildWorker.description"><![CDATA[Rebuilds the sitemap.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker"><![CDATA[Rebuild Statistics]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker.description"><![CDATA[Rebuilds the daily statistics.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker"><![CDATA[Rebuild Point Activities]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker.description"><![CDATA[Recalculates the number of activities for which users get points and rebuilds user ranks.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointUpdateEventsWorker"><![CDATA[Rebuild Points per Activity]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointUpdateEventsWorker.description"><![CDATA[Recalculates points per activity.]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserRebuildDataWorker"><![CDATA[Rebuild Users]]></item>
-		<item name="wcf.acp.rebuildData.wcf_system_worker_UserRebuildDataWorker.description"><![CDATA[Rebuilds the user counters.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_LikeRebuildDataWorker.description"><![CDATA[Beğenileri yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_MediaRebuildDataWorker"><![CDATA[MedyALARI Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_MediaRebuildDataWorker.description"><![CDATA[Medyaları yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_PageRebuildDataWorker"><![CDATA[Sayfaları Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_PageRebuildDataWorker.description"><![CDATA[Sayfaları yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_PollRebuildDataWorker"><![CDATA[Anketleri Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_PollRebuildDataWorker.description"><![CDATA[Anketleri yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_SitemapRebuildWorker"><![CDATA[Site Haritasını Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_SitemapRebuildWorker.description"><![CDATA[Site Haritasını yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker"><![CDATA[İstatistikleri Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker.description"><![CDATA[İstatistikleri yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker"><![CDATA[Puan Etkinliklerini Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker.description"><![CDATA[Kullanıcıların puan aldığı aktivite sayısını yeniden hesaplar ve kullanıcı sıralamalarını yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointUpdateEventsWorker"><![CDATA[Aktivite Başına Puanları Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointUpdateEventsWorker.description"><![CDATA[Aktivite başına puanları yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserRebuildDataWorker"><![CDATA[Kullanıcıları Yeniden Oluştur]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UserRebuildDataWorker.description"><![CDATA[Kullanıcıları yeniden oluşturur.]]></item>
 	</category>
 	<category name="wcf.acp.rescueMode">
 		<item name="wcf.acp.rescueMode"><![CDATA[Kurtarma Modu]]></item>
@@ -4657,13 +4655,19 @@ Ekler:
 		<item name="wcf.tagging.tags.error.unknownTags"><![CDATA[Aşağıdaki etiketler mevcut değil: {implode from=$unknownTags item=unknownTag}{$unknownTag}{/implode}.]]></item>
 	</category>
 	<category name="wcf.upload">
-		<item name="wcf.upload.error.adopt"><![CDATA[„{$filename}“ dosyası atanamıyor.]]></item>
+		<item name="wcf.upload.error.adopt"><![CDATA[“{$filename}” dosyası atanamıyor.]]></item>
+		<item name="wcf.upload.error.damagedImageFile"><![CDATA[“{$filename}” grafik dosyası hasarlı.]]></item>
+		<item name="wcf.upload.error.delete.permissionDenied"><![CDATA[Dosya silinemiyor, dosyayı değiştirmek için <strong>Değiştir</strong>'i kullanın.]]></item>
+		<item name="wcf.upload.error.delete.unknownError"><![CDATA[Dosya silinirken bilinmeyen bir hata oluştu.]]></item>
+		<item name="wcf.upload.error.emptyFile"><![CDATA[“{$filename}” dosyası boş.]]></item>
 		<item name="wcf.upload.error.fileExtensionNotPermitted"><![CDATA[“{$filename}” dosya türüne izin verilmiyor.]]></item>
 		<item name="wcf.upload.error.fileSizeTooLarge"><![CDATA[Dosya çok büyük.]]></item>
 		<item name="wcf.upload.error.maximumCountReached"><![CDATA[{plural value=$maximumCount 1='Sadece bir dosya' other='Sadece # dosyaya kadar'} yüklenebilir.]]></item>
 		<item name="wcf.upload.error.noImage"><![CDATA[Yüklenen dosya resim değil.]]></item>
 		<item name="wcf.upload.error.reachedRemainingLimit"><![CDATA[Çok fazla dosya seçtiniz. Yalnızca {#$maxFiles}daha fazla{if $maxFiles != 1}{/if} yükleyebilirsiniz.]]></item>
 		<item name="wcf.upload.error.uploadFailed"><![CDATA[Yükleme sırasında bilinmeyen bir hata oluştu.]]></item>
+		<item name="wcf.upload.validation.error.noImage"><![CDATA[Dosya bir resim değil.]]></item>
+		<item name="wcf.upload.validation.error.tooSmall"><![CDATA[Dosya çok küçük.]]></item>
 	</category>
 	<category name="wcf.user">
 		<item name="wcf.user.access.everyone"><![CDATA[Herkes]]></item>
@@ -4974,7 +4978,7 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.3rdparty.login.error.genericException"><![CDATA[Kimlik doğrulama isteğiniz işlenirken bir hata oluştu. Lütfen yardım için yöneticiyle iletişime geçin. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
 		<item name="wcf.user.3rdparty.login.error.httpError"><![CDATA[Harici hizmetle iletişim kurulamıyor. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
 		<item name="wcf.user.3rdparty.login.error.stateValidation"><![CDATA[Kimlik doğrulama isteği bulunamadı. Belki oturumunuz sona ermiştir.]]></item>
-		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Oturum açma işlemi iptal edildi.]]></item>/item>
+		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Oturum açma işlemi iptal edildi.]]></item>
 		<item name="wcf.user.3rdparty.twitter.connect"><![CDATA[X hesabınızla bağlantı kurun{if $__wcf->session->getVar('__twitterUsername')} “<a href="https://twitter.com/{$__wcf->session->getVar('__twitterUsername')}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__twitterUsername')}</a>”{/if}.]]></item>
 		<item name="wcf.user.3rdparty.twitter.connect.error.inuse"><![CDATA[X hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
 		<item name="wcf.user.3rdparty.twitter.connect.success"><![CDATA[Kullanıcı hesabınız X ile bağlandı.]]></item>
@@ -5136,11 +5140,11 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.notification.com.woltlab.wcf.likeableArticle.notification.like"><![CDATA[Makalelerime tepki verildiğinde beni bilgilendir.]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.moderation"><![CDATA[Moderasyon]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.notification.comment"><![CDATA[Moderasyonda yeni yorumlar yazıldığında beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.report"><![CDATA[Yeni rapor]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.response.notification.commentResponse"><![CDATA[Moderasyonda yorumlara yeni cevaplar yazıldığında beni bilgilendir.]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.page"><![CDATA[Sayfa Bildirimleri]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.page.notification.comment"><![CDATA[Sayfalara yeni yorum yazıldığında beni bilgilendir.]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.page.response.notification.commentResponse"><![CDATA[Sayfalardaki yorumlara yeni cevaplar yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.page.response.notification.commentResponseOwner"><![CDATA[Sayfalardaki yorumlarıma cevap verdiğinde beni bilgilendir.]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.paidSubscription.user.expiring"><![CDATA[Aboneliğin süresi dolmadan önce beni bilgilendir.]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.user"><![CDATA[Kullanıcı Bildirimleri]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.user.follow.following"><![CDATA[Takip edildiğimde beni bilgilendir.]]></item>
@@ -5615,8 +5619,7 @@ Ayrıca, ikinci faktörünüz kullanılamaz hale geldiğinde kullanmanız için 
 <h2>Çerezleri ne için kullanıyoruz?</h2>
 <p>Aşağıdaki nedenlerden dolayı çerezleri kullanıyoruz:</p>
 <ul>
-<li>Giriş: Sitemize giriş yaptığınızda şifrelenmiş verilerinizi içeren bir çerez ayarlanır bu sayede sayfa ziyaretleriniz arasında sizi hatırlarız. Bu çerezi giriş ekranındaki “Beni hatırla” seçeneğini seçmeyerek etkisizleştirebilirsiniz.</li>
-<li>Oturum: Sitemizi ilk ziyaretinizde sistem yeni bir oturum oluşturacaktır ki bu oturum bir çerez kullanılarak bilgisayarınıza kaydedilecektir. Oturumlar sayfa erişimleri arasında kullanıcıları tanımak için gereklidir. Bu çerez internet tarayıcınızı kapattığınızda silinecek olan geçici bir çerezdir.</li>
+<li>Oturum: Web sitemizi ilk ziyaretinizde, sistem sizin için yeni ve benzersiz bir oturum oluşturacak ve bu oturum, bilgisayarınıza bir çerez kullanılarak kaydedilecektir. Oturumlar, sayfa erişimleri arasında kullanıcıların tanınması için gereklidir.</li>
 <li>3. Parti Servisler: Reklam gösterme ya da içeriği sosyla medyada paylaşma ya da benzeri işlemler bu 3.parti uygulamalar tarafından bir çerez oluşturulmasına sebep olabilir.</li>
 </ul>
 
