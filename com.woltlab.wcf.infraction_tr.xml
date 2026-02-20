@@ -57,7 +57,9 @@
 		<item name="wcf.infraction.suspension.predefined"><![CDATA[Öntanımlı Yaptırım]]></item>
 		<item name="wcf.infraction.suspension.revoke"><![CDATA[İptal]]></item>
 		<item name="wcf.infraction.suspension.revoke.confirmMessage"><![CDATA[Bu yaptırımı gerçekten iptal etmek istiyor musunuz?]]></item>
+		<item name="wcf.infraction.suspension.revoked"><![CDATA[İptal edildi]]></item>
 		<item name="wcf.infraction.suspension.revokedBy"><![CDATA[İptal eden: {if $suspension->revokerUsername}{$suspension->revokerUsername}{else}Sistem{/if}.]]></item>
+		<item name="wcf.infraction.suspension.revokedBy.system"><![CDATA[Sistem]]></item>
 		<item name="wcf.infraction.suspension.time"><![CDATA[Tarih]]></item>
 		<item name="wcf.infraction.userWarning.message.subject"><![CDATA[Bir uyarı aldınız]]></item>
 		<item name="wcf.infraction.userWarning.message.text"><![CDATA[<h2>Uyarı</h2>
@@ -95,7 +97,9 @@
 		<item name="wcf.infraction.warning.reason.template.description"><![CDATA[Bir kullanıcıyı uyarırken, neden için metin alanı burada verilen nedenle önceden doldurulacaktır.]]></item>
 		<item name="wcf.infraction.warning.revoke"><![CDATA[İptal]]></item>
 		<item name="wcf.infraction.warning.revoke.confirmMessage"><![CDATA[Bu uyarıyı gerçekten iptal etmek istiyor musunuz?]]></item>
+		<item name="wcf.infraction.warning.revoked"><![CDATA[İptal edildi]]></item>
 		<item name="wcf.infraction.warning.revokedBy"><![CDATA[İptal eden: {if $warning->revokerUsername}{$warning->revokerUsername}{else}Sistem{/if}.]]></item>
+		<item name="wcf.infraction.warning.revokedBy.system"><![CDATA[Sistem]]></item>
 		<item name="wcf.infraction.warning.showDetails"><![CDATA[Ayrıntıları göster]]></item>
 		<item name="wcf.infraction.warning.status"><![CDATA[Durum]]></item>
 		<item name="wcf.infraction.warning.status.active"><![CDATA[Etkin]]></item>

@@ -78,6 +78,7 @@
 		<item name="wcf.acp.article.author"><![CDATA[Yazar]]></item>
 		<item name="wcf.acp.article.button.toggleI18n"><![CDATA[Makale Dillerini Düzenle]]></item>
 		<item name="wcf.acp.article.button.viewArticle"><![CDATA[Makaleyi Göster]]></item>
+		<item name="wcf.acp.article.category.error.noCategories"><![CDATA[Lütfen makale yazmadan önce <a href="{link controller='ArticleCategoryAdd' isACP=true}{/link}">bir kategori ekleyin</a>.]]></item>
 		<item name="wcf.acp.article.category.sortField"><![CDATA[Sırayı Göster]]></item>
 		<item name="wcf.acp.article.category.sortField.publicationDate"><![CDATA[Yayın tarihi]]></item>
 		<item name="wcf.acp.article.category.sortField.title"><![CDATA[Başlık]]></item>
@@ -109,6 +110,7 @@
 		<item name="wcf.acp.article.views"><![CDATA[Görüntülenme]]></item>
 	</category>
 	<category name="wcf.acp.attachment">
+		<item name="wcf.acp.attachment.button.goToContent"><![CDATA[İlgili İçeriğe Git]]></item>
 		<item name="wcf.acp.attachment.list"><![CDATA[Ekler]]></item>
 		<item name="wcf.acp.attachment.stats"><![CDATA[<ul class="inlineList dotSeparated"><li>{#$stats.count} Ek dosya{if $stats.count != 1}lar{/if}</li><li>{@$stats.size|filesize}</li><li>{#$stats.downloads} İndir{if $stats.downloads != 1}{/if}</li></ul>]]></item>
 	</category>
@@ -278,10 +280,12 @@
 	<category name="wcf.acp.contact">
 		<item name="wcf.acp.contact.option.add"><![CDATA[Giriş Alanı Ekle]]></item>
 		<item name="wcf.acp.contact.option.edit"><![CDATA[Giriş Alanını Düzenle]]></item>
+		<item name="wcf.acp.contact.option.list"><![CDATA[Giriş Alanları]]></item>
 		<item name="wcf.acp.contact.options"><![CDATA[Giriş Alanları]]></item>
 		<item name="wcf.acp.contact.recipient.add"><![CDATA[Alıcı ekle]]></item>
 		<item name="wcf.acp.contact.recipient.edit"><![CDATA[Alıcıyı Düzenle]]></item>
 		<item name="wcf.acp.contact.recipient.isDisabled"><![CDATA[Alıcıyı devre dışı bırak]]></item>
+		<item name="wcf.acp.contact.recipient.list"><![CDATA[Alıcılar]]></item>
 		<item name="wcf.acp.contact.recipient.name"><![CDATA[Ekran adı]]></item>
 		<item name="wcf.acp.contact.recipients"><![CDATA[Alıcılar]]></item>
 		<item name="wcf.acp.contact.settings"><![CDATA[İletişim Formunu Düzenle]]></item>
@@ -297,6 +301,7 @@
 		<item name="wcf.acp.content.removeContent"><![CDATA[Kullanıcının İçeriğini Silin]]></item>
 	</category>
 		<category name="wcf.acp.cronjob">
+		<item name="wcf.acp.cronjob"><![CDATA[Cronjob]]></item>
 		<item name="wcf.acp.cronjob.add"><![CDATA[Zamanlanmış Görev Ekle]]></item>
 		<item name="wcf.acp.cronjob.className"><![CDATA[PHP Sınıf Adı]]></item>
 		<item name="wcf.acp.cronjob.className.error.doesNotExist"><![CDATA[Belirtilen sınıf bulunamadı.]]></item>
@@ -330,6 +335,7 @@
 		<item name="wcf.acp.cronjob.expressionType.default"><![CDATA[Kesin zamanlama]]></item>
 		<item name="wcf.acp.cronjob.expressionType.random"><![CDATA[Tahmini zamanlama]]></item>
 		<item name="wcf.acp.cronjob.intro"><![CDATA[Unix tabanlı sistemlerde zamanlanmış görevleri yapılandırmak için cron sözdizimi hakkında bilgi sahibi olmanız gerekir. Daha fazla bilgi için: <a href="http://www.unixgeeks.org/security/newbie/unix/cron-1.html" class="externalURL">Yeni Başlayanlar için Cron Kılavuzu</a>.]]></item>
+		<item name="wcf.acp.cronjob.lastExec"><![CDATA[Son Yürütme]]></item>
 		<item name="wcf.acp.cronjob.list"><![CDATA[Zamanlanmış Görevler]]></item>
 		<item name="wcf.acp.cronjob.log"><![CDATA[Günlük Kayıtları]]></item>
 		<item name="wcf.acp.cronjob.log.clear"><![CDATA[Kayıtları Temizle]]></item>
@@ -341,6 +347,7 @@
 		<item name="wcf.acp.cronjob.log.status"><![CDATA[Durum]]></item>
 		<item name="wcf.acp.cronjob.log.success"><![CDATA[Başarılı]]></item>
 		<item name="wcf.acp.cronjob.nextExec"><![CDATA[Sonraki Planlı Çalıştırma]]></item>
+		<item name="wcf.acp.cronjob.showLog"><![CDATA[Günlüğü Göster]]></item>
 		<item name="wcf.acp.cronjob.startDom"><![CDATA[Ayın Günü]]></item>
 		<item name="wcf.acp.cronjob.startDom.description"><![CDATA[Görevin ayın hangi gününde çalışacağını belirtin (1 - 31).]]></item>
 		<item name="wcf.acp.cronjob.startDomShort"><![CDATA[G]]></item>
@@ -446,6 +453,7 @@
 		<item name="wcf.acp.dataImport.configure.settings.userMergeMode.4"><![CDATA[Aynı e-posta adresi olan kullanıcıları birleştir]]></item>
 		<item name="wcf.acp.dataImport.configure.settings.userMergeMode.5"><![CDATA[Aynı e-posta adresi ya da aynı kullanıcı adı olan kullanıcıları birleştir]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.article"><![CDATA[Makaleler]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.article.attachment"><![CDATA[Ekler]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.article.category"><![CDATA[Makale kategorileri]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.article.comment"><![CDATA[Makale yorumları]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.article.comment.response"><![CDATA[Makale yorumlarına verilen yanıtlar]]></item>
@@ -463,6 +471,7 @@
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.avatar"><![CDATA[Kullanıcı Resimleri]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.comment"><![CDATA[Duvar yorumları]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.comment.response"><![CDATA[Duvar yorumlarına cevaplar]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.coverPhoto"><![CDATA[Kullanıcı profili kapak fotoğrafları]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.follower"><![CDATA[Takipçiler]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.group"><![CDATA[Kullanıcı grupları]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.wcf.user.option"><![CDATA[Kullanıcı profil alanları]]></item>
@@ -694,6 +703,8 @@
 	</category>
 	<category name="wcf.acp.email">
 		<item name="wcf.acp.email.log"><![CDATA[Gönderilen E-postalar]]></item>
+		<item name="wcf.acp.email.log.button.showDetails"><![CDATA[Detayları Göster]]></item>
+		<item name="wcf.acp.email.log.details"><![CDATA[Detaylar]]></item>
 		<item name="wcf.acp.email.log.messageId"><![CDATA[Mesaj-ID]]></item>
 		<item name="wcf.acp.email.log.status"><![CDATA[Durum]]></item>
 		<item name="wcf.acp.email.log.status.discarded"><![CDATA[Atılan]]></item>
@@ -701,7 +712,7 @@
 		<item name="wcf.acp.email.log.status.permanent_failure"><![CDATA[Sonunda Başarısız]]></item>
 		<item name="wcf.acp.email.log.status.success"><![CDATA[Gönderilmiş]]></item>
 		<item name="wcf.acp.email.log.status.transient_failure"><![CDATA[Geçici Arıza]]></item>
-		<item name="wcf.acp.email.log.statusMessage.title"><![CDATA[Durum mesajı]]></item>
+		<item name="wcf.acp.email.log.statusMessage"><![CDATA[Durum Mesajı]]></item>
 		<item name="wcf.acp.email.log.subject"><![CDATA[Konu]]></item>
 		<item name="wcf.acp.email.log.time"><![CDATA[Oluşturuldu]]></item>
 		<item name="wcf.acp.email.smtp.test"><![CDATA[SMTP Bağlantı Testi]]></item>
@@ -797,8 +808,8 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.group.assignment.title.error.tooLong"><![CDATA[Girilen başlık çok uzun. En büyük uzunluk 255 karakterdir.]]></item>
 		<item name="wcf.acp.group.assignment.userGroup"><![CDATA[Kullanıcı Grubu]]></item>
 		<item name="wcf.acp.group.button.choose"><![CDATA[Kullanıcı Grubu Seç]]></item>
-		<item name="wcf.acp.group.button.copy"><![CDATA[Kullanıcı Grubunu Kopyala]]></item>
-		<item name="wcf.acp.group.copy.confirmMessage"><![CDATA[<span class="confirmationObject">{$group->groupName|language|encodeJS}</span> adlı kullanıcı grubunu gerçekten kopyalamak istiyor musunuz?]]></item>
+		<item name="wcf.acp.group.button.copy"><![CDATA[Kopyala]]></item>
+		<item name="wcf.acp.group.copy"><![CDATA[Kullanıcı Grubunu Kopyala]]></item>
 		<item name="wcf.acp.group.copy.copyACLOptions"><![CDATA[Nesne Yetkilerini Kopyala]]></item>
 		<item name="wcf.acp.group.copy.copyACLOptions.description"><![CDATA[Etiket grupları gibi belirli nesneler için ayarlanmış yetkiler aynı zamanda yeni kullanıcı grubu için de ayarlanacak.]]></item>
 		<item name="wcf.acp.group.copy.copyMembers"><![CDATA[Kullanıcıları Kopyala]]></item>
@@ -824,7 +835,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.group.option.admin.configuration.canManageApplication"><![CDATA[Uygulamaları yönetebilir mi?]]></item>
 		<item name="wcf.acp.group.option.admin.configuration.package.canEditServer"><![CDATA[Güncelleme sunucularını düzenleyebilir mi?]]></item>
 		<item name="wcf.acp.group.option.admin.configuration.package.canInstallPackage"><![CDATA[Paketleri yükleyebilir mi?]]></item>
-		<item name="wcf.acp.group.option.admin.configuration.package.canUninstallPackage"><![CDATA[Paketleri kaldırabilir mi?]]></item>
 		<item name="wcf.acp.group.option.admin.configuration.package.canUpdatePackage"><![CDATA[Paketleri güncelleyebilir mi?]]></item>
 		<item name="wcf.acp.group.option.admin.contact.canManageContactForm"><![CDATA[İletişim formunu yönetebilir mi?]]></item>
 		<item name="wcf.acp.group.option.admin.content.article.canContributeArticle"><![CDATA[Makalelere katkı sağlayabilir mi?]]></item>
@@ -971,7 +981,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.group.option.user.page.canDeleteComment"><![CDATA[Kendi yorumlarını silebilir mi?]]></item>
 		<item name="wcf.acp.group.option.user.page.canEditComment"><![CDATA[Kendi yorumlarını düzenleyebilir mi?]]></item>
 		<item name="wcf.acp.group.option.user.profile.aboutMeMaxLength"><![CDATA[Hakkımda bölümü için kullanabileceği karakter uzunluğu?]]></item>
-		<item name="wcf.acp.group.option.user.profile.avatar.allowedFileExtensions"><![CDATA[İzin verilen resim uzantıları?]]></item>
 		<item name="wcf.acp.group.option.user.profile.avatar.canSeeAvatars"><![CDATA[Diğer kullanıcıların profil resmini görebilir mi?]]></item>
 		<item name="wcf.acp.group.option.user.profile.avatar.canUploadAvatar"><![CDATA[Kendi profil resmini yükleyebilir mi?]]></item>
 		<item name="wcf.acp.group.option.user.profile.canChangeEmail"><![CDATA[E-posta adresini değiştirebilir mi?]]></item>
@@ -1055,10 +1064,10 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.label.group.groupName.description"><![CDATA[Başlık, önek etiket grubu ile etkileşimde olan her kullanıcı tarafından görülür.]]></item>
 		<item name="wcf.acp.label.group.list"><![CDATA[Önek Etiket Grupları]]></item>
 		<item name="wcf.acp.label.group.permanentSelection"><![CDATA[Seçilen etiket grubu değiştirilemez ve bu etiket için kalıcıdır.]]></item>
+		<item name="wcf.acp.label.group.showLabels"><![CDATA[Etiketleri Göster]]></item>
 		<item name="wcf.acp.label.label"><![CDATA[Önek Etiketi]]></item>
 		<item name="wcf.acp.label.list"><![CDATA[Önek Etiketleri]]></item>
 		<item name="wcf.acp.label.showOrder.description"><![CDATA[Etiketin kendi etiket grubu içindeki görüntülenme sırasıdır. Eğer bu alanı boş bırakırsanız, etiket en son konuma yerleştirilecektir.]]></item>
-		<item name="wcf.acp.label.sortAfterGroupFiltering"><![CDATA[Eğer etiket listesini sadece belli bir etiket grubu ile süzerseniz, bu gruptaki etiketleri sürükle ve bırakı kullanarak sıralayabilirsiniz.]]></item>
 	</category>
 	<category name="wcf.acp.language">
 		<item name="wcf.acp.language.add"><![CDATA[Dil Ekle]]></item>
@@ -1154,6 +1163,7 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.item.list"><![CDATA[Menü Öğeleri]]></item>
 		<item name="wcf.acp.menu.item.pageObjectID.error.invalid"><![CDATA[ID geçersiz.]]></item>
 		<item name="wcf.acp.menu.item.parentItem"><![CDATA[Alt Menü Öğesi]]></item>
+		<item name="wcf.acp.menu.item.urlParameters"><![CDATA[Ek URL Parametreleri]]></item>
 		<item name="wcf.acp.menu.link.activityPoint"><![CDATA[Etkinlik Puanları]]></item>
 		<item name="wcf.acp.menu.link.ad"><![CDATA[Reklamlar]]></item>
 		<item name="wcf.acp.menu.link.ad.add"><![CDATA[Reklam Ekle]]></item>
@@ -1162,8 +1172,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.application.management"><![CDATA[Uygulamaları Yönet]]></item>
 		<item name="wcf.acp.menu.link.article"><![CDATA[Makaleler]]></item>
 		<item name="wcf.acp.menu.link.article.add"><![CDATA[Makale Ekle]]></item>
-		<item name="wcf.acp.menu.link.article.category.add"><![CDATA[Kategori Ekle]]></item>
-		<item name="wcf.acp.menu.link.article.category.list"><![CDATA[Kategoriler]]></item>
 		<item name="wcf.acp.menu.link.article.list"><![CDATA[Makaleler]]></item>
 		<item name="wcf.acp.menu.link.attachment"><![CDATA[Ek Dosyalar]]></item>
 		<item name="wcf.acp.menu.link.attachment.list"><![CDATA[Ek Dosyalar]]></item>
@@ -1183,7 +1191,9 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.cms.page.add"><![CDATA[Sayfa Ekle]]></item>
 		<item name="wcf.acp.menu.link.cms.page.list"><![CDATA[Sayfalar]]></item>
 		<item name="wcf.acp.menu.link.configuration"><![CDATA[Yapılandırma]]></item>
-		<item name="wcf.acp.menu.link.contact.settings"><![CDATA[İletişim Formu]]></item>
+		<item name="wcf.acp.menu.link.contact"><![CDATA[İletişim Formu]]></item>
+		<item name="wcf.acp.menu.link.contact.options"><![CDATA[Seçenek Alanları]]></item>
+		<item name="wcf.acp.menu.link.contact.recipients"><![CDATA[Alıcı]]></item>
 		<item name="wcf.acp.menu.link.content"><![CDATA[İçerik]]></item>
 		<item name="wcf.acp.menu.link.cronjob"><![CDATA[Dönemsel Görevler]]></item>
 		<item name="wcf.acp.menu.link.cronjob.add"><![CDATA[Dönemsel Görev Ekle]]></item>
@@ -1225,8 +1235,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.maintenance.sitemap"><![CDATA[Site Haritaları]]></item>
 		<item name="wcf.acp.menu.link.management"><![CDATA[Yönetim]]></item>
 		<item name="wcf.acp.menu.link.media"><![CDATA[Medya]]></item>
-		<item name="wcf.acp.menu.link.media.category.add"><![CDATA[Kategori ekle]]></item>
-		<item name="wcf.acp.menu.link.media.category.list"><![CDATA[Kategoriler]]></item>
 		<item name="wcf.acp.menu.link.media.list"><![CDATA[Medya]]></item>
 		<item name="wcf.acp.menu.link.notice"><![CDATA[Bildirimler]]></item>
 		<item name="wcf.acp.menu.link.notice.add"><![CDATA[Bildirim Ekle]]></item>
@@ -1251,8 +1259,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.reactionType.list"><![CDATA[Tepki Türleri]]></item>
 		<item name="wcf.acp.menu.link.smiley"><![CDATA[İfadeler]]></item>
 		<item name="wcf.acp.menu.link.smiley.add"><![CDATA[İfade Ekle]]></item>
-		<item name="wcf.acp.menu.link.smiley.category.add"><![CDATA[İfade Kategorisi Ekle]]></item>
-		<item name="wcf.acp.menu.link.smiley.category.list"><![CDATA[İfade Kategorileri]]></item>
 		<item name="wcf.acp.menu.link.smiley.list"><![CDATA[İfadeler]]></item>
 		<item name="wcf.acp.menu.link.stat"><![CDATA[İstatistikler]]></item>
 		<item name="wcf.acp.menu.link.stat.list"><![CDATA[İstatistikler]]></item>
@@ -1272,8 +1278,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.template.list"><![CDATA[Şablonlar]]></item>
 		<item name="wcf.acp.menu.link.trophy"><![CDATA[Başarımlar]]></item>
 		<item name="wcf.acp.menu.link.trophy.add"><![CDATA[Başarım Ekle]]></item>
-		<item name="wcf.acp.menu.link.trophy.category.add"><![CDATA[Kategori ekle]]></item>
-		<item name="wcf.acp.menu.link.trophy.category.list"><![CDATA[Kategoriler]]></item>
 		<item name="wcf.acp.menu.link.trophy.edit"><![CDATA[Başarımı Düzenle]]></item>
 		<item name="wcf.acp.menu.link.trophy.list"><![CDATA[Başarımlar]]></item>
 		<item name="wcf.acp.menu.link.user"><![CDATA[Kullanıcılar]]></item>
@@ -1284,8 +1288,6 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.user.management"><![CDATA[Kullanıcılar]]></item>
 		<item name="wcf.acp.menu.link.user.option"><![CDATA[Özel Kullanıcı Alanları]]></item>
 		<item name="wcf.acp.menu.link.user.option.add"><![CDATA[Özel Kullanıcı Alanı Ekle]]></item>
-		<item name="wcf.acp.menu.link.user.option.category.add"><![CDATA[Alan Kategorisi Ekle]]></item>
-		<item name="wcf.acp.menu.link.user.option.category.list"><![CDATA[Alan Kategorileri]]></item>
 		<item name="wcf.acp.menu.link.user.option.list"><![CDATA[Özel Kullanıcı Alanlarını Listele]]></item>
 		<item name="wcf.acp.menu.link.user.profileMenu"><![CDATA[Kullanıcı Profili Menüsü]]></item>
 		<item name="wcf.acp.menu.link.user.rank"><![CDATA[Kullanıcı Dereceleri]]></item>
@@ -1297,19 +1299,14 @@ Hata kaydına şu adresten erişebilirsiniz: {link controller='ExceptionLogView'
 		<item name="wcf.acp.menu.link.userTrophy.edit"><![CDATA[Atanan Başarımı düzenleyin]]></item>
 		<item name="wcf.acp.menu.link.userTrophy.list"><![CDATA[Atanmış Başarımlar]]></item>
 		<item name="wcf.acp.menu.list"><![CDATA[Menüler]]></item>
+		<item name="wcf.acp.menu.showItems"><![CDATA[Menü Öğelerini Göster]]></item>
 	</category>
 	<category name="wcf.acp.modificationLog">
 		<item name="wcf.acp.modificationLog.action"><![CDATA[Eylemler]]></item>
-		<item name="wcf.acp.modificationLog.action.all"><![CDATA[Tüm Eylemler]]></item>
 		<item name="wcf.acp.modificationLog.action.allPackageActions"><![CDATA[“{$package->getName()}” kaynaklı tüm eylemler]]></item>
 		<item name="wcf.acp.modificationLog.affectedObject"><![CDATA[Etkilenen Nesne]]></item>
-		<item name="wcf.acp.modificationLog.affectedObject.id"><![CDATA[ID: {@$modificationLog->objectID}]]></item>
 		<item name="wcf.acp.modificationLog.affectedObject.unknown"><![CDATA[(Artık yok)]]></item>
 		<item name="wcf.acp.modificationLog.list"><![CDATA[Global Değişiklik Günlüğü]]></item>
-		<item name="wcf.acp.modificationLog.package.all"><![CDATA[Tüm Kaynaklar]]></item>
-		<item name="wcf.acp.modificationLog.time.afterDate"><![CDATA[Tarihten sonra]]></item>
-		<item name="wcf.acp.modificationLog.time.beforeDate"><![CDATA[Tarihten önce]]></item>
-		<item name="wcf.acp.modificationLog.unsupportedObjectTypes"><![CDATA[Bazı türler şu anda desteklenmemektedir ve satıcı tarafından değişiklik yapılmasını gerektirir.]]></item>
 	</category>
 	<category name="wcf.acp.notice">
 		<item name="wcf.acp.notice.add"><![CDATA[Bildirim Ekle]]></item>
@@ -1407,7 +1404,9 @@ Veritabanı dikkatli bir şekilde korunur, ancak yanlış veya eski girişlerden
 		<item name="wcf.acp.option.category.general.cache"><![CDATA[Önbellek]]></item>
 		<item name="wcf.acp.option.category.general.cache.general"><![CDATA[Genel]]></item>
 		<item name="wcf.acp.option.category.general.cache.redis"><![CDATA[Redis]]></item>
-		<item name="wcf.acp.option.category.general.cache.redis.description"><![CDATA[Redis veri tabanı ve dosya sistemi yükünü azaltmak için sık kullanılan verileri depolamak için makinanın belleğini kullanır. Redis hakkında daha fazla bilgi için tıklayınız <a href="https://redis.io/" class="externalURL">redis.io</a>.]]></item>
+		<item name="wcf.acp.option.category.general.cache.redis.description"><![CDATA[Redis veri tabanı ve dosya sistemi yükünü azaltmak için sık kullanılan verileri depolamak için makinanın belleğini kullanır. Redis hakkında daha fazla bilgi için tıklayınız <a href="https://redis.io/" class="externalURL">redis.io</a>.<br>
+		<br>
+<strong>Uyarı:</strong> Redis desteği gelecekteki bir sürümde kaldırılacak ve dosya sistemi tabanlı önbelleğe geçilmesi önerilir. Dosya sistemi önbelleği, ek bir servis işlemi çalıştırmaya gerek kalmadan aynı yüksek performans seviyesini sağlar.]]></item>
 		<item name="wcf.acp.option.category.general.mail"><![CDATA[E-Postalar]]></item>
 		<item name="wcf.acp.option.category.general.mail.general"><![CDATA[Genel]]></item>
 		<item name="wcf.acp.option.category.general.mail.send"><![CDATA[Gönderme]]></item>
@@ -1547,7 +1546,6 @@ Veritabanı dikkatli bir şekilde korunur, ancak yanlış veya eski girişlerden
 		<item name="wcf.acp.option.google_maps_default_latitude"><![CDATA[Varsayılan Harita Konumu (Enlem)]]></item>
 		<item name="wcf.acp.option.google_maps_default_longitude"><![CDATA[Varsayılan Harita Konumu (Boylam)]]></item>
 		<item name="wcf.acp.option.google_maps_zoom"><![CDATA[Harita Yakınlaştır]]></item>
-		<item name="wcf.acp.option.google_maps_zoom.description"><![CDATA[Varsayılan Harita Yakınlaştırma]]></item>
 		<item name="wcf.acp.option.google_private_key"><![CDATA[Google Uygulama Anahtarı]]></item>
 		<item name="wcf.acp.option.google_public_key"><![CDATA[Google Uygulama Kimliği]]></item>
 		<item name="wcf.acp.option.google_public_key.description"><![CDATA[Client ID ve Client Secret'i <a href="https://code.google.com/apis/console/" class="externalURL">Google</a> bağlantısından edinebilirsiniz. Yönlendirme URL'si: {link controller="GoogleAuth" forceFrontend=true}{/link}]]></item>
@@ -1558,6 +1556,10 @@ Veritabanı dikkatli bir şekilde korunur, ancak yanlış veya eski girişlerden
 		<item name="wcf.acp.option.image_adapter_type.gd"><![CDATA[GD Grafik Kütüphanesi (varsayılan) Kullan]]></item>
 		<item name="wcf.acp.option.image_adapter_type.imagick"><![CDATA[ImageMagick Kullan]]></item>
 		<item name="wcf.acp.option.image_allow_external_source"><![CDATA[Harici sitelerden görüntülere izin ver]]></item>
+		<item name="wcf.acp.option.image_convert_format"><![CDATA[Yüklenen Resimlerin Dosya Formatı]]></item>
+		<item name="wcf.acp.option.image_convert_format.description"><![CDATA[WebP formatı, PNG ve JPEG grafik formatlarına göre daha verimlidir ve dosya boyutunda önemli ölçüde tasarruf sağlayarak karşılaştırılabilir bir kalite sunar. Bu özellik henüz tüm dosya yüklemeleri için mevcut değildir, ancak ekler veya profil resimleri gibi seçili bileşenler zaten desteklenmektedir.]]></item>
+		<item name="wcf.acp.option.image_convert_format.keep"><![CDATA[Değişiklik Yok]]></item>
+		<item name="wcf.acp.option.image_convert_format.webp"><![CDATA[Görüntüleri WebP Formatına Dönüştür]]></item>
 		<item name="wcf.acp.option.image_external_source_whitelist"><![CDATA[Harici sitelerden izin verilen resimler]]></item>
 		<item name="wcf.acp.option.image_external_source_whitelist.description"><![CDATA[Listelenen alanlar engellemeden muaf tutulacaktır. Ana bilgisayar adları yalnızca tam eşleşmelerdir, bir alanın tamamını hariç tutmak için baştaki bir joker karakter kullanılabilir: <kbd>*.example.com</kbd> eşleşmeleri <kbd>example.com</kbd> ve gibi alt alanlar <kbd>foo.example.com</kbd> veya <kbd>www.example.com</kbd>gibi alt alan adlarıyla eşleşir.<br>Her satıra yalnızca bir alan adı girin.]]></item>
 		<item name="wcf.acp.option.image_proxy_enable_prune"><![CDATA[Önbelleğe Alınmış Görüntüleri Düzenli Olarak Kaldırın]]></item>
@@ -1565,6 +1567,8 @@ Veritabanı dikkatli bir şekilde korunur, ancak yanlış veya eski girişlerden
 		<item name="wcf.acp.option.image_proxy_host_whitelist"><![CDATA[Görüntü proxy beyaz listesi]]></item>
 		<item name="wcf.acp.option.image_proxy_host_whitelist.description"><![CDATA[Listelenen alanlar resim proxy'si tarafından işlenmeyecektir, mevcut alan örtük olarak eklenir. Ana bilgisayar adları yalnızca tam eşleşmelerdir, bir alanın tamamını hariç tutmak için baştaki bir joker karakter kullanılabilir: <kbd>*.example.com</kbd> eşleşmeleri <kbd>example.com</kbd> ve gibi alt alanlar <kbd>foo.example.com</kbd> veya <kbd>www.example.com</kbd>gibi alt alan adlarıyla eşleşir.<br>Her satıra yalnızca bir alan adı girin.]]></item>
 		<item name="wcf.acp.option.image_proxy_insecure_only"><![CDATA[Yalnızca güvenli olmayan kaynaklardan gelen resimleri depolayın]]></item>
+		<item name="wcf.acp.option.image_strip_exif"><![CDATA[Görsellerden EXIF ​​Verilerini Kaldır]]></item>
+		<item name="wcf.acp.option.image_strip_exif.description"><![CDATA[EXIF verileri, GPS koordinatları gibi hassas bilgilerin yanı sıra yararlı bilgiler de içerebilen resimlerdeki meta verilerdir. Bu özellik etkinleştirildiğinde, EXIF ​​verileri çıkarılır, veritabanına ayrı olarak kaydedilir ve ardından dosyadan kalıcı olarak silinir. Bu özellik henüz tüm dosya yüklemeleri için mevcut değildir, ancak ekler veya profil resimleri gibi seçili bileşenler zaten desteklenmektedir. PHP için ImageMagick eklentisi gereklidir.]]></item>
 		<item name="wcf.acp.option.internal_hostnames"><![CDATA[Ek dahili etki alanları eklemek ister misin?]]></item>
 		<item name="wcf.acp.option.internal_hostnames.description"><![CDATA[Listelenen alanlar, yüklü uygulamalar tarafından kullanılan alanlara ek olarak dahili alanlar olarak kabul edilecektir. Ana bilgisayar adları yalnızca tam eşleşmelerdir, bir alanın tamamını hariç tutmak için önde gelen bir joker karakter kullanılabilir: <kbd>*.example.com</kbd> gibi <kbd>example.com</kbd> alt alan adlarıyla <kbd>foo.example.com</kbd> veya <kbd>www.example.com</kbd> eşleşir.]]></item>
 		<item name="wcf.acp.option.ip_address_search_engine"><![CDATA[IP Adresleri için Arama Motoru]]></item>
@@ -1692,10 +1696,13 @@ Anında ödeme bildirimleri için bildirim URL'si istendiğinde, lütfen şu ba�
 		<item name="wcf.acp.option.prune_ip_address.description"><![CDATA[Saklanan IP adresleri belirtilen süre sonunda kaldırılacaktır. Devre dışı bırakmak için 0 değerini kullanın.]]></item>
 		<item name="wcf.acp.option.recaptcha_privatekey"><![CDATA[Özel API Anahtarı (reCAPTCHA v2)]]></item>
 		<item name="wcf.acp.option.recaptcha_privatekey_invisible"><![CDATA[Özel API Anahtarı (Görünmez reCAPTCHA)]]></item>
+		<item name="wcf.acp.option.recaptcha_privatekey_v3"><![CDATA[Özel API Anahtarı (reCAPTCHA v3)]]></item>
 		<item name="wcf.acp.option.recaptcha_publickey"><![CDATA[Genel API Anahtarı (reCAPTCHA v2)]]></item>
-		<item name="wcf.acp.option.recaptcha_publickey.description"><![CDATA[<a href="https://www.google.com/recaptcha/admin" class="externalURL">reCAPTCHA</a> internet sitesini ziyaret ederek reCAPTCHA kullanımı için gereken kendi API anahtarınızı talep edebilirsiniz..]]></item>
+		<item name="wcf.acp.option.recaptcha_publickey.description"><![CDATA[<a href="https://www.google.com/recaptcha/admin" class="externalURL">reCAPTCHA</a> internet sitesini ziyaret ederek reCAPTCHA kullanımı için gereken kendi API anahtarınızı talep edebilirsiniz.]]></item>
 		<item name="wcf.acp.option.recaptcha_publickey_invisible"><![CDATA[Genel API Anahtarı (Invisible reCAPTCHA)]]></item>
 		<item name="wcf.acp.option.recaptcha_publickey_invisible.description"><![CDATA[ReCAPTCHA'nın görünmez varyantını kullanmak istiyorsanız, yukarıdaki tuşlara <b> ek olarak </b> anahtarları girin.]]></item>
+		<item name="wcf.acp.option.recaptcha_publickey_v3"><![CDATA[Genel API Anahtarı (reCAPTCHA v3)]]></item>
+		<item name="wcf.acp.option.recaptcha_publickey_v3.description"><![CDATA[<a href="https://www.google.com/recaptcha/admin" class="externalURL">reCAPTCHA website</a> internet sitesini ziyaret ederek reCAPTCHA kullanımı için gereken kendi API anahtarınızı talep edebilirsiniz.]]></item>
 		<item name="wcf.acp.option.register_activation_method"><![CDATA[Üyelik Onaylama Yöntemi]]></item>
 		<item name="wcf.acp.option.register_activation_method.byAdmin"><![CDATA[Sadece yöneticiler kayıtları onaylayabilir]]></item>
 		<item name="wcf.acp.option.register_activation_method.byUser"><![CDATA[Kayıtlar e-posta doğrulaması ile onaylanır]]></item>
@@ -1785,6 +1792,8 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 <li>“WBB=WoltLab Burning Board”</li>
 <li>“GmbH=Gesellschaft mit beschränkter Haftung”</li>
 </ul>]]></item>
+		<item name="wcf.acp.option.url_unfurling_save_images"><![CDATA[Harici bağlantılardan resimleri yükle]]></item>
+		<item name="wcf.acp.option.url_unfurling_save_images.description"><![CDATA[Görselleri <kbd>og:images</kbd> altına kaydedin ve zengin içerikli yerleştirmelerde görüntüleyin.]]></item>
 		<item name="wcf.acp.option.use_page_title_on_landing_page"><![CDATA[Açılış sayfasında, sayfa başlığı kullanılsın mı?]]></item>
 		<item name="wcf.acp.option.user_authentication_failure_expiration"><![CDATA[Kayıt Girdilerini Düşür]]></item>
 		<item name="wcf.acp.option.user_authentication_failure_expiration.description"><![CDATA[Başarısız giriş denemelerinin kayıtları belirlenen gün sayısından sonra otomatik olarak silinecektir. Bu sınırı yükseltmek daha uzun bir kayıt sağlayacakken aynı zamanda artan bir veritabanı alanı kullanımına neden olacaktır.]]></item>
@@ -1935,14 +1944,10 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.package.packageDate"><![CDATA[Paket Tarihi]]></item>
 		<item name="wcf.acp.package.packageDescription.package1"><![CDATA[Harika web siteleri ve topluluklar için tasarlanmış ücretsiz CMS ve web-framework.]]></item>
 		<item name="wcf.acp.package.packageDescription.package4"><![CDATA[Özel forumlar, en iyi yanıtlar ve konu formlarıyla tamamlanan ödüllü forum yazılımı.]]></item>
-		<item name="wcf.acp.package.packageDescription.package5"><![CDATA[Denetlenen Kullanıcı Grupları, kullanıcının bir kullanıcı grubuna katılmak için uygulamalar göndermesine olanak tanır.]]></item>
-		<item name="wcf.acp.package.packageDescription.package6"><![CDATA[Web sitenize site sahibi hakkında bilgilerin yer aldığı yeni bir sayfa ekler. (Bu, Almanca web siteleri için gereklidir.)]]></item>
 		<item name="wcf.acp.package.packageDir.input"><![CDATA[Kurulum Dizini]]></item>
 		<item name="wcf.acp.package.packageDir.notAvailable"><![CDATA[Hedef dizin zaten bir uygulama içeriyor.]]></item>
 		<item name="wcf.acp.package.packageName.package1"><![CDATA[WoltLab Suite Core]]></item>
 		<item name="wcf.acp.package.packageName.package4"><![CDATA[WoltLab Suite Forum]]></item>
-		<item name="wcf.acp.package.packageName.package5"><![CDATA[WoltLab Suite Core: Moderated User Groups]]></item>
-		<item name="wcf.acp.package.packageName.package6"><![CDATA[WoltLab Suite Core: Legal Notice]]></item>
 		<item name="wcf.acp.package.plugin.installed"><![CDATA[Yüklü Paketler]]></item>
 		<item name="wcf.acp.package.plugin.title"><![CDATA[Eklentiler]]></item>
 		<item name="wcf.acp.package.pluginStore.file"><![CDATA[WoltLab® Eklenti Mağazası]]></item>
@@ -2051,6 +2056,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.package.validation.errorCode.3"><![CDATA[“{$packageName}” paket adı beklentileri karşılamıyor ve reddedildi.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.30"><![CDATA[Paketin teslim tarihi belirtilmedi.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.31"><![CDATA[“package.xml” dosyası geçersiz{if $libxmlOutput}: {$libxmlOutput}{/if}.]]></item>
+		<item name="wcf.acp.package.validation.errorCode.32"><![CDATA[“fromversion” ifadesinde önünde sürüm numarası bulunmayan yer tutucu geçersizdir.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.4"><![CDATA[“{$packageVersion}” paket sürümü beklentileri karşılamadı ve reddedildi.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.5"><![CDATA[“{$packageName}” adlı paket geçerli yükleme talimatlarını içermiyor.]]></item>
 		<item name="wcf.acp.package.validation.errorCode.6"><![CDATA[“{$packageName|phrase}” paketi (yüklenmiş sürüm: “{$packageVersion}”) , “{$deliveredPackageVersion}”, sürümüne güncellenmelidir ancak güncellenme desteklenmemektedir.]]></item>
@@ -2116,6 +2122,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 	<category name="wcf.acp.paidSubscription">
 		<item name="wcf.acp.paidSubscription.add"><![CDATA[Abonelik Ekle]]></item>
 		<item name="wcf.acp.paidSubscription.cost"><![CDATA[Fiyat]]></item>
+		<item name="wcf.acp.paidSubscription.currency"><![CDATA[Para birimi]]></item>
 		<item name="wcf.acp.paidSubscription.edit"><![CDATA[Abonelik Düzenle]]></item>
 		<item name="wcf.acp.paidSubscription.error.noPaymentMethods"><![CDATA[Abonelik ekleme esnasında “Desteklenen Ödeme Yöntemleri” için en azından bir adet etkin ödeme yöntemi gerekir.]]></item>
 		<item name="wcf.acp.paidSubscription.excludedSubscriptions"><![CDATA[Hariç Tutulan Abonelikler]]></item>
@@ -2139,6 +2146,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.paidSubscription.transactionLog.logMessage"><![CDATA[İşlem]]></item>
 		<item name="wcf.acp.paidSubscription.transactionLog.logTime"><![CDATA[Tarih]]></item>
 		<item name="wcf.acp.paidSubscription.transactionLog.paymentMethod"><![CDATA[Ödeme Yöntemi]]></item>
+		<item name="wcf.acp.paidSubscription.transactionLog.showTransactionDetails"><![CDATA[Detayları Göster]]></item>
 		<item name="wcf.acp.paidSubscription.transactionLog.transactionDetails"><![CDATA[Ayrıntılar]]></item>
 		<item name="wcf.acp.paidSubscription.transactionLog.transactionID"><![CDATA[Alışveriş-ID]]></item>
 		<item name="wcf.acp.paidSubscription.user.add"><![CDATA[Aboneliği Manuel Ekle]]></item>
@@ -2352,6 +2360,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.pip.menu.identifier.error.notUnique"><![CDATA[Girilen tanımlayıcı zaten başka bir menü tarafından kullanılıyor.]]></item>
 		<item name="wcf.acp.pip.menu.identifier.error.tooFewSegments"><![CDATA[Girilen menü tanımlayıcısı yalnızca {#$segmentCount} segmenti {if $segmentCount > 1}{/if} içerir.]]></item>
 		<item name="wcf.acp.pip.menu.info"><![CDATA[<kbd>menu</kbd> <a href="https://docs.woltlab.com/latest/package/pip/menu/" class="externalURL">geliştirici belgelerde</a> daha fazla bilgi bulabilirsiniz.]]></item>
+		<item name="wcf.acp.pip.menuItem.additionalInternalURL"><![CDATA[Ek dahili URL parametreleri]]></item>
 		<item name="wcf.acp.pip.menuItem.externalURL"><![CDATA[Harici URL]]></item>
 		<item name="wcf.acp.pip.menuItem.externalURL.description"><![CDATA[Menü öğesine tıklandığında, kullanıcı girilen web sitesine yönlendirilir.]]></item>
 		<item name="wcf.acp.pip.menuItem.identifier"><![CDATA[Menü Öğesi Tanımlayıcı]]></item>
@@ -2682,8 +2691,6 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.reactionType.isAssignable"><![CDATA[Kullanıma izin verilsin mi?]]></item>
 		<item name="wcf.acp.reactionType.isAssignable.description"><![CDATA[Bir tepki kullanılamazsa, kullanıcılar tepkiye tepki veremez. Bu seçenek sadece tepkinin gözükmemesine neden olur.]]></item>
 		<item name="wcf.acp.reactionType.isNotAssignable"><![CDATA[Kullanıma izin verme]]></item>
-		<item name="wcf.acp.reactionType.showOrder.description"><![CDATA[Tepki tipi, seçilen tepki tipinden sonra gösterilecektir.]]></item>
-		<item name="wcf.acp.reactionType.type"><![CDATA[Tepki Tipi]]></item>
 	</category>
 	<category name="wcf.acp.rebuildData">
 		<item name="wcf.acp.rebuildData"><![CDATA[Veri Yenile]]></item>
@@ -2714,6 +2721,8 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.rebuildData.wcf_system_worker_SitemapRebuildWorker.description"><![CDATA[Site Haritasını yeniden oluşturur.]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker"><![CDATA[İstatistikleri Yeniden Oluştur]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_StatDailyRebuildDataWorker.description"><![CDATA[İstatistikleri yeniden oluşturur.]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UnfurlUrlRebuildDataWorker"><![CDATA[Zengin gömülü içerikleri güncelle]]></item>
+		<item name="wcf.acp.rebuildData.wcf_system_worker_UnfurlUrlRebuildDataWorker.description"><![CDATA[Creates new rich embeds images.]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker"><![CDATA[Puan Etkinliklerini Yeniden Oluştur]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointItemsRebuildDataWorker.description"><![CDATA[Kullanıcıların puan aldığı aktivite sayısını yeniden hesaplar ve kullanıcı sıralamalarını yeniden oluşturur.]]></item>
 		<item name="wcf.acp.rebuildData.wcf_system_worker_UserActivityPointUpdateEventsWorker"><![CDATA[Aktivite Başına Puanları Yeniden Oluştur]]></item>
@@ -2797,9 +2806,6 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.smiley.add"><![CDATA[İfade Ekle]]></item>
 		<item name="wcf.acp.smiley.aliases"><![CDATA[Alternatif İfade Kodları]]></item>
 		<item name="wcf.acp.smiley.aliases.error.notUnique"><![CDATA[En az bir alternatif ifade kodu zaten başka bir ifade tarafından kullanılmakta]]></item>
-		<item name="wcf.acp.smiley.category.add"><![CDATA[İfade Kategorisi Ekle]]></item>
-		<item name="wcf.acp.smiley.category.edit"><![CDATA[İfade Kategorisi Düzenle]]></item>
-		<item name="wcf.acp.smiley.category.list"><![CDATA[İfade Kategorileri]]></item>
 		<item name="wcf.acp.smiley.categoryID.default"><![CDATA[Varsayılan Kategori]]></item>
 		<item name="wcf.acp.smiley.categoryID.error.invalid"><![CDATA[Seçilen kategori geçersiz.]]></item>
 		<item name="wcf.acp.smiley.edit"><![CDATA[İfade Düzenle]]></item>
@@ -2808,6 +2814,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.smiley.fileUpload.error.noImage"><![CDATA[Yüklenen dosya bir resim dosyası değil.]]></item>
 		<item name="wcf.acp.smiley.fileUpload.error.uploadFailed"><![CDATA[Yükleme esnasında bilinmeyen bir hata oluştu.]]></item>
 		<item name="wcf.acp.smiley.list"><![CDATA[İfadeler]]></item>
+		<item name="wcf.acp.smiley.smiley"><![CDATA[İfade]]></item>
 		<item name="wcf.acp.smiley.smileyCode"><![CDATA[Birincil İfade Kodu]]></item>
 		<item name="wcf.acp.smiley.smileyCode.error.notUnique"><![CDATA[Bu kod zaten başka bir ifade tarafından kullanılıyor.]]></item>
 		<item name="wcf.acp.smiley.smileyFile"><![CDATA[İfade Dosyası]]></item>
@@ -3009,6 +3016,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.systemCheck.php.opcache"><![CDATA[OPcache]]></item>
 		<item name="wcf.acp.systemCheck.php.opcache.broken"><![CDATA[Bozuk – yönetim işlevleri kullanılamıyor]]></item>
 		<item name="wcf.acp.systemCheck.php.opcache.description"><![CDATA[PHP'nin OPcache'i, önceden işlenmiş uygulama kodunu önbelleğe alarak istek işleme performansını artırır. OPcache etkinleştirilirse, uygulama kodu güncellendiğinde önbelleği güvenilir bir şekilde sıfırlayabilmek için <kbd>opcache_reset()</kbd> ve <kbd>opcache_invalidate()</kbd> yönetim fonksiyonlarının mevcut olması gerekir.]]></item>
+		<item name="wcf.acp.systemCheck.php.opcache.saveComments"><![CDATA[Hatalı – gerekli PHP ayarı <kbd>opcache.save_comments</kbd> devre dışı bırakılmış]]></item>
 		<item name="wcf.acp.systemCheck.php.version"><![CDATA[Sürüm]]></item>
 		<item name="wcf.acp.systemCheck.php.version.deprecated"><![CDATA[Kullanılan PHP sürümü oldukça eskidir ve sınırlı desteğe sahiptir, bu sürümle düzgün çalışması garanti edilmez. Modern bir PHP sürümüne ({implode from=$phpVersions[recommended] item=$recommended}{$recommended}{/implode}) geçmeniz şiddetle tavsiye edilir.]]></item>
 		<item name="wcf.acp.systemCheck.php.version.description"><![CDATA[PHP {$phpVersions[minimum]} veya daha yenisi gereklidir, aşağıdaki PHP serileri şiddetle tavsiye edilir: {implode from=$phpVersions[recommended] item=$recommended}{$recommended}{/implode}.]]></item>
@@ -3046,6 +3054,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.template.error.noGroups"><![CDATA[Öncelikle bir <a href="{link controller='TemplateGroupAdd'}{/link}">şablon grubu</a> oluşturmalısınız.]]></item>
 		<item name="wcf.acp.template.group"><![CDATA[Şablon Grubu]]></item>
 		<item name="wcf.acp.template.group.add"><![CDATA[Şablon Grubu Ekle]]></item>
+		<item name="wcf.acp.template.group.button.showTemplates"><![CDATA[Şablonları Göster]]></item>
 		<item name="wcf.acp.template.group.copy"><![CDATA[Şablon Grubunu Kopyala]]></item>
 		<item name="wcf.acp.template.group.default"><![CDATA[Varsayılan Şablonlar]]></item>
 		<item name="wcf.acp.template.group.edit"><![CDATA[Şablon Grubu Düzenle]]></item>
@@ -3103,7 +3112,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 	<category name="wcf.acp.updateServer">
 		<item name="wcf.acp.updateServer.add"><![CDATA[Sunucu Ekle]]></item>
 		<item name="wcf.acp.updateServer.edit"><![CDATA[Sunucu Düzenle]]></item>
-		<item name="wcf.acp.updateServer.errorMessage"><![CDATA[Hata Mesajı]]></item>
+		<item name="wcf.acp.updateServer.isDisabled"><![CDATA[Sunucuyu Devre Dışı Bırak]]></item>
 		<item name="wcf.acp.updateServer.lastErrorMessage"><![CDATA[Son bağlantı girişiminde oluşan hatalar:]]></item>
 		<item name="wcf.acp.updateServer.lastUpdateTime"><![CDATA[Son Erişim]]></item>
 		<item name="wcf.acp.updateServer.list"><![CDATA[Sunucu Güncelle]]></item>
@@ -3120,6 +3129,7 @@ Lütfen <a href="https://manual.woltlab.com/en/url-rewrites/" class="externalURL
 		<item name="wcf.acp.updateServer.serverURL.error.nonStandardPort"><![CDATA[Adres standart olmayan bir bağlantı noktası kullanmamalıdır.]]></item>
 		<item name="wcf.acp.updateServer.serverURL.error.userinfo"><![CDATA[Adres, kimlik bilgileri içeremez.]]></item>
 		<item name="wcf.acp.updateServer.serverURL.error.woltlab"><![CDATA[Resmi sunucular zaten kurulmuş ve doğru şekilde yapılandırılmıştır.]]></item>
+		<item name="wcf.acp.updateServer.showErrorMessage"><![CDATA[Hata Mesajını Göster]]></item>
 		<item name="wcf.acp.updateServer.status"><![CDATA[Durum]]></item>
 	</category>
 	<category name="wcf.acp.user">
@@ -3171,7 +3181,6 @@ tam olarak kullanabilirsiniz.</p>]]></item>
 		<item name="wcf.acp.user.bulkProcessing.sendMail"><![CDATA[Kullanıcılara E-Posta Gönder]]></item>
 		<item name="wcf.acp.user.bulkProcessing.success"><![CDATA[Seçilen işlem çalıştırıldı ve {#$affectedObjectCount} kullanıcı{if $affectedObjectCount != 1}{/if} etkilendi.]]></item>
 		<item name="wcf.acp.user.bulkProcessing.warning"><![CDATA[Dikkat! Toplu işlem, seçili koşulları karşılayan tüm kullanıcılar için başka herhangi bir onay ya da doğrulama olmaksızın aşağıdaki tüm işlemleri çalıştıracaktır!]]></item>
-		<item name="wcf.acp.user.coverPhoto.description"><![CDATA[Kullanıcı profili sayfasına bir kapak fotoğrafı yükleyebilirsiniz.]]></item>
 		<item name="wcf.acp.user.delete"><![CDATA[Kullanıcı(ları) Sil]]></item>
 		<item name="wcf.acp.user.deleteCoverPhoto"><![CDATA[Kapak Fotoğrafını Sil]]></item>
 		<item name="wcf.acp.user.disable"><![CDATA[Etkisizleştir]]></item>
@@ -3219,9 +3228,6 @@ tam olarak kullanabilirsiniz.</p>]]></item>
 		<item name="wcf.acp.user.option.access"><![CDATA[Erişim]]></item>
 		<item name="wcf.acp.user.option.add"><![CDATA[Özel Kullanıcı Alanı Ekle]]></item>
 		<item name="wcf.acp.user.option.askDuringRegistration"><![CDATA[Bu alan kayıt esnasında görünür olacaktır.]]></item>
-		<item name="wcf.acp.user.option.category.add"><![CDATA[Özel Kullanıcı Alan Kategorisi Ekle]]></item>
-		<item name="wcf.acp.user.option.category.edit"><![CDATA[Özel Kullanıcı Alan Kategorisi Düzenle]]></item>
-		<item name="wcf.acp.user.option.category.list"><![CDATA[Özel Kullanıcı Alanı Kategorileri]]></item>
 		<item name="wcf.acp.user.option.category.options"><![CDATA[Alanlar]]></item>
 		<item name="wcf.acp.user.option.defaultValue"><![CDATA[Varsayılan Değer]]></item>
 		<item name="wcf.acp.user.option.defaultValue.description"><![CDATA[İlk düzenlemede önerilen varsayılan seçenek değeri.]]></item>
@@ -3360,7 +3366,10 @@ kayıp şifre formunu [URL:{link controller='LostPassword' isEmail=true}{/link}]
 		<item name="wcf.article.articleViews"><![CDATA[{#$article->views} Görüntülenme{if $article->views != 1}{/if}]]></item>
 		<item name="wcf.article.articles"><![CDATA[Makaleler]]></item>
 		<item name="wcf.article.bbcode.type"><![CDATA[Makale]]></item>
+		<item name="wcf.article.button.publish"><![CDATA[Yayınla]]></item>
+		<item name="wcf.article.button.setCategory"><![CDATA[Kategori belirle]]></item>
 		<item name="wcf.article.button.sort"><![CDATA[Sırala]]></item>
+		<item name="wcf.article.button.unpublish"><![CDATA[Yayını Geri Çek]]></item>
 		<item name="wcf.article.category.delete.sure"><![CDATA[Bu kategoriyi gerçekten silmek istiyor musunuz? Bu kategorinin tüm alt kategorileri bu kategorinin üst kategorisine taşınacaktır. Bu kategorideki makaleler silinecektir.]]></item>
 		<item name="wcf.article.comment"><![CDATA[Makale Yorumu]]></item>
 		<item name="wcf.article.commentResponse"><![CDATA[Makale Yorumunu Cevapla]]></item>
@@ -3368,31 +3377,32 @@ kayıp şifre formunu [URL:{link controller='LostPassword' isEmail=true}{/link}]
 		<item name="wcf.article.convertFromI18n.question"><![CDATA[Bu makale için çoklu dilleri devre dışı bırakmak istediğinizden emin misiniz?]]></item>
 		<item name="wcf.article.convertToI18n.description"><![CDATA[Mevcut içeriklerin diğer tüm dillere kopyalanmasına ve bu maddenin düzenleme geçmişinin silinmesine neden olur.<br><br>Lütfen bu işlemi gerçekleştirmeden önce kaydedilmemiş değişiklikleri kaydedin.]]></item>
 		<item name="wcf.article.convertToI18n.question"><![CDATA[Bu makale için çoklu dil sistemini etkinleştirmek istediğinizden emin misiniz?	]]></item>
-		<item name="wcf.article.like.notification.message"><![CDATA[<strong>{$author}</strong> adlı kullanıcı <strong>{$article->getTitle()}</strong> makalenize ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
-		<item name="wcf.article.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} <strong>{$article->getTitle()}</strong> makaleye ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
+		<item name="wcf.article.like.notification.message"><![CDATA[<strong>{$author}</strong>, <strong>{$article->getTitle()}</strong> başlıklı makalenize {unsafe:$reaction->renderIcon()} ile tepki verdi.]]></item>
+<item name="wcf.article.like.notification.message.stacked"><![CDATA[{unsafe:$authorList}{if $reaction} {unsafe:$reaction->renderIcon()} ile{/if} <strong>{$article->getTitle()}</strong> başlıklı makaleye tepki verdi.]]></item>
 		<item name="wcf.article.like.notification.title"><![CDATA[Makalenize tepki]]></item>
 		<item name="wcf.article.like.notification.title.stacked"><![CDATA[{#$count} kullanıcı makalenize tepki verdi]]></item>
 		<item name="wcf.article.moreArticles"><![CDATA[Daha Fazla Makale]]></item>
 		<item name="wcf.article.nextArticle"><![CDATA[Sonraki Makale]]></item>
 		<item name="wcf.article.previousArticle"><![CDATA[Önceki Makale]]></item>
-		<item name="wcf.article.publicationStatus.0"><![CDATA[Bu Makale henüz yayınlanmamıştır.]]></item>
-		<item name="wcf.article.publicationStatus.2"><![CDATA[Bu akale {@$publicationDate|plainTime} tarihinde yayınlanacak.]]></item>
-		<item name="wcf.article.recentActivity"><![CDATA[{if $article->hasLabels()}<ul class="labelList">{foreach from=$article->getLabels() item=label}<li>{@$label->render()}</li>{/foreach}</ul> {/if}<a href="{$article->getLink()}">{$article->getTitle()}</a> adlı makaleyi oluşturdu.]]></item>
-		<item name="wcf.article.recentActivity.articleComment"><![CDATA[<a href="{$article->getLink()}#comment{$commentID}">{$article->getTitle()}</a> adlı makaleye yorum yaptı.]]></item>
-		<item name="wcf.article.recentActivity.articleCommentResponse"><![CDATA[<a href="{$article->getLink()}#comment{@$commentID}/response{@$responseID}">{$article->getTitle()}</a> adlı makaledeki <a href="{link controller='User' object=$commentAuthor}{/link}">{$commentAuthor->username}</a>'in yorumuna cevap verdi.]]></item>
-		<item name="wcf.article.recentActivity.likedArticle"><![CDATA[<a href="{$article->getLink()}">{$article->getTitle()}</a> adlı makaleye <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> tepkisi verdi.]]></item>
+		<item name="wcf.article.publicationStatus.0"><![CDATA[Bu makale henüz yayımlanmadı.]]></item>
+		<item name="wcf.article.publicationStatus.2"><![CDATA[Bu makale {@$publicationDate|plainTime} tarihinde yayımlanacaktır.]]></item>
+		<item name="wcf.article.recentActivity"><![CDATA[<strong>{$author}</strong>, {if $article->hasLabels()}<ul class="labelList">{foreach from=$article->getLabels() item=label}<li>{unsafe:$label->render()}</li>{/foreach}</ul> {/if}<strong>{$article->getTitle()}</strong> başlıklı makaleyi yazdı.]]></item>
+		<item name="wcf.article.recentActivity.articleComment"><![CDATA[<strong>{$author}</strong>, <strong>{$article->getTitle()}</strong> başlıklı makaleye yorum yaptı.]]></item>
+		<item name="wcf.article.recentActivity.articleCommentResponse"><![CDATA[<strong>{$author}</strong>, <strong>{$article->getTitle()}</strong> başlıklı makalede <strong>{$commentAuthor->username}</strong> adlı kullanıcının yorumuna yanıt verdi.]]></item>
+		<item name="wcf.article.recentActivity.likedArticle"><![CDATA[<strong>{$author}</strong>, <strong>{$article->getTitle()}</strong> başlıklı makaleye <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> ile tepki verdi.]]></item>
 		<item name="wcf.article.relatedArticles"><![CDATA[İlişkili Makaleler]]></item>
 		<item name="wcf.article.search"><![CDATA[Makalelerde Ara]]></item>
 		<item name="wcf.article.search.error.noResults"><![CDATA[Arama sonuç vermedi.]]></item>
 		<item name="wcf.article.search.error.tooShort"><![CDATA[Girilen anahtar kelime çok kısa.]]></item>
 		<item name="wcf.article.search.name"><![CDATA[Başlıkları Ara]]></item>
 		<item name="wcf.article.search.results"><![CDATA[Arama Sonuçları]]></item>
-		<item name="wcf.article.showArticlesWritten"><![CDATA[{$user->username} tarafından yazılan makaleler]]></item>
 		<item name="wcf.article.sortField.comments"><![CDATA[Yorumlar]]></item>
 		<item name="wcf.article.sortField.cumulativeLikes"><![CDATA[Tepkiler]]></item>
 		<item name="wcf.article.sortField.random"><![CDATA[Rastgele]]></item>
 		<item name="wcf.article.sortField.time"><![CDATA[Tarih]]></item>
 		<item name="wcf.article.sortField.views"><![CDATA[Görüntülenme]]></item>
+		<item name="wcf.article.unreadArticles"><![CDATA[Okunmamış Makaleler]]></item>
+		<item name="wcf.article.watchedArticles"><![CDATA[Abone Olunan Makaleler]]></item>
 	</category>
 	<category name="wcf.attachment">
 		<item name="wcf.attachment.attachments"><![CDATA[Ek Dosyalar]]></item>
@@ -3413,8 +3423,10 @@ kayıp şifre formunu [URL:{link controller='LostPassword' isEmail=true}{/link}]
 		<item name="wcf.attachment.insertAll"><![CDATA[Tümüne yerleştir]]></item>
 		<item name="wcf.attachment.insertFull"><![CDATA[Tam Boyutlu Resim]]></item>
 		<item name="wcf.attachment.insertThumbnail"><![CDATA[Küçük Resim]]></item>
+		<item name="wcf.attachment.inserted"><![CDATA[Eklendi]]></item>
 		<item name="wcf.attachment.lastDownloadTime"><![CDATA[Son İndirme]]></item>
 		<item name="wcf.attachment.moreOptions"><![CDATA[Daha Fazla Seçenek]]></item>
+		<item name="wcf.attachment.preview"><![CDATA[Önizleme]]></item>
 		<item name="wcf.attachment.upload.error.http413"><![CDATA[Dosya boyutu, web sunucusunun maksimum istek boyutunu aşıyor (HTTP durum kodu 413).]]></item>
 		<item name="wcf.attachment.upload.error.invalidExtension"><![CDATA[Geçersiz dosya uzantısı.]]></item>
 		<item name="wcf.attachment.upload.error.reachedLimit"><![CDATA[Dosya sayısı sınırına ulaştınız.]]></item>
@@ -3440,6 +3452,7 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.bbcode.quote.edit.author"><![CDATA[Yazar]]></item>
 		<item name="wcf.bbcode.quote.edit.link"><![CDATA[Kaynak]]></item>
 		<item name="wcf.bbcode.quote.insert"><![CDATA[Alıntı Gir]]></item>
+		<item name="wcf.bbcode.quote.messageTab"><![CDATA[Alıntılar]]></item>
 		<item name="wcf.bbcode.quote.simplified"><![CDATA[[…]]]></item>
 		<item name="wcf.bbcode.quote.title"><![CDATA[{$quoteAuthor} yazdı:]]></item>
 		<item name="wcf.bbcode.spoiler.hide"><![CDATA[Spoiler Gizle]]></item>
@@ -3464,6 +3477,9 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 	</category>
 	<category name="wcf.captcha.recaptchaV2">
 		<item name="wcf.captcha.recaptchaV2.error.recaptchaString.false"><![CDATA[Lütfen robot olmadığınızı doğrulayın.]]></item>
+	</category>
+	<category name="wcf.captcha.recaptchaV3">
+		<item name="wcf.captcha.recaptchaV3.error.recaptchaString.false"><![CDATA[Kontrol işlemi başarısız oldu, lütfen formu yeniden gönderin.]]></item>
 	</category>
 	<category name="wcf.category">
 		<item name="wcf.category.add"><![CDATA[Kategori Ekle]]></item>
@@ -3490,6 +3506,7 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.ckeditor.marker.warning"><![CDATA[	Sarı Metin İşaretleyici]]></item>
 		<item name="wcf.ckeditor.quote"><![CDATA[Alıntı]]></item>
 		<item name="wcf.ckeditor.quote.author"><![CDATA[Kaynak]]></item>
+		<item name="wcf.ckeditor.quote.remove"><![CDATA[Alıntıyı Kaldır]]></item>
 		<item name="wcf.ckeditor.quoteFrom"><![CDATA[%0 adlı kullanıcıdan alıntı]]></item>
 	</category>
 	<category name="wcf.cli">
@@ -3508,26 +3525,12 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.cli.worker.threads.windows"><![CDATA[--Konular kullanarak paralel işleme Windows'ta kullanılamaz.]]></item>
 	</category>
 	<category name="wcf.clipboard">
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.delete"><![CDATA[Sil ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.delete.confirmMessage"><![CDATA[{#$count} makalesini{if $count != 1}{/if} gerçekten silmek istiyor musunuz?]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.publish"><![CDATA[Yayınla ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.restore"><![CDATA[Onarmak ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.setCategory"><![CDATA[Kategori Ayarla ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.trash"><![CDATA[Çöp kutusuna taşıyın ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.trash.confirmMessage"><![CDATA[{#$count} Makaleyi{if $count != 1}{/if} çöp kutusuna gerçekten taşımak istiyor musunuz?]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.article.unpublish"><![CDATA[Yayını Geri Çekme ({#$count})]]></item>
+		<item name="wcf.clipboard.button.noInteractionsAvailable"><![CDATA[Yapılabilecek işlem yok.]]></item>
+		<item name="wcf.clipboard.button.numberOfSelectedItems"><![CDATA[{#$numberOfSelectedItems} Seçildi]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.media.delete"><![CDATA[Sil ({#$count})]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.media.delete.confirmMessage"><![CDATA[{#$count} dosyayı{if $count != 1}{/if} gerçekten silmek istiyor musunuz?]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.media.insert"><![CDATA[Ekle ({#$count})]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.media.setCategory"><![CDATA[Kategoriyi Düzenle ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.assignUserByClipboard"><![CDATA[Atanan Kullanıcıyı Değiştir ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.enableContent"><![CDATA[İçeriği Onayla ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeActivationContent"><![CDATA[Bekleyen İçeriği Sil ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReport"><![CDATA[Raporu Kapat ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.moderation.queue.removeReportContent"><![CDATA[Bildirilen İçeriği Sil ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete"><![CDATA[Sil ({#$count})]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.tag.delete.confirmMessage"><![CDATA[{#$count} etiketi{if $count != 1}{/if} gerçekten silmek istiyor musunuz?]]></item>
-		<item name="wcf.clipboard.item.com.woltlab.wcf.tag.setAsSynonyms"><![CDATA[Eş Anlamlı Olarak Ayarla ({#$count})]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.user.assignToGroup"><![CDATA[Kullanıcı grubuna ekle]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.user.ban"><![CDATA[Yasakla ({#$count})]]></item>
 		<item name="wcf.clipboard.item.com.woltlab.wcf.user.confirmEmail"><![CDATA[E-posta Adresini Onaylayın ({#$count})]]></item>
@@ -3546,10 +3549,7 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.clipboard.item.mark"><![CDATA[Nesneyi İşaretle]]></item>
 		<item name="wcf.clipboard.item.markAll"><![CDATA[Tüm Nesneleri İşaretle]]></item>
 		<item name="wcf.clipboard.item.unmarkAll"><![CDATA[İşaretleri Kaldır]]></item>
-		<item name="wcf.clipboard.label.com.woltlab.wcf.article.marked"><![CDATA[{if $count == 1}Bir Yazı{else}{#$count} Yazılar{/if}]]></item>
 		<item name="wcf.clipboard.label.com.woltlab.wcf.media.marked"><![CDATA[{if $count == 1}Bir Dosya{else}{#$count} Dosyalar{/if}]]></item>
-		<item name="wcf.clipboard.label.com.woltlab.wcf.moderation.queue.marked"><![CDATA[{plural value=$count 1='One Moderation Item' other='# Moderation Items'}]]></item>
-		<item name="wcf.clipboard.label.com.woltlab.wcf.tag.marked"><![CDATA[{if $count == 1}Bir Etiket{else}{#$count} Etiketler{/if}]]></item>
 		<item name="wcf.clipboard.label.com.woltlab.wcf.user.marked"><![CDATA[{if $count == 1}Bir Kullanıcı{else}{#$count} Kullanıcılar{/if}]]></item>
 	</category>
 	<category name="wcf.comment">
@@ -3578,15 +3578,14 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 		<item name="wcf.condition.timestamp.error.invalidStart"><![CDATA[Başlangıç tarihi geçerli değil.]]></item>
 	</category>
 	<category name="wcf.contact">
-		<item name="wcf.contact.confirmPrivacyPolicy"><![CDATA[<a href="{page}com.woltlab.wcf.PrivacyPolicy{/page}">Gizlilik Politikasını</a> okudum ve açıkça kabul ediyorum. <span class="customOptionRequired">*</span>]]></item>
-		<item name="wcf.contact.data"><![CDATA[Mesaj İçeriği]]></item>
+		<item name="wcf.contact.attachments"><![CDATA[Ekler]]></item>
 		<item name="wcf.contact.mail.html"><![CDATA[<h2>Merhaba,</h2>
 
-<p>„{@$name}“ iletişim formu aracılığıyla size <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> üzerinden bir mesaj gönderdi:</p>
+<p>“{$name}” iletişim formu aracılığıyla size <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a> üzerinden bir mesaj gönderdi:</p>
 <p><br></p>
 <p>E-posta adresi: <a href="mailto:{$emailAddress}">{$emailAddress}</a></p>
 {foreach from=$options item=option}
-<p><strong>{@$option['title']}:</strong> {@$option['htmlValue']}</p>
+<p><strong>{unsafe:$option['title']}:</strong> {unsafe:$option['htmlValue']}</p>
 {/foreach}
 {if !$attachments|empty}
 <p><br></p>
@@ -3600,20 +3599,19 @@ En büyük dosya boyutu: {@$attachmentHandler->getMaxSize()|filesize}<br>
 <p><small>(Ekler, {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}bir gün{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} günler{/if} sonra kaldırılır..)</small></p>
 {/if}
 {/if}]]></item>
-		<item name="wcf.contact.mail.plaintext"><![CDATA[Hello,
+		<item name="wcf.contact.mail.plaintext"><![CDATA[Merhaba,
 
-„{@$name}“ iletişim formu aracılığıyla size  {@PAGE_TITLE|phrase} üzerinden bir mesaj gönderdi:
+“{unsafe:$name}” iletişim formu aracılığıyla size {unsafe:PAGE_TITLE|phrase} üzerinden bir mesaj gönderdi:
 
-E-Posta: {@$emailAddress} {* bu satır boşlukla bitiyor *}
+E-Posta: {unsafe:$emailAddress} {* bu satır boşlukla bitiyor *}
 {foreach from=$options item=option}
-{@$option['title']}: {if !$option['isMessage']}{@$option['value']}{else} {* bu satır boşlukla bitiyor *}
-{@$option['value']}{/if} {* bu satır boşlukla bitiyor *}
+{unsafe:$option['title']}: {unsafe:$option['value']} {* bu satır boşlukla bitiyor *}
 {/foreach}
 {if !$attachments|empty}
 
-Ekler:
+Attachments:
 {foreach from=$attachments item=attachment}
-- {@$attachment->getTitle()} [URL: {@$attachment->getLink()} ]
+- {unsafe:$attachment->getTitle()} [URL: {unsafe:$attachment->getLink()} ]
 {/foreach}
 {if CONTACT_FORM_PRUNE_ATTACHMENTS}(Ekler {if CONTACT_FORM_PRUNE_ATTACHMENTS == 1}bir gün{else}{CONTACT_FORM_PRUNE_ATTACHMENTS} günler{/if} sonra kaldırılır.){/if} {* bu satır boşlukla bitiyor *}
 {/if}]]></item>
@@ -3625,7 +3623,6 @@ Ekler:
 		<item name="wcf.contact.recipientID"><![CDATA[Alıcı]]></item>
 		<item name="wcf.contact.sender"><![CDATA[Gönderen]]></item>
 		<item name="wcf.contact.sender.information"><![CDATA[Gönderici Bilgileri]]></item>
-		<item name="wcf.contact.success"><![CDATA[Mesaj gönderildi.]]></item>
 	</category>
 	<category name="wcf.date">
 		<item name="wcf.date.dateFormat"><![CDATA[j M Y]]></item>
@@ -3841,6 +3838,8 @@ Ekler:
 		<item name="wcf.dialog.confirmation.cannotBeUndone"><![CDATA[Bu süreç geri alınamaz.]]></item>
 		<item name="wcf.dialog.confirmation.delete"><![CDATA[Silmek istediğinize emin misiniz? “{$title}”?]]></item>
 		<item name="wcf.dialog.confirmation.delete.indeterminate"><![CDATA[Bunu silmek istediğine emin misin?]]></item>
+		<item name="wcf.dialog.confirmation.disable"><![CDATA[“{$title}” öğesini devre dışı bırakmak istiyor musunuz?]]></item>
+		<item name="wcf.dialog.confirmation.disable.indeterminate"><![CDATA[Bunu devre dışı bırakmak istiyor musunuz?]]></item>
 		<item name="wcf.dialog.confirmation.reason"><![CDATA[Neden]]></item>
 		<item name="wcf.dialog.confirmation.reason.optional"><![CDATA[Neden (isteğe bağlı)]]></item>
 		<item name="wcf.dialog.confirmation.restore"><![CDATA[Geri yüklemek ister misin? “{$title}”?]]></item>
@@ -3967,6 +3966,36 @@ Ekler:
 		<item name="wcf.editor.table.insertTable"><![CDATA[Tablo ekle]]></item>
 		<item name="wcf.editor.table.rows"><![CDATA[Satırlar]]></item>
 	</category>
+	<category name="wcf.fancybox">
+		<item name="wcf.fancybox.close"><![CDATA[Kapat]]></item>
+		<item name="wcf.fancybox.download"><![CDATA[İndir]]></item>
+		<item name="wcf.fancybox.elementNotFound"><![CDATA[HTML öğesi bulunamadı]]></item>
+		<item name="wcf.fancybox.error"><![CDATA[Bir hata oluştu.]]></item>
+		<item name="wcf.fancybox.flipX"><![CDATA[Yatay çevir]]></item>
+		<item name="wcf.fancybox.flipY"><![CDATA[Dikey çevir]]></item>
+		<item name="wcf.fancybox.goto"><![CDATA[#%d sayfasına git]]></item>
+		<item name="wcf.fancybox.iframeError"><![CDATA[Sayfa yüklenirken hata oluştu]]></item>
+		<item name="wcf.fancybox.imageError"><![CDATA[Bu görsel yüklenemedi.]]></item>
+		<item name="wcf.fancybox.iterateZoom"><![CDATA[Yakınlaştırma düzeyini değiştir]]></item>
+		<item name="wcf.fancybox.modal"><![CDATA[Bu pencereyi ESC tuşu ile kapatabilirsiniz]]></item>
+		<item name="wcf.fancybox.moveDown"><![CDATA[Aşağı taşı]]></item>
+		<item name="wcf.fancybox.moveLeft"><![CDATA[Sola taşı]]></item>
+		<item name="wcf.fancybox.moveRight"><![CDATA[Sağa taşı]]></item>
+		<item name="wcf.fancybox.moveUp"><![CDATA[Yukarı taşı]]></item>
+		<item name="wcf.fancybox.next"><![CDATA[Sonraki]]></item>
+		<item name="wcf.fancybox.prev"><![CDATA[Önceki]]></item>
+		<item name="wcf.fancybox.reset"><![CDATA[Sıfırla]]></item>
+		<item name="wcf.fancybox.rotateCcw"><![CDATA[Saat yönünün tersine döndür]]></item>
+		<item name="wcf.fancybox.rotateCw"><![CDATA[Saat yönünde döndür]]></item>
+		<item name="wcf.fancybox.toggle1to1"><![CDATA[Yakınlaştırma düzeyini değiştir]]></item>
+		<item name="wcf.fancybox.toggleAutoplay"><![CDATA[Slayt gösterisini aç/kapat]]></item>
+		<item name="wcf.fancybox.toggleExpand"><![CDATA[Tam boyut modunu aç/kapat]]></item>
+		<item name="wcf.fancybox.toggleFull"><![CDATA[Yakınlaştırma düzeyini değiştir]]></item>
+		<item name="wcf.fancybox.toggleFullscreen"><![CDATA[Tam ekran modunu aç/kapat]]></item>
+		<item name="wcf.fancybox.toggleThumbs"><![CDATA[Küçük resimleri aç/kapat]]></item>
+		<item name="wcf.fancybox.zoomIn"><![CDATA[Yakınlaştır]]></item>
+		<item name="wcf.fancybox.zoomOut"><![CDATA[Uzaklaştır]]></item>
+	</category>
 	<category name="wcf.form">
 		<item name="wcf.form.field.className"><![CDATA[Sınıf]]></item>
 		<item name="wcf.form.field.className.description.interface"><![CDATA[Girilen sınıf (baştaki ters eğik çizgi olmadan) <kbd>{$interface}</kbd>arabirimini uygulamalıdır.]]></item>
@@ -3996,6 +4025,7 @@ Ekler:
 		<item name="wcf.form.field.showOrder.firstPosition"><![CDATA[(ilk pozisyon)]]></item>
 		<item name="wcf.form.field.text.error.maximumLength"><![CDATA[“{$language}” dili için girilen yazı {if $language|isset}{/if}{#$length} karakter {if $length !== 1}ler{/if} içerir, {#$maximumLength} {if $maximumLength !== 1}{/if} karakterden fazla olamaz.]]></item>
 		<item name="wcf.form.field.text.error.minimumLength"><![CDATA[“{$language}” dili için girilen yazı {if $language|isset}{/if}{#$length} karakter {if $length !== 1}ler{/if} içerir, {#$minimumLength} {if $minimumLength !== 1}{/if} karakterden az olamaz.]]></item>
+		<item name="wcf.form.field.upload.error.fileExtension"><![CDATA[“{$filename}” dosyasının dosya uzantısı geçersiz. İzin verilen uzantılar: {implode from=$allowedFileExtensions item=extension}{$extension}{/implode}.]]></item>
 		<item name="wcf.form.field.upload.error.maximum"><![CDATA[Maksimum {if $maximum > 1}{#$maximum} dosya{else}bir dosya{/if} yükleyebilirsiniz.]]></item>
 		<item name="wcf.form.field.upload.error.maximumFilesize"><![CDATA[“{$file->getFilename()}” dosyasının maksimum boyutu {$maximumFilesize|filesize} olabilir.]]></item>
 		<item name="wcf.form.field.upload.error.maximumImageHeight"><![CDATA[“{$file->getFilename()}” dosyasının maksimum yüksekliği {#$maximumImageHeight} piksel olabilir.]]></item>
@@ -4012,6 +4042,35 @@ Ekler:
 		<item name="wcf.form.field.username.error.invalid"><![CDATA[Girilen kullanıcı adı geçersiz.]]></item>
 		<item name="wcf.form.field.username.error.notUnique"><![CDATA[Girilen kullanıcı adı zaten kullanılıyor.]]></item>
 		<item name="wcf.form.fieldValidator.dotSeparatedString.error.invalidSegments"><![CDATA[Aşağıdaki segmentler geçersiz: {implode from=$invalidSegments key=segmentNumber item=segment}{if $segment !== ''}<kbd>{$segment}</kbd>{else}(empty){/if} (segment {#$segmentNumber + 1}){/implode}.]]></item>
+		<item name="wcf.form.option.boolean"><![CDATA[Evet/Hayır]]></item>
+		<item name="wcf.form.option.checkboxes"><![CDATA[Çoklu seçim]]></item>
+		<item name="wcf.form.option.currency"><![CDATA[Para birimi]]></item>
+		<item name="wcf.form.option.date"><![CDATA[Tarih]]></item>
+		<item name="wcf.form.option.email"><![CDATA[E-posta adresi]]></item>
+		<item name="wcf.form.option.float"><![CDATA[Ondalık sayı]]></item>
+		<item name="wcf.form.option.icon"><![CDATA[Simgeler]]></item>
+		<item name="wcf.form.option.integer"><![CDATA[Tamsayı]]></item>
+		<item name="wcf.form.option.optionType"><![CDATA[Seçenek Türü]]></item>
+		<item name="wcf.form.option.radioButton"><![CDATA[Tekli seçim]]></item>
+		<item name="wcf.form.option.rating"><![CDATA[Değerlendirme]]></item>
+		<item name="wcf.form.option.select"><![CDATA[Tekli seçim]]></item>
+		<item name="wcf.form.option.shared.currency"><![CDATA[Para birimi]]></item>
+		<item name="wcf.form.option.shared.defaultValue"><![CDATA[Varsayılan değer]]></item>
+		<item name="wcf.form.option.shared.maxLength"><![CDATA[Maksimum metin uzunluğu]]></item>
+		<item name="wcf.form.option.shared.maxValue"><![CDATA[Maksimum]]></item>
+		<item name="wcf.form.option.shared.minValue"><![CDATA[Minimum]]></item>
+		<item name="wcf.form.option.shared.required"><![CDATA[Bu alan zorunludur]]></item>
+		<item name="wcf.form.option.shared.selectOptions"><![CDATA[Seçenekler]]></item>
+		<item name="wcf.form.option.shared.unit"><![CDATA[Birim]]></item>
+		<item name="wcf.form.option.shared.urlLinkText"><![CDATA[Bağlantı metni]]></item>
+		<item name="wcf.form.option.sourceCode"><![CDATA[Kaynak kodu]]></item>
+		<item name="wcf.form.option.text"><![CDATA[Kısa metin]]></item>
+		<item name="wcf.form.option.textarea"><![CDATA[Çok satırlı metin]]></item>
+		<item name="wcf.form.option.url"><![CDATA[Bağlantı]]></item>
+		<item name="wcf.form.option.wysiwyg"><![CDATA[WYSIWYG]]></item>
+		<item name="wcf.form.selectOptions.addItem"><![CDATA[Başka bir seçenek ekle]]></item>
+		<item name="wcf.form.selectOptions.key"><![CDATA[Anahtar]]></item>
+		<item name="wcf.form.selectOptions.value"><![CDATA[Değer]]></item>
 	</category>
 	<category name="wcf.global">
 		<item name="wcf.global.acp"><![CDATA[Kontrol Paneli]]></item>
@@ -4037,6 +4096,7 @@ Ekler:
 		<item name="wcf.global.button.markAllAsRead"><![CDATA[Tümünü Okundu Olarak İşaretle]]></item>
 		<item name="wcf.global.button.markAsRead"><![CDATA[Okundu olarak işaretle]]></item>
 		<item name="wcf.global.button.more"><![CDATA[Daha]]></item>
+		<item name="wcf.global.button.moreOptions"><![CDATA[Daha Fazla Seçenek]]></item>
 		<item name="wcf.global.button.next"><![CDATA[İleri »]]></item>
 		<item name="wcf.global.button.preview"><![CDATA[Önizleme]]></item>
 		<item name="wcf.global.button.readMore"><![CDATA[Daha Çok Oku]]></item>
@@ -4060,6 +4120,7 @@ Ekler:
 		<item name="wcf.global.button.upload"><![CDATA[Yükle]]></item>
 		<item name="wcf.global.categories"><![CDATA[Kategoriler]]></item>
 		<item name="wcf.global.category"><![CDATA[Kategori]]></item>
+		<item name="wcf.global.changeShowOrder"><![CDATA[Görüntüleme Sırasını Değiştir]]></item>
 		<item name="wcf.global.comments"><![CDATA[Yorumlar]]></item>
 		<item name="wcf.global.confirmation.cancel"><![CDATA[İptal]]></item>
 		<item name="wcf.global.confirmation.confirm"><![CDATA[Tamam]]></item>
@@ -4120,6 +4181,7 @@ Ekler:
 		<item name="wcf.global.select"><![CDATA[Seç]]></item>
 		<item name="wcf.global.settings"><![CDATA[Ayarlar]]></item>
 		<item name="wcf.global.showOrder"><![CDATA[Görüntüleme Düzeni]]></item>
+		<item name="wcf.global.snackbar.progress"><![CDATA[{$label}: {#$iteration} / {#$length}]]></item>
 		<item name="wcf.global.sortOrder.ascending"><![CDATA[Artan]]></item>
 		<item name="wcf.global.sortOrder.descending"><![CDATA[Azalan]]></item>
 		<item name="wcf.global.sorting"><![CDATA[Sıralama]]></item>
@@ -4129,6 +4191,7 @@ Ekler:
 		<item name="wcf.global.success"><![CDATA[İşlem başarıyla tamamlandı.]]></item>
 		<item name="wcf.global.success.add"><![CDATA[Girdi kaydedildi.]]></item>
 		<item name="wcf.global.success.add.editCreatedObject"><![CDATA[Şimdi başka bir tane oluşturabilir veya <a href="{$objectEditLink}">önceden oluşturulmuş girişi düzenleyebilirsiniz</a>.]]></item>
+		<item name="wcf.global.success.delete"><![CDATA[İlgili kayıt silindi.]]></item>
 		<item name="wcf.global.success.edit"><![CDATA[Değişiklikleriniz kaydedildi.]]></item>
 		<item name="wcf.global.thousandsSeparator"><![CDATA[,]]></item>
 		<item name="wcf.global.title"><![CDATA[Başlık]]></item>
@@ -4142,6 +4205,7 @@ Ekler:
 		<item name="wcf.global.form.error"><![CDATA[Lütfen aşağıda hata veren alanları düzeltiniz.]]></item>
 		<item name="wcf.global.form.error.empty"><![CDATA[Lütfen bu alanı doldurun.]]></item>
 		<item name="wcf.global.form.error.greaterThan"><![CDATA[Girilen değer, bu değerden büyük olmalı: {#$greaterThan}.]]></item>
+		<item name="wcf.global.form.error.invalidCssClassName"><![CDATA[Girilen değer geçerli bir CSS sınıfı değil.]]></item>
 		<item name="wcf.global.form.error.lessThan"><![CDATA[Girilen değer, bu değerden küçük olmalı: {#$lessThan}.]]></item>
 		<item name="wcf.global.form.error.multilingual"><![CDATA[Lütfen tüm diller için bu alanı doldurun.]]></item>
 		<item name="wcf.global.form.error.noValidSelection"><![CDATA[Mevcut seçeneklerden birini seçiniz.]]></item>
@@ -4166,18 +4230,13 @@ Ekler:
 		<item name="wcf.image.coverPhoto.upload.error.minHeight"><![CDATA[Görüntü çok küçük.]]></item>
 		<item name="wcf.image.coverPhoto.upload.error.minWidth"><![CDATA[Görüntü çok küçük.]]></item>
 		<item name="wcf.image.coverPhoto.upload.error.uploadFailed"><![CDATA[Yükleme sırasında bilinmeyen bir hata oluştu.]]></item>
-		<item name="wcf.image.coverPhoto.upload.limits"><![CDATA[Minimum Resim Boyutu: {$coverPhotoDimensions.min.width}×{$coverPhotoDimensions.min.height} piksel<br>Maksimum Resim Boyutu: {$coverPhotoDimensions.max.width}×{$coverPhotoDimensions.max.height} piksel<br>İzin verilen dosya uzantıları: gif, jpg, jpeg, png, webp<br>Maksimum Dosya Boyutu: {$__wcf->session->getPermission($coverPhotoPermissionMaxSize)|filesize}]]></item>
+		<item name="wcf.image.coverPhoto.upload.limits"><![CDATA[Minimum görsel boyutu: {$coverPhotoDimensions.min.width} × {$coverPhotoDimensions.min.height} piksel<br>
+Maksimum görsel boyutu: {$coverPhotoDimensions.max.width} × {$coverPhotoDimensions.max.height} piksel<br>
+Maksimum dosya boyutu: {$__wcf->session->getPermission($coverPhotoPermissionMaxSize)|filesize}<br>
+İzin verilen uzantılar: gif, jpg, jpeg, png, webp]]></item>
 	</category>
 	<category name="wcf.imageViewer">
-		<item name="wcf.imageViewer.button.enlarge"><![CDATA[Tam Ekran Modu]]></item>
-		<item name="wcf.imageViewer.button.full"><![CDATA[Kaynak Resmi Gör]]></item>
 		<item name="wcf.imageViewer.button.openSlideshow"><![CDATA[Resim Gösterisi]]></item>
-		<item name="wcf.imageViewer.close"><![CDATA[Kapat]]></item>
-		<item name="wcf.imageViewer.counter"><![CDATA[{literal}Resim {x} , Toplam {y}{/literal}]]></item>
-		<item name="wcf.imageViewer.enlarge"><![CDATA[Tüm Resmi Göster]]></item>
-		<item name="wcf.imageViewer.next"><![CDATA[Sonraki Resim]]></item>
-		<item name="wcf.imageViewer.previous"><![CDATA[Önceki Resim]]></item>
-		<item name="wcf.imageViewer.seriesIndex"><![CDATA[{literal}{x}/{y}{/literal}]]></item>
 	</category>
 	<category name="wcf.label">
 		<item name="wcf.label.all"><![CDATA[Hepsi]]></item>
@@ -4326,16 +4385,13 @@ Ekler:
 		<item name="wcf.message.error.editorAlreadyInUse"><![CDATA[Editör zaten kullanımda, devam etmeden önce düzenlemeyi bitirin.]]></item>
 		<item name="wcf.message.error.tooLong"><![CDATA[Mesaj çok uzun, uzunluğu {#$maxTextLength} karakter altında olmalı.]]></item>
 		<item name="wcf.message.new"><![CDATA[YENİ]]></item>
+		<item name="wcf.message.quote.deleteAllQuotes"><![CDATA[Tüm Alıntıları Sil]]></item>
 		<item name="wcf.message.quote.insertAllQuotes"><![CDATA[Tüm Alıntıları Ekle]]></item>
 		<item name="wcf.message.quote.insertQuote"><![CDATA[Alıntı Ekle]]></item>
-		<item name="wcf.message.quote.insertSelectedQuotes"><![CDATA[İşaretli Alıntıları Ekle]]></item>
-		<item name="wcf.message.quote.manageQuotes"><![CDATA[Alıntıları Yönet]]></item>
 		<item name="wcf.message.quote.quoteAndReply"><![CDATA[Alıntı Ekle]]></item>
 		<item name="wcf.message.quote.quoteMessage"><![CDATA[Alıntı]]></item>
 		<item name="wcf.message.quote.quoteSelected"><![CDATA[Alıntı Kaydet]]></item>
-		<item name="wcf.message.quote.removeAllQuotes"><![CDATA[Tüm Alıntıları Kaldır]]></item>
-		<item name="wcf.message.quote.removeSelectedQuotes"><![CDATA[İşaretlenmiş Alıntıları Kaldır]]></item>
-		<item name="wcf.message.quote.showQuotes"><![CDATA[{if $count == 1}Bir Alıntı{else}{#$count} Alıntılar{/if}]]></item>
+		<item name="wcf.message.quote.quoteSelected.success"><![CDATA[Alıntı kaydedildi.]]></item>
 		<item name="wcf.message.settings"><![CDATA[Ayarlar]]></item>
 		<item name="wcf.message.share"><![CDATA[Paylaş]]></item>
 		<item name="wcf.message.share.copy"><![CDATA[Kodu Kopyala]]></item>
@@ -4359,6 +4415,7 @@ Ekler:
 		<item name="wcf.message.toc.hide"><![CDATA[gizle]]></item>
 		<item name="wcf.message.toc.show"><![CDATA[göster]]></item>
 		<item name="wcf.message.user.consent.button.enable"><![CDATA[Harici içeriklerin hepsini görüntülemek ister misin?]]></item>
+		<item name="wcf.message.user.consent.button.enableOnce"><![CDATA[İçeriği bir kez göster]]></item>
 		<item name="wcf.message.user.consent.description"><![CDATA[Harici kaynaklardan paylaşılan içerikleri, izniniz olmadan görüntüleyemezsiniz.]]></item>
 		<item name="wcf.message.user.consent.notice"><![CDATA[Harici içeriğin etkinleştirilmesi durumunda, kişisel verilerin üçüncü taraf platformlara aktarılabileceğini kabul edersiniz. Gizlilik politikamızda bu konuda daha fazla bilgi verdik.]]></item>
 		<item name="wcf.message.user.consent.title"><![CDATA[Harici İçerik]]></item>
@@ -4370,21 +4427,12 @@ Ekler:
 		<item name="wcf.moderation.assignedUser.nobody"><![CDATA[Hiç Kimse]]></item>
 		<item name="wcf.moderation.assignedUser.other"><![CDATA[Diğer kullanıcı]]></item>
 		<item name="wcf.moderation.assignedUsername"><![CDATA[Atanan Kullanıcı]]></item>
-		<item name="wcf.moderation.comments"><![CDATA[Yorumlar]]></item>
 		<item name="wcf.moderation.comments.description"><![CDATA[Tüm yorumlar dahilidir ve moderatör olmayanlara gösterilmeyecektir.]]></item>
 		<item name="wcf.moderation.deletedContent.objectTypes"><![CDATA[Silinen İçerik]]></item>
-		<item name="wcf.moderation.doneItems"><![CDATA[Çözümlenmiş Öğeler]]></item>
-		<item name="wcf.moderation.filter"><![CDATA[Öğeleri Filtrele]]></item>
-		<item name="wcf.moderation.filterByType"><![CDATA[Tür]]></item>
-		<item name="wcf.moderation.filterByUser"><![CDATA[Tanımlı Kullanıcı]]></item>
-		<item name="wcf.moderation.filterByUser.allEntries"><![CDATA[Tüm Öğeler]]></item>
-		<item name="wcf.moderation.filterByUser.myself"><![CDATA[Ben ({$__wcf->getUser()->username})]]></item>
-		<item name="wcf.moderation.filterByUser.nobody"><![CDATA[Hiç Kimse]]></item>
+		<item name="wcf.moderation.items"><![CDATA[Moderasyon Maddeleri]]></item>
 		<item name="wcf.moderation.jumpToContent"><![CDATA[İlişkili İçeriğe Git]]></item>
 		<item name="wcf.moderation.lastChangeTime"><![CDATA[Son Değişiklik]]></item>
-		<item name="wcf.moderation.markAsRead.doubleClick"><![CDATA[Bu Öğeyi Okundu Olarak İşaretlemek İçin Çift Tıklayın]]></item>
 		<item name="wcf.moderation.moderation"><![CDATA[Moderasyon]]></item>
-		<item name="wcf.moderation.noEntries"><![CDATA[Şu anda hiç öğe yok. <a href="#" class="jsStaticDialog" data-dialog-id="moderationListSortFilter" role="button">Uygulanan filtreleri değiştirin.</a>{if $hasActiveFilter} <a href="{link controller='ModerationList'}{/link}">Reset the active filters.</a>{/if}]]></item>
 		<item name="wcf.moderation.noMoreItems"><![CDATA[Başka öğe yok.]]></item>
 		<item name="wcf.moderation.notification.comment.mail.html"><![CDATA[<p>{@$authorList} <a href="{$moderationQueue->getLink()}">{$moderationQueue->getTitle()}</a>moderasyon girişine yorum yaptı:</p>]]></item>
 		<item name="wcf.moderation.notification.comment.mail.plaintext"><![CDATA[{@$authorList} {@$moderationQueue->getTitle()} [URL:{@$moderationQueue->getLink()}]{if $count == 1 && !$guestTimesTriggered}moderasyon girişi hakkında yorum yaptı:{else}.{/if}]]></item>
@@ -4396,7 +4444,7 @@ Ekler:
 		<item name="wcf.moderation.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} <strong>{$moderationQueue}</strong> adlı moderasyon yazısına cevap yazdılar.]]></item>
 		<item name="wcf.moderation.notification.commentResponse.title"><![CDATA[Yeni cevap (Moderasyon)]]></item>
 		<item name="wcf.moderation.notification.commentResponse.title.stacked"><![CDATA[{#$timesTriggered} yeni cevaplar (Moderation)]]></item>
-		<item name="wcf.moderation.outstandingItems"><![CDATA[Bekleyen Öğeler]]></item>
+		<item name="wcf.moderation.objectType"><![CDATA[Content]]></item>
 		<item name="wcf.moderation.showAll"><![CDATA[Tüm Öğeleri Göster]]></item>
 		<item name="wcf.moderation.showDeletedContent"><![CDATA[Silinmiş İçeriği Göster]]></item>
 		<item name="wcf.moderation.status"><![CDATA[Durum]]></item>
@@ -4408,10 +4456,7 @@ Ekler:
 		<item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.activation"><![CDATA[Onay reddedildi]]></item>
 		<item name="wcf.moderation.status.rejected.com.woltlab.wcf.moderation.report"><![CDATA[Rapor yetersizdi]]></item>
 		<item name="wcf.moderation.status.rejectedButJustified.com.woltlab.wcf.moderation.report"><![CDATA[Rapor haklı çıktı]]></item>
-		<item name="wcf.moderation.time"><![CDATA[Zaman]]></item>
-		<item name="wcf.moderation.title"><![CDATA[Başlık]]></item>
 		<item name="wcf.moderation.type"><![CDATA[Tür]]></item>
-		<item name="wcf.moderation.type.all"><![CDATA[Tüm Öğeler]]></item>
 		<item name="wcf.moderation.type.com.woltlab.wcf.article"><![CDATA[Makale]]></item>
 		<item name="wcf.moderation.type.com.woltlab.wcf.comment.comment"><![CDATA[Yorum]]></item>
 		<item name="wcf.moderation.type.com.woltlab.wcf.comment.response"><![CDATA[Yorum Cevabı]]></item>
@@ -4516,10 +4561,12 @@ Ekler:
 		<item name="wcf.page.pageObjectID.search.terms"><![CDATA[Arama]]></item>
 		<item name="wcf.page.pagePosition"><![CDATA[Sayfa {#$pageNo}, Toplam {#$pages}]]></item>
 		<item name="wcf.page.pagination"><![CDATA[Sayfalandırma]]></item>
+		<item name="wcf.page.readingTime"><![CDATA[{#$minutes} dk. okuma]]></item>
 		<item name="wcf.page.recentActivity.pageComment"><![CDATA[<strong>{$author}</strong>, <strong>{$page->getTitle()}</strong> sayfasına yorum yaptı.]]></item>
 		<item name="wcf.page.recentActivity.pageCommentResponse"><![CDATA[<strong>{$author}</strong>, <strong>{$page->getTitle()}</strong> sayfasında <strong>{$commentAuthor}</strong> adlı kullanıcının yaptığı bir yoruma yanıt verdi.]]></item>
 		<item name="wcf.page.redirect.title"><![CDATA[Yönlendirme]]></item>
 		<item name="wcf.page.redirect.url"><![CDATA[Eğer otomatik yönlendirme çalışmıyorsa lütfen buraya tıklayınız!]]></item>
+		<item name="wcf.page.removeFilterTooltip"><![CDATA[“{$filterLabel}” filtresini kaldır]]></item>
 		<item name="wcf.page.requestedPage"><![CDATA[İstenen Sayfa]]></item>
 		<item name="wcf.page.requestedPage.condition.reverseLogic"><![CDATA[“İstenen Sayfa” seçimini tersine çevirin]]></item>
 		<item name="wcf.page.requestedPage.condition.reverseLogic.description"><![CDATA[Seçilirse, istenen sayfa “İstenen Sayfa” altında seçilen sayfalardan <strong> olmayabilir </strong>.]]></item>
@@ -4540,7 +4587,9 @@ Ekler:
 		<item name="wcf.paidSubscription.expiringSubscription.notification.mail.plaintext"><![CDATA[Aboneliğiniz “{@$subscription->getTitle()}” will expire {dateInterval start=$notification->time end=$subscription->endDate full=true format='sentence'} (on {@$subscription->endDate|date:'F jS'}).]]></item>
 		<item name="wcf.paidSubscription.expiringSubscription.notification.message"><![CDATA[Aboneliğiniz “{$userNotificationObject->getTitle()}” will expire {dateInterval start=$notification->time end=$userNotificationObject->endDate full=true format='sentence'} (on {$userNotificationObject->endDate|date:'F jS'}).]]></item>
 		<item name="wcf.paidSubscription.expiringSubscription.notification.title"><![CDATA[Süresi Dolan Abonelik]]></item>
-		<item name="wcf.paidSubscription.formattedCost"><![CDATA[{$subscription->currency} {$subscription->cost|currency}{if $subscription->subscriptionLength} {if $subscription->subscriptionLength != 1}için{else}her{/if} {if $subscription->subscriptionLength != 1}{@$subscription->subscriptionLength} {/if}{if $subscription->subscriptionLengthUnit == 'D'}Gün{if $subscription->subscriptionLength != 1}{/if}{/if}{if $subscription->subscriptionLengthUnit == 'M'}ay{if $subscription->subscriptionLength != 1}s{/if}{/if}{if $subscription->subscriptionLengthUnit == 'Y'}yıl{if $subscription->subscriptionLength != 1}{/if}{/if}{/if}]]></item>
+		<item name="wcf.paidSubscription.formattedCost.nonrecurring"><![CDATA[{$currency} {$cost|currency} {if $unit === 'D'}{plural value=$length 1='bir gün için' other='# gün için'}{elseif $unit === 'M'}{plural value=$length 1='bir ay için' other='# ay için'}{elseif $unit === 'Y'}{plural value=$length 1='bir yıl için' other='# yıl için'}{/if}]]></item>
+		<item name="wcf.paidSubscription.formattedCost.perpetual"><![CDATA[{$currency} {$cost|currency}]]></item>
+		<item name="wcf.paidSubscription.formattedCost.recurring"><![CDATA[{$currency} {$cost|currency} {if $unit === 'D'}{plural value=$length 1='günlük' other='# günde bir'}{elseif $unit === 'M'}{plural value=$length 1='aylık' other='# ayda bir'}{elseif $unit === 'Y'}{plural value=$length 1='yıllık' other='# yılda bir'}{/if}]]></item>
 		<item name="wcf.paidSubscription.purchasedSubscriptions"><![CDATA[Satın Alınan Abonelikler]]></item>
 		<item name="wcf.paidSubscription.returnMessage"><![CDATA[Ödemeniz için teşekkür ederiz, alışveriş işlemi tamamlandı. Aboneliğiniz ödeme bizim tarafımızdan işlendikten sonra başlayacaktır.]]></item>
 	</category>
@@ -4635,6 +4684,7 @@ Ekler:
 		<item name="wcf.style.colorPicker.hue"><![CDATA[Renk tonu]]></item>
 		<item name="wcf.style.colorPicker.lightness"><![CDATA[Hafiflik]]></item>
 		<item name="wcf.style.colorPicker.new"><![CDATA[yeni]]></item>
+		<item name="wcf.style.colorPicker.opacity"><![CDATA[Opaklık]]></item>
 		<item name="wcf.style.colorPicker.saturation"><![CDATA[Doygunluk]]></item>
 		<item name="wcf.style.currentStyle"><![CDATA[Şimdiki Tema]]></item>
 		<item name="wcf.style.setColorScheme"><![CDATA[Renk Düzenini Ayarla]]></item>
@@ -4655,6 +4705,7 @@ Ekler:
 		<item name="wcf.tagging.tags.error.unknownTags"><![CDATA[Aşağıdaki etiketler mevcut değil: {implode from=$unknownTags item=unknownTag}{$unknownTag}{/implode}.]]></item>
 	</category>
 	<category name="wcf.upload">
+		<item name="wcf.upload.crop.image"><![CDATA[Görüntüyü kırp]]></item>
 		<item name="wcf.upload.error.adopt"><![CDATA[“{$filename}” dosyası atanamıyor.]]></item>
 		<item name="wcf.upload.error.damagedImageFile"><![CDATA[“{$filename}” grafik dosyası hasarlı.]]></item>
 		<item name="wcf.upload.error.delete.permissionDenied"><![CDATA[Dosya silinemiyor, dosyayı değiştirmek için <strong>Değiştir</strong>'i kullanın.]]></item>
@@ -4662,11 +4713,18 @@ Ekler:
 		<item name="wcf.upload.error.emptyFile"><![CDATA[“{$filename}” dosyası boş.]]></item>
 		<item name="wcf.upload.error.fileExtensionNotPermitted"><![CDATA[“{$filename}” dosya türüne izin verilmiyor.]]></item>
 		<item name="wcf.upload.error.fileSizeTooLarge"><![CDATA[Dosya çok büyük.]]></item>
+		<item name="wcf.upload.error.image.tooSmall"><![CDATA[Görsel çok küçük. En az {$width} × {$height} piksel boyutunda olmalıdır.]]></item>
 		<item name="wcf.upload.error.maximumCountReached"><![CDATA[{plural value=$maximumCount 1='Sadece bir dosya' other='Sadece # dosyaya kadar'} yüklenebilir.]]></item>
 		<item name="wcf.upload.error.noImage"><![CDATA[Yüklenen dosya resim değil.]]></item>
 		<item name="wcf.upload.error.reachedRemainingLimit"><![CDATA[Çok fazla dosya seçtiniz. Yalnızca {#$maxFiles}daha fazla{if $maxFiles != 1}{/if} yükleyebilirsiniz.]]></item>
 		<item name="wcf.upload.error.uploadFailed"><![CDATA[Yükleme sırasında bilinmeyen bir hata oluştu.]]></item>
+		<item name="wcf.upload.multiple.limits"><![CDATA[Maksimum dosya sayısı: {#$maximumCount}<br>
+Maksimum dosya boyutu: {$maximumSize|filesize}<br>
+İzin verilen uzantılar: {', '|implode:$allowedFileExtensions}]]></item>
+		<item name="wcf.upload.single.limits"><![CDATA[Maksimum dosya boyutu: {$maximumSize|filesize}<br>
+İzin verilen uzantılar: {', '|implode:$allowedFileExtensions}]]></item>
 		<item name="wcf.upload.validation.error.noImage"><![CDATA[Dosya bir resim değil.]]></item>
+		<item name="wcf.upload.validation.error.notSquare"><![CDATA[Dosya kare şeklinde değil.]]></item>
 		<item name="wcf.upload.validation.error.tooSmall"><![CDATA[Dosya çok küçük.]]></item>
 	</category>
 	<category name="wcf.user">
@@ -4701,7 +4759,6 @@ Ekler:
 		<item name="wcf.user.birthdayToday"><![CDATA[Doğum günü olanlar]]></item>
 		<item name="wcf.user.boxList.description.activityPoints"><![CDATA[{#$boxUser->activityPoints} Puan{if $boxUser->activityPoints != 1}{/if}]]></item>
 		<item name="wcf.user.boxList.description.likesReceived"><![CDATA[{#$boxUser->likesReceived} Beğeni{if $boxUser->likesReceived != 1}{/if}]]></item>
-		<item name="wcf.user.boxList.description.registrationDate"><![CDATA[{@$boxUser->registrationDate|time}]]></item>
 		<item name="wcf.user.button.follow"><![CDATA[Takip Et]]></item>
 		<item name="wcf.user.button.ignore"><![CDATA[Kullanıcıyı Engelle]]></item>
 		<item name="wcf.user.button.login"><![CDATA[Giriş]]></item>
@@ -4820,11 +4877,8 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.lostPasswordKey"><![CDATA[Güvenlik Anahtarı]]></item>
 		<item name="wcf.user.lostPasswordKey.error.invalid"><![CDATA[Güvenlik anahtarı geçersiz.]]></item>
 		<item name="wcf.user.members"><![CDATA[Kullanıcılar]]></item>
-		<item name="wcf.user.members.filter"><![CDATA[Kullanıcıları Filtrele]]></item>
-		<item name="wcf.user.members.noMembers"><![CDATA[Ölçütlerinize uygun kullanıcı yok. <a href="{link controller='MembersList'}{/link}">Uygulanan filtreleri sıfırlayın.</a>]]></item>
 		<item name="wcf.user.members.sort"><![CDATA[Sıralama Şekli]]></item>
 		<item name="wcf.user.members.sort.letters"><![CDATA[İlk Harf]]></item>
-		<item name="wcf.user.members.sort.letters.all"><![CDATA[Hepsi]]></item>
 		<item name="wcf.user.membersList.location"><![CDATA[Konum {$user->location}]]></item>
 		<item name="wcf.user.membersList.registrationDate"><![CDATA[{@$user->registrationDate|date} tarihinden itibaren üye]]></item>
 		<item name="wcf.user.moderate"><![CDATA[Kullanıcı Denetle]]></item>
@@ -4839,6 +4893,7 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.newPassword.success"><![CDATA[“{$user->username}” adlı kullanıcının şifresi başarıyla değiştirildi. Artık yeni şifrenizle giriş yapabilirsiniz.]]></item>
 		<item name="wcf.user.newUsername"><![CDATA[Yeni Kullanıcı Adı]]></item>
 		<item name="wcf.user.newestMember"><![CDATA[En Yeni Kullanıcı]]></item>
+		<item name="wcf.user.oldUsername"><![CDATA[Önceki Kullanıcı Adı]]></item>
 		<item name="wcf.user.online"><![CDATA[Çevrimiçi]]></item>
 		<item name="wcf.user.online.title"><![CDATA[{$username} Çevrimiçi]]></item>
 		<item name="wcf.user.option.error.birthdayTooYoung"><![CDATA[Yeteri kadar yaşlı değilsiniz. Bu siteye kayıt yaptırabilmek için en az {#REGISTER_MIN_USER_AGE} yaşında olmalısınız.]]></item>
@@ -4883,8 +4938,6 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.password.zxcvbn.warnings.straight_row"><![CDATA[Düz tuş sıralarının tahmin edilmesi kolaydır.]]></item>
 		<item name="wcf.user.password.zxcvbn.warnings.top_10"><![CDATA[Bu en iyi 10 ortak şifredir.]]></item>
 		<item name="wcf.user.password.zxcvbn.warnings.top_100"><![CDATA[Bu en iyi 100 ortak şifredir.]]></item>
-		<item name="wcf.user.profileHits"><![CDATA[Profil Tıklanma]]></item>
-		<item name="wcf.user.profileHits.hitsPerDay"><![CDATA[{#$user->profileHits/$user->getProfileAge()} günlük tıklanma]]></item>
 		<item name="wcf.user.quit"><![CDATA[Kullanıcı Hesabını Sil]]></item>
 		<item name="wcf.user.quit.active"><![CDATA[Kullanıcı hesabınız {$__wcf->user->quitStarted+7*86400|date} tarihinde silinecek. Bu süre zarfında <a href="{link controller='AccountManagement'}{/link}">Hesap Yönetim Formu</a>'nu kullanarak silme işlemini iptal edebilirsiniz.]]></item>
 		<item name="wcf.user.quit.cancel"><![CDATA[Kullanıcı hesabınız {$quitStarted+7*86400|date} tarihinde silinecek. Silme işlemini iptal etmek istiyorsanız lütfen bu seçeneği etkinleştirin.]]></item>
@@ -4950,57 +5003,52 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.visibleLanguages.description"><![CDATA[Seçilen dillerle ilişkili olan içerik görüntülenir.]]></item>
 	</category>
 	<category name="wcf.user.3rdparty">
-		<item name="wcf.user.3rdparty"><![CDATA[Sosyal Medya Bağlantısı]]></item>
-		<item name="wcf.user.3rdparty.connect.info"><![CDATA[Kullanıcı {"wcf.user.3rdparty."|concat:$user->getAuthProvider()|language} ile bağlandı.]]></item>
-		<item name="wcf.user.3rdparty.facebook.connect"><![CDATA[Facebook hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'facebook'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.facebook.connect.error.inuse"><![CDATA[Facebook hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty"><![CDATA[Üçüncü Taraf Girişi]]></item>
+		<item name="wcf.user.3rdparty.connect.info"><![CDATA[Kullanıcı, {"wcf.user.3rdparty."|concat:$user->getAuthProvider()|language} ile bağlı.]]></item>
+		<item name="wcf.user.3rdparty.facebook"><![CDATA[Facebook]]></item>
+		<item name="wcf.user.3rdparty.facebook.connect"><![CDATA[Facebook hesabınızla bağlan{if $__wcf->session->getVar('__3rdPartyProvider') === 'facebook'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
+		<item name="wcf.user.3rdparty.facebook.connect.error.inuse"><![CDATA[Facebook hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.facebook.connect.success"><![CDATA[Kullanıcı hesabınız Facebook ile bağlandı.]]></item>
 		<item name="wcf.user.3rdparty.facebook.disconnect"><![CDATA[Facebook bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.facebook.disconnect.success"><![CDATA[Hesabınız artık Facebook ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.facebook.login"><![CDATA[Facebook ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.facebook.register"><![CDATA[{icon size='16' name='facebook' type='brand'}&nbsp;Facebook. Facebook üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
-		<item name="wcf.user.3rdparty.github.connect"><![CDATA[GitHub hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'github'} “<a href="https://github.com/{$__wcf->session->getVar('__oauthUser')->getUsername()}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__oauthUser')->getUsername()}</a>”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.github.connect.error.inuse"><![CDATA[GitHub hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.facebook.disconnect.success"><![CDATA[Hesabınız artık Facebook ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.facebook.login"><![CDATA[Facebook ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.facebook.register"><![CDATA[{icon size='16' name='facebook' type='brand'}&nbsp;Facebook üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adı ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.github"><![CDATA[GitHub]]></item>
+		<item name="wcf.user.3rdparty.github.connect"><![CDATA[GitHub hesabınızla bağlan{if $__wcf->session->getVar('__3rdPartyProvider') === 'github'} “<a href="https://github.com/{$__wcf->session->getVar('__oauthUser')->getUsername()}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__oauthUser')->getUsername()}</a>”{/if}.]]></item>
+		<item name="wcf.user.3rdparty.github.connect.error.inuse"><![CDATA[GitHub hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.github.connect.success"><![CDATA[Kullanıcı hesabınız GitHub ile bağlandı.]]></item>
 		<item name="wcf.user.3rdparty.github.disconnect"><![CDATA[GitHub bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.github.disconnect.success"><![CDATA[[Hesabınız artık GitHub ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.github.login"><![CDATA[GitHub ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.github.register"><![CDATA[{icon size='16' name='github' type='brand'}&nbsp;GitHub. üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
-		<item name="wcf.user.3rdparty.google.connect"><![CDATA[Google hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'google'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.google.connect.error.inuse"><![CDATA[Google hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.github.disconnect.success"><![CDATA[Hesabınız artık GitHub ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.github.login"><![CDATA[GitHub ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.github.register"><![CDATA[{icon size='16' name='github' type='brand'}&nbsp;GitHub üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adı ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.google"><![CDATA[Google]]></item>
+		<item name="wcf.user.3rdparty.google.connect"><![CDATA[Google hesabınızla bağlan{if $__wcf->session->getVar('__3rdPartyProvider') === 'google'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
+		<item name="wcf.user.3rdparty.google.connect.error.inuse"><![CDATA[Google hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.google.connect.success"><![CDATA[Kullanıcı hesabınız Google ile bağlandı.]]></item>
 		<item name="wcf.user.3rdparty.google.disconnect"><![CDATA[Google bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.google.disconnect.success"><![CDATA[Hesabınız artık Google ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.google.login"><![CDATA[Google ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.google.register"><![CDATA[{icon size='16' name='google' type='brand'}&nbsp;Google. üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
-		<item name="wcf.user.3rdparty.login.error.access_denied"><![CDATA[Harici hesabınıza erişim reddedildi.]]></item>
-		<item name="wcf.user.3rdparty.login.error.denied"><![CDATA[Harici hesabınıza erişim reddedildi.]]></item>
-		<item name="wcf.user.3rdparty.login.error.genericException"><![CDATA[Kimlik doğrulama isteğiniz işlenirken bir hata oluştu. Lütfen yardım için yöneticiyle iletişime geçin. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
-		<item name="wcf.user.3rdparty.login.error.httpError"><![CDATA[Harici hizmetle iletişim kurulamıyor. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
-		<item name="wcf.user.3rdparty.login.error.stateValidation"><![CDATA[Kimlik doğrulama isteği bulunamadı. Belki oturumunuz sona ermiştir.]]></item>
-		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Oturum açma işlemi iptal edildi.]]></item>
-		<item name="wcf.user.3rdparty.twitter.connect"><![CDATA[X hesabınızla bağlantı kurun{if $__wcf->session->getVar('__twitterUsername')} “<a href="https://twitter.com/{$__wcf->session->getVar('__twitterUsername')}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__twitterUsername')}</a>”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.twitter.connect.error.inuse"><![CDATA[X hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.google.disconnect.success"><![CDATA[Hesabınız artık Google ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.google.login"><![CDATA[Google ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.google.register"><![CDATA[{icon size='16' name='google' type='brand'}&nbsp;Google üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adı ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.login.error.access_denied"><![CDATA[Dış hesabınıza erişim reddedildi.]]></item>
+		<item name="wcf.user.3rdparty.login.error.denied"><![CDATA[Dış hesabınıza erişim reddedildi.]]></item>
+		<item name="wcf.user.3rdparty.login.error.genericException"><![CDATA[Kimlik doğrulama isteğiniz işlenirken bir hata oluştu. Yardım için lütfen yöneticinizle iletişime geçin. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
+		<item name="wcf.user.3rdparty.login.error.httpError"><![CDATA[Dış hizmet ile iletişim kurulamadı. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
+		<item name="wcf.user.3rdparty.login.error.stateValidation"><![CDATA[Kimlik doğrulama isteği bulunamadı. Oturumunuzun süresi dolmuş olabilir.]]></item>
+		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Giriş işlemi iptal edildi.]]></item>
+		<item name="wcf.user.3rdparty.twitter"><![CDATA[X]]></item>
+		<item name="wcf.user.3rdparty.twitter.connect"><![CDATA[X hesabınızla bağlan{if $__wcf->session->getVar('__twitterUsername')} “<a href="https://twitter.com/{$__wcf->session->getVar('__twitterUsername')}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__twitterUsername')}</a>”{/if}.]]></item>
+		<item name="wcf.user.3rdparty.twitter.connect.error.inuse"><![CDATA[X hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.twitter.connect.success"><![CDATA[Kullanıcı hesabınız X ile bağlandı.]]></item>
 		<item name="wcf.user.3rdparty.twitter.disconnect"><![CDATA[X bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.twitter.disconnect.success"><![CDATA[Hesabınız artık X ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.twitter.login"><![CDATA[X ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.twitter.register"><![CDATA[{icon size='16' name='x-twitter' type='brand'}&nbsp;X. üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adı bu nedenle zaten girildi. Şimdi e-posta adresinizi girin ve hemen başlayabilirsiniz!]]></item>
+		<item name="wcf.user.3rdparty.twitter.disconnect.success"><![CDATA[Hesabınız artık X ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.twitter.login"><![CDATA[X ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.twitter.register"><![CDATA[{icon size='16' name='x-twitter' type='brand'}&nbsp;X üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adınız zaten girilmiş durumda. Şimdi e-posta adresinizi girin ve hemen başlayabilirsiniz!]]></item>
 	</category>
 	<category name="wcf.user.avatar">
 		<item name="wcf.user.avatar"><![CDATA[Profil Resmi]]></item>
 		<item name="wcf.user.avatar.edit"><![CDATA[Profil Resmi Yönetimi]]></item>
 		<item name="wcf.user.avatar.error.disabled"><![CDATA[Yönetim {if $__wcf->user->avatarID || $__wcf->user->enableGravatar}profil resminizi yasakladı ve {/if}avatar kullanmanızı engelledi{if $__wcf->user->disableAvatarReason}: {$__wcf->user->disableAvatarReason}{/if}.]]></item>
-		<item name="wcf.user.avatar.type.custom"><![CDATA[Profil resmi yükle]]></item>
 		<item name="wcf.user.avatar.type.custom.description"><![CDATA[Belirtilen dosya uzantılarını profil resmi olarak kullanabilirsiniz. “{"\n"|str_replace:', ':$__wcf->session->getPermission('user.profile.avatar.allowedFileExtensions')}” Profil resminizin en büyük boyutu ise 128×128 piksel olmalıdır.]]></item>
-		<item name="wcf.user.avatar.type.none"><![CDATA[Profil resmini kaldır]]></item>
-		<item name="wcf.user.avatar.type.none.description"><![CDATA[Seçip kaydettiğinizde, profil resminiz kaldırılır.]]></item>
-		<item name="wcf.user.avatar.upload.error.badImage"><![CDATA[Yüklenen resim geçersiz.]]></item>
-		<item name="wcf.user.avatar.upload.error.invalidExtension"><![CDATA[Resim izin verilen dosya uzantısına sahip değil.]]></item>
-		<item name="wcf.user.avatar.upload.error.tooLarge"><![CDATA[Resim boyutu fazla.]]></item>
-		<item name="wcf.user.avatar.upload.error.tooSmall"><![CDATA[Resim boyutu küçük.]]></item>
-		<item name="wcf.user.avatar.upload.error.uploadFailed"><![CDATA[Yükleme esnasında bilinmeyen bir hata oluştu.]]></item>
-		<item name="wcf.user.avatar.upload.success"><![CDATA[Profil Resmi kaydedildi.]]></item>
 	</category>
 	<category name="wcf.user.condition">
 		<item name="wcf.user.condition.activityPoints"><![CDATA[Puanlar]]></item>
@@ -5057,23 +5105,13 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 	</category>
 	<category name="wcf.user.coverPhoto">
 		<item name="wcf.user.coverPhoto"><![CDATA[Kapak fotoğrafı]]></item>
-		<item name="wcf.user.coverPhoto.delete"><![CDATA[Kapak Fotoğrafını Sil]]></item>
-		<item name="wcf.user.coverPhoto.delete.confirmMessage"><![CDATA[Kapak fotoğrafınızı gerçekten silmek istiyor musunuz? Bu, mevcut fotoğrafınızı varsayılan resimle değiştirecektir.]]></item>
 		<item name="wcf.user.coverPhoto.edit"><![CDATA[Kapak Fotoğrafını Düzenle]]></item>
 		<item name="wcf.user.coverPhoto.error.disabled"><![CDATA[Yöneticiler {if $__wcf->user->coverPhotoHash}kapak fotoğrafınızı yasakladı ve {/if}kapak fotoğrafı kullanmanıza izin vermedi{if $__wcf->user->disableCoverPhotoReason}: {$__wcf->user->disableCoverPhotoReason}{/if}.]]></item>
 		<item name="wcf.user.coverPhoto.noImage"><![CDATA[Kullanıcı henüz bir kapak fotoğrafı yüklemedi.]]></item>
-		<item name="wcf.user.coverPhoto.upload"><![CDATA[Kapak Fotoğrafı Yükle]]></item>
-		<item name="wcf.user.coverPhoto.upload.description"><![CDATA[Minimum Resim Boyutu: {$coverPhotoDimensions.min.width}×{$coverPhotoDimensions.min.height} piksel<br>Maksimum Resim Boyutu: {$coverPhotoDimensions.max.width}×{$coverPhotoDimensions.max.height} piksel<br>İzin Verilen Dosya Uzantıları: gif, jpg, jpeg, png, webp<br>Maksimum dosya boyutu: {$__wcf->session->getPermission('user.profile.coverPhoto.maxSize')|filesize}]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.badImage"><![CDATA[Yüklenen dosya bir resim değil.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.fileExtension"><![CDATA[Dosyanın geçersiz bir uzantısı var.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.invalidExtension"><![CDATA[Dosya uzantısı geçersiz.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.maxHeight"><![CDATA[Görüntü çok uzun.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.maxSize"><![CDATA[Dosya çok büyük.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.maxWidth"><![CDATA[Görüntü çok geniş.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.minHeight"><![CDATA[Görüntü çok küçük.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.minWidth"><![CDATA[Görüntü çok küçük.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.tooLarge"><![CDATA[Dosya çok büyük.]]></item>
-		<item name="wcf.user.coverPhoto.upload.error.uploadFailed"><![CDATA[Yükleme sırasında bilinmeyen bir hata oluştu.]]></item>
+		<item name="wcf.user.coverPhoto.upload.description"><![CDATA[Minimum image size: {$coverPhotoDimensions.min.width} × {$coverPhotoDimensions.min.height} pixels<br>
+Maximum image size: {$coverPhotoDimensions.max.width} × {$coverPhotoDimensions.max.height} pixels<br>
+Maximum file size: {$__wcf->session->getPermission('user.profile.coverPhoto.maxSize')|filesize}<br>
+Allowed extensions: gif, jpg, jpeg, png, webp]]></item>
 	</category>
 	<category name="wcf.user.mail">
 		<item name="wcf.user.mail.mail.html"><![CDATA[<h2>Sayın {$mailbox->getUser()->username},</h2>
@@ -5127,73 +5165,70 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.notification.articleComment.responseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong> adlı kullanıcı {else}Bir misafir{/if} <strong>{$commentAuthor}</strong> makalenize yapılan bir yoruma <strong>{$article->getTitle()}</strong> yanıt verdi.]]></item>
 		<item name="wcf.user.notification.articleComment.responseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} <strong>{$commentAuthor}</strong> adlı kullanıcı <strong>{$article->getTitle()}</strong> makalenize yapılan bir yoruma yanıt verdi.]]></item>
 		<item name="wcf.user.notification.button.confirmed"><![CDATA[Tamam]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.administration"><![CDATA[Yönetim Bildirimleri]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.article.comment.notification.comment"><![CDATA[Makalelerimle ilgili yeni yorumları bana bildir]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.article.comment.response.notification.commentResponse"><![CDATA[Yorumlarıma gelen yeni cevaplarda beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.article.comment.response.notification.commentResponseOwner"><![CDATA[Makalelerimdeki yorumlara cevap verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.article.notification.article"><![CDATA[Abone olunan kategorilerdeki yeni makalelerde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.like.notification.like"><![CDATA[Makale yorumlarıma tepki verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.notification.comment"><![CDATA[Makalelerime ve abone olunan kategorilerdeki makalelere yapılan yeni yorumlarda beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.like.notification.like"><![CDATA[Makale yorumlarına verdiğim cevaplara tepki verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.notification.commentResponse"><![CDATA[Yorumlarıma gelen yeni cevaplarda beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.notification.commentResponseOwner"><![CDATA[Makalelerimdeki yorumlara cevap verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.likeableArticle.notification.like"><![CDATA[Makalelerime tepki verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.moderation"><![CDATA[Moderasyon]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.notification.comment"><![CDATA[Moderasyonda yeni yorumlar yazıldığında beni bilgilendir.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.administration"><![CDATA[Yönetim]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.article.notification.article"><![CDATA[Abone olunan kategoride yeni bir makale]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.like.notification.like"><![CDATA[Makaleye yaptığınız yoruma tepki]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.notification.comment"><![CDATA[Makalenize veya abone olunan kategorideki makalelere yeni yorum]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.like.notification.like"><![CDATA[Yoruma verdiğiniz yanıta tepki]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.notification.commentResponse"><![CDATA[Yoruma veya abone olunan kategorideki makalelere yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.articleComment.response.notification.commentResponseOwner"><![CDATA[Makalenizdeki bir yoruma yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.likeableArticle.notification.like"><![CDATA[Makalenize tepki]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderation"><![CDATA[Moderatörlük]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.notification.comment"><![CDATA[Moderatörlük girdisine yeni yorum]]></item>
 		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.report"><![CDATA[Yeni rapor]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.response.notification.commentResponse"><![CDATA[Moderasyonda yorumlara yeni cevaplar yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.page"><![CDATA[Sayfa Bildirimleri]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.page.notification.comment"><![CDATA[Sayfalara yeni yorum yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.page.response.notification.commentResponse"><![CDATA[Sayfalardaki yorumlara yeni cevaplar yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.paidSubscription.user.expiring"><![CDATA[Aboneliğin süresi dolmadan önce beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user"><![CDATA[Kullanıcı Bildirimleri]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.follow.following"><![CDATA[Takip edildiğimde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.like.notification.like"><![CDATA[Mesajlarıma tepki verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.notification.comment"><![CDATA[Duvarıma yorum yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.like.notification.like"><![CDATA[Yorumlara verdiğim cevaplarda tepki verildiğinde beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.notification.commentResponse"><![CDATA[Yorumlarıma gelen yeni cevaplarda beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.notification.commentResponseOwner"><![CDATA[Duvarımdaki yorumlara cevap yazıldığında beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.registration.notification.needActivation"><![CDATA[Kullanıcının aktivasyona ihtiyacı var]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.user.registration.notification.success"><![CDATA[Kullanıcı kayıt işlemini tamamladı]]></item>
-		<item name="wcf.user.notification.com.woltlab.wcf.userTrophy.notification.received"><![CDATA[Başarım aldığımda beni bilgilendir.]]></item>
-		<item name="wcf.user.notification.comment.like.message"><![CDATA[<strong>{$author}</strong> adlı kullanıcı {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong> adlı kullanıcının duvarındaki{/if} yorumunuza ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
-		<item name="wcf.user.notification.comment.like.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong> adlı kullanıcının duvarındaki{/if} yorumunuza ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
-		<item name="wcf.user.notification.comment.like.title"><![CDATA[Yoruma verilen beğeni (Duvar)]]></item>
-		<item name="wcf.user.notification.comment.like.title.stacked"><![CDATA[{#$count} kullanıcı yorumunuza tepki gösterdi (Duvar)]]></item>
-		<item name="wcf.user.notification.comment.mail.html"><![CDATA[<p>{@$authorList} <a href="{$owner->getLink()}#wall/comment{@$commentID}">duvarınızda</a> bir yorum yazdı:</p>]]></item>
-		<item name="wcf.user.notification.comment.mail.plaintext"><![CDATA[{@$authorList} duvarınıza bir yorum yazdı [URL:{@$owner->getLink()}#wall/comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-		<item name="wcf.user.notification.comment.mail.title"><![CDATA["{@$objectTitle}" ({@$typeName}) yeni cevap var.]]></item>
-		<item name="wcf.user.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else} Misafir Biri{/if} duvarınıza yorum yaptı.]]></item>
-		<item name="wcf.user.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} duvarınıza yorum yaptı.]]></item>
-		<item name="wcf.user.notification.comment.response.mail.title"><![CDATA["{@$objectTitle}" ({@$typeName}) yeni cevap var.]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.moderation.queue.response.notification.commentResponse"><![CDATA[Moderatörlük girdisine yapılan yoruma yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.page"><![CDATA[Sayfalar]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.page.notification.comment"><![CDATA[Sayıfaya yeni yorum]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.page.response.notification.commentResponse"><![CDATA[Sayıfaya yapılan yoruma yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.paidSubscription.user.expiring"><![CDATA[Ücretli aboneliğiniz sona ermek üzere]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user"><![CDATA[Kullanıcı Profilleri]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.follow.following"><![CDATA[Yeni takipçi]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.like.notification.like"><![CDATA[Yoruma tepki]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.notification.comment"><![CDATA[Duvarınıza yeni yorum]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.like.notification.like"><![CDATA[Yoruma verdiğiniz yanıta tepki]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.notification.commentResponse"><![CDATA[Yorumunuza yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.profileComment.response.notification.commentResponseOwner"><![CDATA[Duvarınızdaki bir yoruma yeni yanıt]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.registration.notification.needActivation"><![CDATA[Kullanıcı aktivasyon gerektiriyor]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.user.registration.notification.success"><![CDATA[Kullanıcı kaydını tamamladı]]></item>
+		<item name="wcf.user.notification.com.woltlab.wcf.userTrophy.notification.received"><![CDATA[Kupa alındı]]></item>
+		<item name="wcf.user.notification.comment.like.message"><![CDATA[<strong>{$author}</strong>, {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong>’in duvarındaki{/if} yorumunuza {unsafe:$reaction->renderIcon()} ile tepki verdi.]]></item>
+		<item name="wcf.user.notification.comment.like.message.stacked"><![CDATA[{unsafe:$authorList}, {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong>’in duvarındaki{/if} yorumunuza tepki verdi{if $reaction} ({unsafe:$reaction->renderIcon()}){/if}.]]></item>
+		<item name="wcf.user.notification.comment.like.title"><![CDATA[Yoruma Tepki (Duvar)]]></item>
+		<item name="wcf.user.notification.comment.like.title.stacked"><![CDATA[{#$count} kullanıcı duvar yorumunuza tepki verdi]]></item>
+		<item name="wcf.user.notification.comment.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$owner->getLink()}#wall/comment{@$commentID}">duvarınıza</a> yorum yaptı:</p>]]></item>
+		<item name="wcf.user.notification.comment.mail.plaintext"><![CDATA[{@$authorList} duvarınıza yorum yaptı [URL:{@$owner->getLink()}#wall/comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.comment.mail.title"><![CDATA["{@$objectTitle}" ({@$typeName}) için Yeni Yorum]]></item>
+		<item name="wcf.user.notification.comment.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir ziyaretçi{/if}, duvarınıza yorum yaptı.]]></item>
+		<item name="wcf.user.notification.comment.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, duvarınıza yorum yaptı.]]></item>
+		<item name="wcf.user.notification.comment.response.mail.title"><![CDATA["{@$objectTitle}" ({@$typeName}) için Yeni Yanıt]]></item>
 		<item name="wcf.user.notification.comment.response.title"><![CDATA[Yeni Yanıt ({$typeName})]]></item>
-		<item name="wcf.user.notification.comment.response.title.stacked"><![CDATA[{#$timesTriggered} Yeni Yanıt ({$typeName})]]></item>
-		<item name="wcf.user.notification.comment.title"><![CDATA[Yeni Yorum (Duvar)]]></item>
-		<item name="wcf.user.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} yeni yorumlar (Duvar)]]></item>
-		<item name="wcf.user.notification.commentResponse.like.message"><![CDATA[<strong>{$author}</strong> adlı kullanıcı {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong> adlı kullanıcının duvarındaki {/if} bir yoruma verdiğiniz cevaba ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
-		<item name="wcf.user.notification.commentResponse.like.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} adlı kullanıcı {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong> adlı kullanıcının duvarındaki{/if} bir yoruma verdiğiniz cevaba ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}) ile tepki verdi.]]></item>
-		<item name="wcf.user.notification.commentResponse.like.title"><![CDATA[Bir yoruma verdiğiniz yanıtı beğendi (Duvar)]]></item>
-		<item name="wcf.user.notification.commentResponse.like.title.stacked"><![CDATA[{#$count} kullanıcı bir yoruma verdiğiniz yanıta tepki gösterdi (Duvar)]]></item>
-		<item name="wcf.user.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList} <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">{if $mailbox->getUser()->userID == $owner->userID}your{else}{$owner} {/if} duvarınızdaki</a> yoruma yanıt verdi:</p>]]></item>
-		<item name="wcf.user.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList} yorumunuza yanıt verdi {if $mailbox->getUser()->userID == $owner->userID}duvarınızdaki{else}{@$owner}’ın{/if} duvarında [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-		<item name="wcf.user.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Misafir biri{/if} duvarınızdaki yorumunuza yanıt verdi {if $owner->userID == $__wcf->getUser()->userID}duvarınıza{else}<strong>{$owner}</strong>’ın duvarına{/if}.]]></item>
-		<item name="wcf.user.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} duvarınızdaki yorumunuza yanıt verdi {if $owner->userID == $__wcf->getUser()->userID}duvarınıza{else}<strong>{$owner}</strong>’ın duvarına{/if}.]]></item>
-		<item name="wcf.user.notification.commentResponseOwner.mail.html"><![CDATA[<p>{@$authorList} <strong>{$commentAuthor}</strong> adlı kullanıcı <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">duvarınızda</a> yoruma yanıt verdi:</p>]]></item>
-		<item name="wcf.user.notification.commentResponseOwner.mail.plaintext"><![CDATA[{@$authorList} duvarınızdaki {@$commentAuthor}’ın yorumuna yanıt verdi [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
-		<item name="wcf.user.notification.commentResponseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Misafir biri{/if} duvarınızdaki <strong>{$commentAuthor}</strong>’ın yorumuna yanıt verdi.]]></item>
-		<item name="wcf.user.notification.commentResponseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, duvarınızdaki <strong>{$author}</strong>’ın yorumuna cevap verdi.]]></item>
-		<item name="wcf.user.notification.count"><![CDATA[if (data.returnValues.count == 0) { "Haber Yok" } else if (data.returnValues.count == 1) { "1 Haber" } else { data.returnValues.count + " Haberler" }]]></item>
-		<item name="wcf.user.notification.enableDesktopNotifications"><![CDATA[Yeni gönderilerde veya içeriklerde bildirim almak istiyor musunuz?]]></item>
-		<item name="wcf.user.notification.enableDesktopNotifications.button"><![CDATA[Bildirimleri Yönet]]></item>
-		<item name="wcf.user.notification.follow.mail.html"><![CDATA[<p>{@$authorList} sizi {if $authors|count == 1}takip ediyor{else}takip ediyor{/if}:</p>]]></item>
-		<item name="wcf.user.notification.follow.mail.plaintext"><![CDATA[{@$authorList} sizi {if $authors|count == 1}takip ediyor{else}takip ediyor{/if}.]]></item>
+		<item name="wcf.user.notification.comment.response.title.stacked"><![CDATA[{#$timesTriggered} Yeni Yanıtlar ({$typeName})]]></item>
+		<item name="wcf.user.notification.comment.title"><![CDATA[Yeni Yorum ({$typeName})]]></item>
+		<item name="wcf.user.notification.comment.title.stacked"><![CDATA[{#$timesTriggered} Yeni Yorumlar ({$typeName})]]></item>
+		<item name="wcf.user.notification.commentResponse.like.message"><![CDATA[<strong>{$author}</strong>, {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong>’in duvarındaki{/if} yorumunuza verdiğiniz yanıta {unsafe:$reaction->renderIcon()} ile tepki verdi.]]></item>
+		<item name="wcf.user.notification.commentResponse.like.message.stacked"><![CDATA[{unsafe:$authorList}, {if $owner === null}duvarınızdaki{else}<strong>{$owner}</strong>’in duvarındaki{/if} yorumunuza verdiğiniz yanıta tepki verdi{if $reaction} ({unsafe:$reaction->renderIcon()}){/if}.]]></item>
+		<item name="wcf.user.notification.commentResponse.like.title"><![CDATA[Yoruma Verdiğiniz Yanıta Tepki (Duvar)]]></item>
+		<item name="wcf.user.notification.commentResponse.like.title.stacked"><![CDATA[{#$count} kullanıcı yoruma verdiğiniz yanıta tepki verdi (Duvar)]]></item>
+		<item name="wcf.user.notification.commentResponse.mail.html"><![CDATA[<p>{@$authorList}, <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">{if $mailbox->getUser()->userID == $owner->userID}duvarınıza{else}{$owner}’in duvarına{/if}</a> yanıtladı:</p>]]></item>
+		<item name="wcf.user.notification.commentResponse.mail.plaintext"><![CDATA[{@$authorList}, {if $mailbox->getUser()->userID == $owner->userID}duvarınıza{else}{$owner}’in duvarına{/if} yorumunuza yanıtladı [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.commentResponse.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir ziyaretçi{/if}, {if $owner->userID == $__wcf->getUser()->userID}duvarınıza{else}<strong>{$owner}</strong>’in duvarına{/if} yorumunuza yanıtladı.]]></item>
+		<item name="wcf.user.notification.commentResponse.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, {if $owner->userID == $__wcf->getUser()->userID}duvarınıza{else}<strong>{$owner}</strong>’in duvarına{/if} yorumunuza yanıtladı.]]></item>
+		<item name="wcf.user.notification.commentResponseOwner.mail.html"><![CDATA[<p>{@$authorList}, <strong>{$commentAuthor}</strong>’in yorumuna <a href="{$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}">duvarınızda</a> yanıtladı:</p>]]></item>
+		<item name="wcf.user.notification.commentResponseOwner.mail.plaintext"><![CDATA[{@$authorList}, {@$commentAuthor}’in yorumuna duvarınızda yanıtladı [URL:{@$owner->getLink()}#wall/comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="wcf.user.notification.commentResponseOwner.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Bir ziyaretçi{/if}, <strong>{$commentAuthor}</strong>’in yorumuna duvarınızda yanıtladı.]]></item>
+		<item name="wcf.user.notification.commentResponseOwner.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language}, <strong>{$author}</strong>’in yorumuna duvarınızda yanıtladı.]]></item>
+		<item name="wcf.user.notification.count"><![CDATA[if (data.returnValues.count == 0) { "Bildirim Yok" } else if (data.returnValues.count == 1) { "1 Bildirim" } else { data.returnValues.count + " Bildirim" }]]></item>
+		<item name="wcf.user.notification.enableDesktopNotifications"><![CDATA[Yeni bildirimler için masaüstü bildirimlerini etkinleştirin.]]></item>
+		<item name="wcf.user.notification.enableDesktopNotifications.button"><![CDATA[Tercihi Değiştir]]></item>
+		<item name="wcf.user.notification.follow.mail.html"><![CDATA[<p>{@$authorList} {if $authors|count == 1}sizi takip ediyor{else}takip ediyor{/if}:</p>]]></item>
+		<item name="wcf.user.notification.follow.mail.plaintext"><![CDATA[{@$authorList} {if $authors|count == 1}sizi takip ediyor{else}takip ediyor{/if}.]]></item>
 		<item name="wcf.user.notification.follow.message"><![CDATA[<strong>{$author}</strong> sizi takip ediyor.]]></item>
 		<item name="wcf.user.notification.follow.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} sizi takip ediyor.]]></item>
 		<item name="wcf.user.notification.follow.title"><![CDATA[Yeni Takipçi]]></item>
-		<item name="wcf.user.notification.follow.title.stacked"><![CDATA[{#$count} yeni takipçiler]]></item>
-		<item name="wcf.user.notification.mail.authorList.html"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Misafirler{else}Bir misafir{/if}{else}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} ve {else}, {/if}<a href="{link controller='User' object=$authors[1] isHtmlEmail=true}{/link}">{$authors[1]->username}</a>{if $count == 3}{if !$guestTimesTriggered} ve {else}, {/if}<a href="{link controller='User' object=$authors[2] isHtmlEmail=true}{/link}">{$authors[2]->username}</a>{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} ve{/if} {#$count-1} diğer kullanıcılar{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} ve {if $guestTimesTriggered == 1}bir misafir{else}{#$guestTimesTriggered} misafirler{/if}{/if}]]></item>
-		<item name="wcf.user.notification.mail.authorList.plaintext"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Misafirler{else}Bir misafir{/if}{else}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} ve {else}, {/if}{@$authors[1]->username} [URL:{link controller='User' object=$authors[1] isEmail=true}{/link}]{if $count == 3}{if !$guestTimesTriggered} ve {else}, {/if}{@$authors[2]->username} [URL:{link controller='User' object=$authors[2] isEmail=true}{/link}]{/if}{elseif $count >= 4}{if $guestTimesTriggered},{else} ve{/if} {#$count-1} diğer kullanıcılar{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} ve {if $guestTimesTriggered == 1}bir misafir{else}{#$guestTimesTriggered} misafirler{/if}{/if}]]></item>
-		<item name="wcf.user.notification.mail.daily.html.intro"><![CDATA[<h2>Sayın {$mailbox->getUser()->username},</h2>
+		<item name="wcf.user.notification.follow.title.stacked"><![CDATA[{#$count} yeni takipçi]]></item>
+		<item name="wcf.user.notification.mail.authorList.html"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Ziyaretçiler{else}Bir ziyaretçi{/if}{else}<a href="{link controller='User' object=$event->getAuthor() isHtmlEmail=true}{/link}">{$event->getAuthor()->username}</a>{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} ve {else}, {/if}<a href="{link controller='User' object=$authors[1] isHtmlEmail=true}{/link}">{$authors[1]->username}</a>{if $count == 3}{if !$guestTimesTriggered} ve {else}, {/if}<a href="{link controller='User' object=$authors[2] isHtmlEmail=true}{/link}">{$authors[2]->username}</a>{/if}{elseif $count >= 4}{if $guestTimesTriggered}, {else} ve {/if} {#$count-1} diğer kullanıcı{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} ve {if $guestTimesTriggered == 1}bir ziyaretçi{else}{#$guestTimesTriggered} ziyaretçi{/if}{/if}]]></item>
+		<item name="wcf.user.notification.mail.authorList.plaintext"><![CDATA[{if !$event->getAuthor()->userID}{if $guestTimesTriggered > 1}Ziyaretçiler{else}Bir ziyaretçi{/if}{else}{@$event->getAuthor()->username} [URL:{link controller='User' object=$event->getAuthor() isEmail=true}{/link}]{/if}{if $count > 1 && $count < 4}{if $count == 2 && !$guestTimesTriggered} ve {else}, {/if}{@$authors[1]->username} [URL:{link controller='User' object=$authors[1] isEmail=true}{/link}]{if $count == 3}{if !$guestTimesTriggered} ve {else}, {/if}{@$authors[2]->username} [URL:{link controller='User' object=$authors[2] isEmail=true}{/link}]{/if}{elseif $count >= 4}{if $guestTimesTriggered}, {else} ve {/if} {#$count-1} diğer kullanıcı{/if}{if $event->getAuthor()->userID && $guestTimesTriggered} ve {if $guestTimesTriggered == 1}bir ziyaretçi{else}{#$guestTimesTriggered} ziyaretçi{/if}{/if}]]></item>
+		<item name="wcf.user.notification.mail.daily.html.intro"><![CDATA[<h2>Sevgili {$mailbox->getUser()->username},</h2>]]></item>
 
 <p>Şu an {#$notificationCount} adet okunmamış{if $notificationCount != 1}{/if} 24 saatten eski olan bildiriminiz bulunmakta:</p>]]></item>
 		<item name="wcf.user.notification.mail.daily.html.outro"><![CDATA[<p>{if $remaining} <a href="{link controller='NotificationList' isHtmlEmail=true}{/link}">Bildirim listenizi</a> ziyaret ederek kalan {#$remaining} bildirimlerinizi görebilirsiniz.</p>{/if}
@@ -5321,7 +5356,6 @@ Eğer sadece bu tür bildirimleri etkisizleştirmek isterseniz onu da bu bağlan
 		<item name="wcf.user.option.searchRadioButtonOption"><![CDATA[“{$option->getTitle()}” için kullanıcı seçimi:]]></item>
 		<item name="wcf.user.option.searchTextOption"><![CDATA[“{$option->getTitle()}” içeriği:]]></item>
 		<item name="wcf.user.option.showSignature"><![CDATA[Kullanıcı imzalarını görmek ister misin?]]></item>
-		<item name="wcf.user.option.skype"><![CDATA[Skype]]></item>
 		<item name="wcf.user.option.timezone"><![CDATA[Zaman Dilimi]]></item>
 		<item name="wcf.user.option.twitter"><![CDATA[X]]></item>
 	</category>
@@ -5607,7 +5641,6 @@ Ayrıca, ikinci faktörünüz kullanılamaz hale geldiğinde kullanmanız için 
 		<item name="shadow.invalid.page.com.woltlab.wcf.ArticleAdd.title"><![CDATA[Makale Ekle]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.ArticleEdit.title"><![CDATA[Makaleyi Düzenle]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.ArticleList.title"><![CDATA[Makaleler]]></item>
-		<item name="shadow.invalid.page.com.woltlab.wcf.AvatarEdit.title"><![CDATA[Profil Resmi Yönetimi]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.CombinedTagged.title"><![CDATA[Belirli Etiketlere Sahip İçerikler]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.Contact.title"><![CDATA[İletişim]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.CookiePolicy.title"><![CDATA[Çerez Politikası]]></item>
@@ -5633,6 +5666,7 @@ Ayrıca, ikinci faktörünüz kullanılamaz hale geldiğinde kullanmanız için 
 <li><a href="https://support.apple.com/kb/ph17191?locale=en_US" class="externalURL" rel="nofollow">Safari</a></li>
 </ul>]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.DeletedContentList.title"><![CDATA[Silinmiş İçerik]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.DeletedContentListView.title"><![CDATA[Silinen İçerik]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.Disclaimer.title"><![CDATA[Yasal Uyarı]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.EditHistory.title"><![CDATA[Düzenleme Geçmişi]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.EmailActivation.title"><![CDATA[Yeni E-posta Adresi Doğrulama]]></item>
@@ -5711,6 +5745,7 @@ Email: [email address of the responsible party]</p><p>The controller is the natu
 		<item name="shadow.invalid.page.com.woltlab.wcf.Settings.title"><![CDATA[Ayarlar]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.SignatureEdit.title"><![CDATA[İmza Yönetimi]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.Tagged.title"><![CDATA[Belirli Etikete Sahip İçerik]]></item>
+		<item name="shadow.invalid.page.com.woltlab.wcf.TaggedListView.title"><![CDATA[Belirli Etiketlere Sahip İçerik]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.TagSearch.title"><![CDATA[Etiketlere Göre Ara]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.Team.title"><![CDATA[Takım]]></item>
 		<item name="shadow.invalid.page.com.woltlab.wcf.TrophyList.title"><![CDATA[Başarımlar]]></item>
