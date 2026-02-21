@@ -4950,42 +4950,46 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 		<item name="wcf.user.visibleLanguages.description"><![CDATA[Seçilen dillerle ilişkili olan içerik görüntülenir.]]></item>
 	</category>
 	<category name="wcf.user.3rdparty">
-		<item name="wcf.user.3rdparty"><![CDATA[Sosyal Medya Bağlantısı]]></item>
-		<item name="wcf.user.3rdparty.connect.info"><![CDATA[Kullanıcı {"wcf.user.3rdparty."|concat:$user->getAuthProvider()|language} ile bağlandı.]]></item>
+		<item name="wcf.user.3rdparty"><![CDATA[Üçüncü Taraf ile Giriş]]></item>
+		<item name="wcf.user.3rdparty.connect.info"><![CDATA[Kullanıcı, {"wcf.user.3rdparty."|concat:$user->getAuthProvider()|language} ile bağlı.]]></item>
+		<item name="wcf.user.3rdparty.facebook"><![CDATA[Facebook]]></item>
 		<item name="wcf.user.3rdparty.facebook.connect"><![CDATA[Facebook hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'facebook'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.facebook.connect.error.inuse"><![CDATA[Facebook hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.facebook.connect.error.inuse"><![CDATA[Facebook hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.facebook.connect.success"><![CDATA[Kullanıcı hesabınız Facebook ile bağlandı.]]></item>
-		<item name="wcf.user.3rdparty.facebook.disconnect"><![CDATA[Facebook bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.facebook.disconnect.success"><![CDATA[Hesabınız artık Facebook ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.facebook.login"><![CDATA[Facebook ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.facebook.register"><![CDATA[{icon size='16' name='facebook' type='brand'}&nbsp;Facebook. Facebook üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.facebook.disconnect"><![CDATA[Facebook bağlantısını kaldır]]></item>
+		<item name="wcf.user.3rdparty.facebook.disconnect.success"><![CDATA[Hesabınız artık Facebook ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.facebook.login"><![CDATA[Facebook ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.facebook.register"><![CDATA[{icon size='16' name='facebook' type='brand'} Facebook üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adınız ve e-posta adresiniz bu nedenle otomatik olarak girildi.]]></item>
+		<item name="wcf.user.3rdparty.github"><![CDATA[GitHub]]></item>
 		<item name="wcf.user.3rdparty.github.connect"><![CDATA[GitHub hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'github'} “<a href="https://github.com/{$__wcf->session->getVar('__oauthUser')->getUsername()}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__oauthUser')->getUsername()}</a>”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.github.connect.error.inuse"><![CDATA[GitHub hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.github.connect.error.inuse"><![CDATA[GitHub hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.github.connect.success"><![CDATA[Kullanıcı hesabınız GitHub ile bağlandı.]]></item>
-		<item name="wcf.user.3rdparty.github.disconnect"><![CDATA[GitHub bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.github.disconnect.success"><![CDATA[[Hesabınız artık GitHub ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.github.login"><![CDATA[GitHub ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.github.register"><![CDATA[{icon size='16' name='github' type='brand'}&nbsp;GitHub. üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.github.disconnect"><![CDATA[GitHub bağlantısını kaldır]]></item>
+		<item name="wcf.user.3rdparty.github.disconnect.success"><![CDATA[Hesabınız artık GitHub ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.github.login"><![CDATA[GitHub ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.github.register"><![CDATA[{icon size='16' name='github' type='brand'} GitHub üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adınız ve e-posta adresiniz bu nedenle otomatik olarak girildi.]]></item>
+		<item name="wcf.user.3rdparty.google"><![CDATA[Google]]></item>
 		<item name="wcf.user.3rdparty.google.connect"><![CDATA[Google hesabınızla bağlanın{if $__wcf->session->getVar('__3rdPartyProvider') === 'google'} “{$__wcf->session->getVar('__oauthUser')->getUsername()}”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.google.connect.error.inuse"><![CDATA[Google hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.google.connect.error.inuse"><![CDATA[Google hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.google.connect.success"><![CDATA[Kullanıcı hesabınız Google ile bağlandı.]]></item>
-		<item name="wcf.user.3rdparty.google.disconnect"><![CDATA[Google bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.google.disconnect.success"><![CDATA[Hesabınız artık Google ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.google.login"><![CDATA[Google ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.google.register"><![CDATA[{icon size='16' name='google' type='brand'}&nbsp;Google. üzerinden bir hesap oluşturuyorsunuz. Bu nedenle kullanıcı adınız ve e-posta adresiniz zaten girilmiş durumda.]]></item>
+		<item name="wcf.user.3rdparty.google.disconnect"><![CDATA[Google bağlantısını kaldır]]></item>
+		<item name="wcf.user.3rdparty.google.disconnect.success"><![CDATA[Hesabınız artık Google ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.google.login"><![CDATA[Google ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.google.register"><![CDATA[{icon size='16' name='google' type='brand'} Google üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adınız ve e-posta adresiniz bu nedenle otomatik olarak girildi.]]></item>
 		<item name="wcf.user.3rdparty.login.error.access_denied"><![CDATA[Harici hesabınıza erişim reddedildi.]]></item>
 		<item name="wcf.user.3rdparty.login.error.denied"><![CDATA[Harici hesabınıza erişim reddedildi.]]></item>
-		<item name="wcf.user.3rdparty.login.error.genericException"><![CDATA[Kimlik doğrulama isteğiniz işlenirken bir hata oluştu. Lütfen yardım için yöneticiyle iletişime geçin. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
-		<item name="wcf.user.3rdparty.login.error.httpError"><![CDATA[Harici hizmetle iletişim kurulamıyor. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
-		<item name="wcf.user.3rdparty.login.error.stateValidation"><![CDATA[Kimlik doğrulama isteği bulunamadı. Belki oturumunuz sona ermiştir.]]></item>
-		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Oturum açma işlemi iptal edildi.]]></item>
-		<item name="wcf.user.3rdparty.twitter.connect"><![CDATA[X hesabınızla bağlantı kurun{if $__wcf->session->getVar('__twitterUsername')} “<a href="https://twitter.com/{$__wcf->session->getVar('__twitterUsername')}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__twitterUsername')}</a>”{/if}.]]></item>
-		<item name="wcf.user.3rdparty.twitter.connect.error.inuse"><![CDATA[X hesabınız zaten başka bir kullanıcı ile bağlantılı.]]></item>
+		<item name="wcf.user.3rdparty.login.error.genericException"><![CDATA[Kimlik doğrulama isteğiniz işlenirken bir hata oluştu. Lütfen yöneticiyle iletişime geçin. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
+		<item name="wcf.user.3rdparty.login.error.httpError"><![CDATA[Harici hizmetle iletişim kurulamadı. Dahili hata kodu: <code>{$exceptionID}</code>.]]></item>
+		<item name="wcf.user.3rdparty.login.error.stateValidation"><![CDATA[Kimlik doğrulama isteği bulunamadı. Oturumunuzun süresi dolmuş olabilir.]]></item>
+		<item name="wcf.user.3rdparty.login.error.user_aborted"><![CDATA[Giriş işlemi iptal edildi.]]></item>
+		<item name="wcf.user.3rdparty.twitter"><![CDATA[X]]></item>
+		<item name="wcf.user.3rdparty.twitter.connect"><![CDATA[X hesabınızla bağlanın{if $__wcf->session->getVar('__twitterUsername')} “<a href="https://twitter.com/{$__wcf->session->getVar('__twitterUsername')}"{if EXTERNAL_LINK_TARGET_BLANK} target="_blank"{/if}>{$__wcf->session->getVar('__twitterUsername')}</a>”{/if}.]]></item>
+		<item name="wcf.user.3rdparty.twitter.connect.error.inuse"><![CDATA[X hesabınız zaten başka bir kullanıcıya bağlı.]]></item>
 		<item name="wcf.user.3rdparty.twitter.connect.success"><![CDATA[Kullanıcı hesabınız X ile bağlandı.]]></item>
-		<item name="wcf.user.3rdparty.twitter.disconnect"><![CDATA[X bağlantısını iptal et]]></item>
-		<item name="wcf.user.3rdparty.twitter.disconnect.success"><![CDATA[Hesabınız artık X ile bağlantılı değil.]]></item>
-		<item name="wcf.user.3rdparty.twitter.login"><![CDATA[X ile Giriş yapın]]></item>
-		<item name="wcf.user.3rdparty.twitter.register"><![CDATA[{icon size='16' name='x-twitter' type='brand'}&nbsp;X. üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adı bu nedenle zaten girildi. Şimdi e-posta adresinizi girin ve hemen başlayabilirsiniz!]]></item>
+		<item name="wcf.user.3rdparty.twitter.disconnect"><![CDATA[X bağlantısını kaldır]]></item>
+		<item name="wcf.user.3rdparty.twitter.disconnect.success"><![CDATA[Hesabınız artık X ile bağlı değil.]]></item>
+		<item name="wcf.user.3rdparty.twitter.login"><![CDATA[X ile giriş yap]]></item>
+		<item name="wcf.user.3rdparty.twitter.register"><![CDATA[{icon size='16' name='x-twitter' type='brand'} X üzerinden bir hesap oluşturuyorsunuz. Kullanıcı adınız otomatik olarak girildi. Şimdi e-posta adresinizi girin ve hemen başlayın!]]></item>
 	</category>
 	<category name="wcf.user.avatar">
 		<item name="wcf.user.avatar"><![CDATA[Profil Resmi]]></item>
