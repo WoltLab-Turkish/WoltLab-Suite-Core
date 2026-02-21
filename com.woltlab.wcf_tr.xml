@@ -5081,14 +5081,10 @@ Eğer şifrenizi değiştirmek istemiyorsanız sadece bekleyebilirsiniz.Bu talep
 	</category>
 	<category name="wcf.user.mail">
 		<item name="wcf.user.mail.mail.html"><![CDATA[<h2>Sayın {$mailbox->getUser()->username},</h2>
-
 <p>“{$username}” sana bir mesaj gönderdi <a href="{link isHtmlEmail=true}{/link}">{PAGE_TITLE|phrase}</a>:</p>
-
 <p>{@$message|newlineToBreak}</p>]]></item>
 		<item name="wcf.user.mail.mail.plaintext"><![CDATA[Sayın{@$mailbox->getUser()->username},
-
 “{@$username}” sana bir mesaj gönderdi {@PAGE_TITLE|phrase} [URL:{link isEmail=true}{/link}]:
-
 {@$message}]]></item>
 	</category>
 	<category name="wcf.user.menu">
